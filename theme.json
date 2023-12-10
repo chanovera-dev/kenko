@@ -1,0 +1,173 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json", 
+	"version": 2,
+	"patterns": [
+		"three-columns-of-services",
+		"clients-section"
+	],
+    "settings": {
+        "appearanceTools": true,
+        "color": {
+            "palette": [
+                {
+					"color": "#ffffff",
+					"name": "Background",
+					"slug": "background"
+				},
+                {
+					"color": "#888888",
+					"name": "Text",
+					"slug": "text"
+				},
+                {
+                    "color": "#DC9814",
+                    "name": "Links",
+                    "slug": "links"
+                }
+            ]
+        },
+        "typography": {
+            "fluid": false,
+            "fontFamilies": [
+                {
+                    "fontFace": [
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-300.woff2"]
+						},
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-300italic.woff2"]
+						},
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-regular.woff2"]
+						},
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-italic.woff2"]
+						},
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-500.woff2"]
+						},
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-500italic.woff2"]
+						},
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-700.woff2"]
+						},
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-700italic.woff2"]
+						}
+                    ],
+                    "fontFamily": "\"Roboto\", sans-serif",
+					"name": "Inter",
+					"slug": "body"
+                },
+                {
+					"fontFamily": "roboto, noto, arial, sans-serif",
+					"name": "System Sans-serif",
+					"slug": "system-sans-serif"
+				}
+            ],
+            "fontSizes": [
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": "0.9rem",
+					"slug": "small"
+				},
+				{
+					"fluid": false,
+					"name": "Medium",
+					"size": "1.05rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"min": "1.39rem",
+						"max": "1.85rem"
+					},
+					"name": "Large",
+					"size": "1.85rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"min": "1.85rem",
+						"max": "2.5rem"
+					},
+					"name": "Extra Large",
+					"size": "2.5rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"min": "2.5rem",
+						"max": "3.27rem"
+					},
+					"name": "Extra Extra Large",
+					"size": "3.27rem",
+					"slug": "xx-large"
+				}
+			]
+        }
+    },
+    "styles": {
+        "color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--text)"
+		},
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--body)",
+            "fontSize": "var(--wp--preset--font-size--medium)",
+			"fontStyle": "normal",
+			"fontWeight": "400",
+			"lineHeight": "1.15"
+        },
+        "elements": {
+            "link": {
+                ":any-link": {
+                    "typography": {
+                        "textDecoration": "none"
+                    }
+                },
+				":hover": {
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				":focus": {
+					"outline": {
+						"offset": "0",
+						"width": "0",
+						"style": "solid"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--links)"
+				}
+			}
+        }
+    }
+}
