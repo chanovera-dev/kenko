@@ -1,6 +1,6 @@
 <?php
         echo '
-        <footer id="main-footer">Probando</footer>';
+        <footer id="main-footer"></footer>';
         wp_footer();
     echo '
     </body>
