@@ -246,7 +246,7 @@
 						"typography": {
 							"fontFamily": "var(--wp--preset--font-family--body)",
 							"fontStyle": "normal",
-							"fontSize": "var(--wp--preset--font-size--medium)",
+							"fontSize": "var(--wp--preset--font-size--large)",
 							"lineHeight": "1.4"
 						}
 					}
