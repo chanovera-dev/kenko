@@ -57,3 +57,8 @@
     /* paginación */
     #main .container .single-post-pagination{padding:44px 0; width:min(100% - 60px); margin-inline:auto;}
 }
+
+@media(min-width:1024px){
+    /* paginación */
+    #main .container .single-post-pagination{width:min(100% - 120px);}
+}
