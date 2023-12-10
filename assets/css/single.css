@@ -13,3 +13,6 @@
 /* citas */
 #main .container .section .post .wp-block-quote{max-width:651px;}
 #main .container .section .post .wp-block-quote p{color:var(--wp--preset--color--title); text-align:center;}
+/* imágenes */
+    /* galería */
+    #main .container .section .post .wp-gallery{grid-template-columns:1fr 1fr;}
