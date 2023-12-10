@@ -157,7 +157,7 @@
         "elements": {
             "h1": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--xx-large)"
+                    "fontSize": "var(--wp--preset--font-size--large)"
                 }
             },
             "heading": {
