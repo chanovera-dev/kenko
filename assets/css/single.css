@@ -1,22 +1,27 @@
 /* generales */
-#main .container .section .post{padding-bottom:50px; max-width:803px; margin-inline:auto;}
+#main .container .section :is(.post, aside){padding-bottom:50px; max-width:803px; margin-inline:auto;}
 #main .container .section .post > *:not(:last-child){margin-bottom:24px;}
 
 /* imagen destacada */
 #main .container .featured-picture{width:100%; aspect-ratio:16/9; object-fit:cover; max-width:921.29px; margin-inline:auto;}
-/* título */
-#main .container .section .post .title{margin:44px auto 21px; text-align:center;}
-/* autor y fecha de publicación */
-#main .container .section .post .author-and-date{font-size:var(--wp--preset--font-size--small); text-align:center; margin-bottom:35px;}
-#main .container .section .post .author-and-date span{color:var(--wp--preset--color--title);}
-/* citas */
-#main .container .section .post .wp-block-quote{max-width:651px;}
-#main .container .section .post .wp-block-quote p{color:var(--wp--preset--color--title); text-align:center;}
-/* imágenes */
-    /* galería */
-    #main .container .section .post .wp-block-image.size-full img{width:100%;}
-    #main .container .section .post .wp-block-gallery{display:grid; grid-template-columns:1fr 1fr;}
-    .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image){width:100%;}
+
+/* contenido */
+    /* título */
+    #main .container .section .post .title{margin:44px auto 21px; text-align:center;}
+    /* autor y fecha de publicación */
+    #main .container .section .post .author-and-date{font-size:var(--wp--preset--font-size--small); text-align:center; margin-bottom:35px;}
+    #main .container .section .post .author-and-date span{color:var(--wp--preset--color--title);}
+    /* citas */
+    #main .container .section .post .wp-block-quote{max-width:651px;}
+    #main .container .section .post .wp-block-quote p{color:var(--wp--preset--color--title); text-align:center;}
+    /* imágenes */
+        /* galería */
+        #main .container .section .post .wp-block-image.size-full img{width:100%;}
+        #main .container .section .post .wp-block-gallery{display:grid; grid-template-columns:1fr 1fr;}
+        .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image){width:100%;}
+
+/* aside */
+
 
 @media(min-width:768px){
     /* generales */
