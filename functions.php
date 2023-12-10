@@ -73,3 +73,10 @@ register_nav_menus(
         'social' => __( 'Social', 'kenko' ), 
     ) 
 );
+
+
+
+// Anexos
+
+// Anexo para definir los componentes personalizados en las plantillas
+require_once(get_template_directory() . '/functions/components.php');

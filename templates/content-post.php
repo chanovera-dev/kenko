@@ -2,15 +2,19 @@
 echo '
 <main id="main">
     <div class="container">
-        <article class="section">
-            <img src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
-            the_title('<h1 class="title">','</h1>');
-            echo '
-            <div class="autor-and-date">' . esc_html__('Escrito por ', 'kenko'); the_author(); echo esc_html__(' en ', 'kenko') . get_the_date() . '</div>';
-            the_content();
-            echo '
-            <div class="tags-and-share">' . get_the_tag_list() . '.' . '
-            
+        <section class="section">
+            <article class="post">
+                <img src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
+                the_title('<h1 class="title">','</h1>');
+                echo '
+                <div class="autor-and-date">' . esc_html__('Escrito por ', 'kenko'); the_author(); echo esc_html__(' en ', 'kenko') . get_the_date() . '</div>';
+                the_content();
+                echo '
+            </article>
+        </section>
+        <aside class="section">
+            <div class="tags-and-share">' . 
+                get_the_tag_list() . '.' . '
                 <p>
                     <a href="https://www.facebook.com/sharer/sharer.php?u='; the_permalink(); echo '" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="17" height="17" fill="currentColor">
@@ -34,8 +38,8 @@ echo '
                         </svg>
                     </a>
                 </p>
-            </div>' . '
+            </div>
             <div class="categories">' . esc_html__('Publicado en ', 'kenko'); get_the_category(); echo '</div>
-        </article>
+        </aside> 
     </div>
 </main>'; 
