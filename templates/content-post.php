@@ -45,6 +45,15 @@ echo '
                 <div class="categories">' . esc_html__('Publicado en ', 'kenko'); the_category(); echo '</div>
             </aside> 
         </section>
-        
+    </div>
+    <div class="single-post-pagination">
+        <div class="previous-post-link">';
+            previous_post_link('%link', '&laquo; Post Anterior');
+        echo '
+        </div>
+        <div class="next-post-link">';
+            next_post_link('%link', 'Siguiente Post &raquo;');
+        echo '
+        </div>
     </div>
 </main>'; 
