@@ -11,4 +11,4 @@
 #main .container .section .post .author-and-date{font-size:var(--wp--present--font-size--small); text-align:center;}
 #main .container .section .post .author-and-date span{color:var(--wp--present--color--title);}
 /* citas */
-#main .container .section .post .wp-block-quote{max-width:651px; color:var(--wp--present--color--title);}
+#main .container .section .post .wp-block-quote{max-width:651px; color:var(--wp--present--color--title); text-align:center;}
