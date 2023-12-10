@@ -3,11 +3,11 @@
     echo '
     <article class="post">';
 
-    if ( has_post_thumbnail() == true ) :
+    if ( has_post_thumbnail() == false ) :
+        
+    else:
         echo '
         <img class="thumbnail" src="'; the_post_thumbnail_url( 'media' ); echo '" alt="Imagen del artículo" loading="lazy" width="300" height="200">';
-    else:
-        
     endif;
 
     echo get_the_date();
