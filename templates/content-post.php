@@ -1,7 +1,7 @@
 <?php
 echo '
 <main id="main">
-    <div class="container">';
+    <div class="container post-wrapper">';
         if ( has_post_thumbnail() == false ) :
         else:
             echo '<img class="featured-picture" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';

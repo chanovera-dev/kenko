@@ -48,7 +48,7 @@
 
 @media(min-width:768px){
     /* generales */
-    #main .container{padding-top:68px;}
+    #main .container.post-wrapper{padding-top:68px;}
 
     /* imagen destacada */
     #main .container .featured-picture{aspect-ratio:16/9;}
