@@ -37,6 +37,8 @@
     /* categorías */
     #main .container .section aside .categories{display:inline-flex; gap:7px;}
     #main .container .section aside .categories .post-categories{display:inline-flex; flex-wrap:wrap; gap:7px;}
+    #main .container .section aside .categories .post-categories li{position:relative;}
+    #main .container .section aside .categories .post-categories li:not(:last-child):after{content:',';}
 
 @media(min-width:768px){
     /* generales */
