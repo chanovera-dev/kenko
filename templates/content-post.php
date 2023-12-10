@@ -46,7 +46,7 @@ echo '
             </aside> 
         </section>
     </div>
-    <div class="container">
+    <div class="container pagination-wrapper">
         <section class="single-post-pagination">
             <div class="previous-post-link">';
                 previous_post_link('%link', 'Post Anterior: %title');
