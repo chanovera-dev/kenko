@@ -2,9 +2,13 @@
 echo '
 <main id="main">
     <div class="container">
-        <section class="section">
-            <article class="post">
-                <img class="featured-picture" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
+        <section class="section post-wrapper">';
+            if ( has_post_thumbnail() == false ) :
+            else:
+                echo '<img class="featured-picture" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
+            endif;
+            echo '
+            <article class="post">';
                 the_title('<h1 class="title">','</h1>');
                 echo '
                 <div class="author-and-date">' . esc_html__('Escrito por ', 'kenko'). '<span>'; the_author(); echo '</span>' . esc_html__(' en ', 'kenko') . get_the_date() . '</div>';

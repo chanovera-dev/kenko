@@ -1,10 +1,10 @@
 /* generales */
-#main .container .section .post{padding:68px 0 50px;}
-#main .container .section .post *:not(.featured-picture){max-width:803px; margin-inline:auto;}
+#main .container .section.post-wrapper{padding-top:68px;}
+#main .container .section .post{padding-bottom:50px; max-width:803px; margin-inline:auto;}
 #main .container .section .post > *:not(:last-child){margin-bottom:24px;}
 
 /* imagen destacada */
-#main .container .section .post .featured-picture{width:100%; aspect-ratio:16/9; object-fit:cover;}
+#main .container .section .post-wrapper .featured-picture{width:100%; aspect-ratio:16/9; object-fit:cover; max-width:921.29px; margin-inline:auto;}
 /* título */
 #main .container .section .post .title{margin:44px auto 21px; text-align:center;}
 /* autor y fecha de publicación */
