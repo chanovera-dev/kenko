@@ -46,14 +46,16 @@ echo '
             </aside> 
         </section>
     </div>
-    <div class="single-post-pagination">
-        <div class="previous-post-link">';
-            previous_post_link('%link', 'Post Anterior: %title');
-        echo '
-        </div>
-        <div class="next-post-link">';
-            next_post_link('%link', 'Siguiente Post: %title');
-        echo '
-        </div>
+    <div class="container">
+        <section class="single-post-pagination">
+            <div class="previous-post-link">';
+                previous_post_link('%link', 'Post Anterior: %title');
+            echo '
+            </div>
+            <div class="next-post-link">';
+                next_post_link('%link', 'Siguiente Post: %title');
+            echo '
+            </div>
+        </section>
     </div>
 </main>'; 

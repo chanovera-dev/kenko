@@ -41,10 +41,16 @@
     #main .container .section aside .categories .post-categories li:not(:last-child):after{content:',';}
     #main .container .section aside .categories .post-categories li:last-child{content:'.';}
 
+/* paginación */
+#main .container .single-post-pagination{padding:44px 0; width:min(100% - 30px); display:flex; justify-content:space-between;}
+
 @media(min-width:768px){
     /* generales */
     #main .container{padding-top:68px;}
 
     /* imagen destacada */
-#main .container .featured-picture{aspect-ratio:16/9;}
+    #main .container .featured-picture{aspect-ratio:16/9;}
+
+    /* paginación */
+    #main .container .single-post-pagination{padding:44px 0; width:min(100% - 60px);}
 }
