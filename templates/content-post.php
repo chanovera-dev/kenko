@@ -9,7 +9,7 @@ echo '
             <div class="autor-and-date">' . esc_html__('Escrito por ', 'kenko'); the_author(); echo esc_html__(' en ', 'kenko') . get_the_date() . '</div>';
             the_content();
             echo '
-            <div class="tags-and-share">' . esc_html__('Posteado en ') . get_the_tag_list() . '.' . '
+            <div class="tags-and-share">' . get_the_tag_list() . '.' . '
             
                 <p>
                     <a href="https://www.facebook.com/sharer/sharer.php?u='; the_permalink(); echo '" target="_blank">
@@ -34,7 +34,8 @@ echo '
                         </svg>
                     </a>
                 </p>
-            </div>
+            </div>' . '
+            <div class="categories">' . esc_html__('Publicado en ', 'kenko'); get_the_category(); echo '</div>
         </article>
     </div>
 </main>'; 
