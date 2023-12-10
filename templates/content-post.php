@@ -39,7 +39,7 @@ echo '
                     </a>
                 </p>
             </div>
-            <div class="categories">' . esc_html__('Publicado en ', 'kenko') . the_category(); echo '</div>
+            <div class="categories">' . esc_html__('Publicado en ', 'kenko'); the_category(); echo '</div>
         </aside> 
     </div>
 </main>'; 
