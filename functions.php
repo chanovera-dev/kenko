@@ -18,7 +18,6 @@ add_action( 'get_footer', 'load_components_footer' );
 
 
 
-
 function kenko_theme_support(){ 
     
     add_theme_support( 'title-tag' );
@@ -62,3 +61,15 @@ function kenko_theme_support(){
 
 } 
 add_action('after_setup_theme', 'kenko_theme_support');
+
+
+
+// Registro de menús
+register_nav_menus( 
+    array(
+        'primary' => __( 'Primary', 'kenko' ),
+        'secondary' => __( 'Secondary', 'kenko' ),
+        'tertiary' => __( 'Tertiary', 'kenko' ),
+        'social' => __( 'Social', 'kenko' ), 
+    ) 
+);
