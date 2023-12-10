@@ -118,7 +118,7 @@
 						"max": "1.85rem"
 					},
 					"name": "Large",
-					"size": "1.65rem",
+					"size": "1.5rem",
 					"slug": "large"
 				},
 				{
@@ -127,7 +127,7 @@
 						"max": "2.5rem"
 					},
 					"name": "Extra Large",
-					"size": "2.5rem",
+					"size": "1.85rem",
 					"slug": "x-large"
 				},
 				{
@@ -157,7 +157,7 @@
         "elements": {
             "h1": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--large)"
+                    "fontSize": "var(--wp--preset--font-size--x-large)"
                 }
             },
             "heading": {
