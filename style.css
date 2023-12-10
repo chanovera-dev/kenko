@@ -21,4 +21,4 @@ body{position:relative;}
 a{transition:all .3s ease; border-radius:.2rem;}
 a:focus{outline:none; box-shadow:var(--wp--preset--color--links);}
 img{display:block; height:auto;}
-.container .section{width:min(100% - 15px, 921.19px); margin-inline:auto;}
+.container .section{width:min(100% - 30px, 921.19px); margin-inline:auto;}
