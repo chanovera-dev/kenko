@@ -1,2 +1,2 @@
-#main .container .section .post *{max-width:803px; margin-inline:auto;}
+#main .container .section .post *:not(.featured-picture){max-width:803px; margin-inline:auto;}
 #main .container .section .post *:not(:last-child){margin-bottom:24px;}
