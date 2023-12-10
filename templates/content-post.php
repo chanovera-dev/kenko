@@ -4,7 +4,7 @@ echo '
     <div class="container">
         <section class="section">
             <article class="post">
-                <img src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
+                <img class="featured-picture" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
                 the_title('<h1 class="title">','</h1>');
                 echo '
                 <div class="autor-and-date">' . esc_html__('Escrito por ', 'kenko'); the_author(); echo esc_html__(' en ', 'kenko') . get_the_date() . '</div>';

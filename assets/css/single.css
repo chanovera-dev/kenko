@@ -1,2 +1,6 @@
+/* generales */
 #main .container .section .post *:not(.featured-picture){max-width:803px; margin-inline:auto;}
 #main .container .section .post *:not(:last-child){margin-bottom:24px;}
+
+/* imagen destacada */
+#main .container .section .post .featured-picture{width:100%; aspect-ratio:4/3; object-fit:cover;}
