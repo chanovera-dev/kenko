@@ -8,8 +8,8 @@
 /* título */
 #main .container .section .post .title{margin:44px auto 21px; text-align:center;}
 /* autor y fecha de publicación */
-#main .container .section .post .author-and-date{font-size:var(--wp--present--font-size--small); text-align:center;}
-#main .container .section .post .author-and-date span{color:var(--wp--present--color--title);}
+#main .container .section .post .author-and-date{font-size:var(--wp--preset--font-size--small); text-align:center;}
+#main .container .section .post .author-and-date span{color:var(--wp--preset--color--title);}
 /* citas */
 #main .container .section .post .wp-block-quote{max-width:651px;}
-#main .container .section .post .wp-block-quote p{color:var(--wp--present--color--title); text-align:center;}
+#main .container .section .post .wp-block-quote p{color:var(--wp--preset--color--title); text-align:center;}
