@@ -43,6 +43,7 @@
     #main .container .section aside .categories .post-categories li:last-child{content:'.';}
 
 /* paginación */
+#main .container.pagination-wrapper{border-top:1px solid #eee;}
 #main .container .single-post-pagination{padding:44px 0; width:min(100% - 30px); display:flex; justify-content:space-between;}
 
 @media(min-width:768px){
