@@ -1,5 +1,5 @@
 /* generales */
-#main .container{padding-top:68px;}
+#main .container .section .post{padding:68px 0 50px;}
 #main .container .section .post *:not(.featured-picture){max-width:803px; margin-inline:auto;}
 #main .container .section .post > *:not(:last-child){margin-bottom:24px;}
 
