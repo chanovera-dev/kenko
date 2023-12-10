@@ -11,6 +11,7 @@
     endif;
 
     echo get_the_date();
+    the_title('<h2 class="title">', '</h2>');
     the_excerpt();
     echo '
         <a class="permalink" href="'; the_permalink(); echo '" target="_blank">'; 
