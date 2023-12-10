@@ -15,4 +15,4 @@
 #main .container .section .post .wp-block-quote p{color:var(--wp--preset--color--title); text-align:center;}
 /* imágenes */
     /* galería */
-    #main .container .section .post .wp-block-gallery{grid-template-columns:1fr 1fr;}
+    #main .container .section .post .wp-block-gallery{display:grid; grid-template-columns:1fr 1fr;}
