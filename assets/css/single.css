@@ -18,6 +18,7 @@
         /* galería */
         #main .container .section .post .wp-block-image.size-full img{width:100%;}
         #main .container .section .post .wp-block-gallery{display:grid; grid-template-columns:1fr 1fr;}
+        .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image),
         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2), 
         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:100%;}
 
