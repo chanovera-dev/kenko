@@ -191,6 +191,13 @@
 					"text": "var(--wp--preset--color--links)"
 				}
 			}
+        },
+        "blocks": {
+            "core/post-author": {
+                "typography": {
+                    "fontWeight": "500"
+                }
+            }
         }
     }
 }
