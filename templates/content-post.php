@@ -1,13 +1,13 @@
 <?php
 echo '
 <main id="main">
-    <div class="container">
-        <section class="section post-wrapper">';
-            if ( has_post_thumbnail() == false ) :
-            else:
-                echo '<img class="featured-picture" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
-            endif;
-            echo '
+    <div class="container">';
+        if ( has_post_thumbnail() == false ) :
+        else:
+            echo '<img class="featured-picture" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="'.esc_html__('Imagen destacada', 'kenko').'">';
+        endif;
+        echo '
+        <section class="section">
             <article class="post">';
                 the_title('<h1 class="title">','</h1>');
                 echo '
