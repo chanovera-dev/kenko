@@ -12,3 +12,13 @@ License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: kenko
 Tags:
+
+/* ajustes globales */
+html{scroll-behavior:smooth;}
+*, :before, :after{box-sizing:border-box; margin:0;}
+body{position:relative;}
+:is(header,footer,aside,.resume-content) :is(ol,ul){padding:0; list-style:none;}
+a{transition:all .3s ease; border-radius:.2rem;}
+a:focus{outline:none; box-shadow:var(--wp--preset--color--links);}
+img{display:block; height:auto;}
+.container .section{width:min(100% - 15px, 921.19px); margin-inline:auto;}
