@@ -7,3 +7,6 @@
 #main .container .section .post .featured-picture{width:100%; aspect-ratio:16/9; object-fit:cover;}
 /* título */
 #main .container .section .post .title{margin:44px 0 21px; text-align:center;}
+/* autor y fecha de publicación */
+#main .container .section .post .author-and-date{font-size:var(--wp--present--font-size--small); text-align:center;}
+#main .container .section .post .author-and-date span{color:var(--wp--present--color--title);}
