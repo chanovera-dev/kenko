@@ -14,7 +14,7 @@ echo '
         </section>
         <aside class="section">
             <div class="tags-and-share">' . 
-                get_the_tag_list() . '.' . '
+                get_the_tag_list() . '
                 <p>
                     <a href="https://www.facebook.com/sharer/sharer.php?u='; the_permalink(); echo '" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="17" height="17" fill="currentColor">
@@ -39,7 +39,7 @@ echo '
                     </a>
                 </p>
             </div>
-            <div class="categories">' . esc_html__('Publicado en ', 'kenko'); get_the_category(); echo '</div>
+            <div class="categories">' . esc_html__('Publicado en ', 'kenko'). get_the_category(); echo '</div>
         </aside> 
     </div>
 </main>'; 
