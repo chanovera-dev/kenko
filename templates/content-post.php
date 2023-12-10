@@ -18,7 +18,7 @@ echo '
             <aside>
                 <div class="tags-and-share">
                     <div class="tags">' . get_the_tag_list() . '</div>
-                    <p>
+                    <p class="share">
                         <a href="https://www.facebook.com/sharer/sharer.php?u='; the_permalink(); echo '" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="17" height="17" fill="currentColor">
                                 <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
