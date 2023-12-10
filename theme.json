@@ -155,12 +155,18 @@
 			"lineHeight": "1.15"
         },
         "elements": {
+            "h1": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--xx-large)"
+                }
+            },
             "heading": {
                 "color": {
                     "text": "var(--wp--preset--color--title)"
                 },
                 "typography": {
-                    "fontWeight": "400"
+                    "fontWeight": "400",
+                    "lineHeight": "1.2"
                 }
             },
             "link": {
