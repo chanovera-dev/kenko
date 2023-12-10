@@ -16,8 +16,8 @@ echo '
                 echo '
             </article>
             <aside>
-                <div class="tags-and-share">' . 
-                    get_the_tag_list() . '
+                <div class="tags-and-share">
+                    <div class="tags">' . get_the_tag_list() . '</div>
                     <p>
                         <a href="https://www.facebook.com/sharer/sharer.php?u='; the_permalink(); echo '" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="17" height="17" fill="currentColor">
