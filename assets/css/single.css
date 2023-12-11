@@ -61,6 +61,7 @@
     :is(.commentlist, .children){list-style:none;}
     .commentlist li:not(:first-child){border-top:1px solid var(--wp--preset--color--line-comments); margin-top:29px;}
     .commentlist li .comment-body{padding-top:20px;}
+    .commentlist li .comment-body .comment-meta .comment-author .fn,
     .commentlist li .comment-body .comment-meta .comment-author .fn .url{color:var(--wp--preset--color--title); font-weight:400; font-size:18px;}
     .commentlist li .comment-body .comment-meta .comment-author .says{display:none;}
     .commentlist li .comment-body .comment-metadata{font-size:var(--wp--preset--font-size--small);}
