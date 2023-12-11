@@ -29,13 +29,12 @@ get_header();
                     while ($default_query->have_posts()) : $default_query->the_post();
                         // Mostrar el contenido de la entrada aquí
                         the_title('<h2>', '</h2>');
-                        the_content();
                     endwhile;
                     wp_reset_postdata();
                 else :
                     echo 'No hay entradas disponibles.';
                 endif;
-                
+
             echo '
             </div>';
 
