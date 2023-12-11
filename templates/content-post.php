@@ -62,8 +62,18 @@ echo '
                 endif;
             echo '
             </div>
-            <div class="next-post-link">';
-                next_post_link('%link', 'Siguiente Post: %title');
+            <div>';
+                $next_post = get_next_post();
+                if ($next_post) :
+                echo '
+                <a href="' . esc_url(get_permalink($next_post->ID)); echo '" class="next-post-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                    </svg>
+                    <p>Siguiente</p>
+                    <p>' . esc_html($next_post->post_title); echo '</p>
+                </a>';
+                endif;
             echo '
             </div>
         </section>
