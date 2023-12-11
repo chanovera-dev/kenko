@@ -11,6 +11,9 @@ get_header();
                     foreach ($categories as $category) {
                         echo '<button class="category-button" data-category="' . $category->slug . '">' . $category->name . '</button>';
                     }
+
+                    filter_posts();
+                    
                 echo '
                 </div>';
 
