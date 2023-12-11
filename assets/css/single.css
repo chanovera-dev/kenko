@@ -54,11 +54,11 @@
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) .title-post{color:var(--wp--preset--color--title); grid-row:2/3;}
 
 /* comentarios */
-#main .container.comments-wrapper{background-color:var(--wp--preset--color--background-comments);}
+#main .container.comments-wrapper{background-color:var(--wp--preset--color--background-comments); padding-bottom:57px;}
 #main .container .section.comments-section{width:min(100%, 803px);}
     /* Deja un comentario */
     #respond{padding-top:65px;}
-    #reply-title{font-size:var(--wp--preset--font-size--large); padding-bottom:3px;}
+    #reply-title{font-size:var(--wp--preset--font-size--x-large); padding-bottom:3px;}
 
 @media(min-width:768px){
     /* generales */
