@@ -6,4 +6,4 @@
 #main .container .section .posts .post .publicate-date{position:relative; padding-left:51px; font-size:var(--wp--preset--font-size--small);}
 #main .container .section .posts .post .publicate-date:before{position:absolute; content:''; width:37px; height:1px; top:50%; left:0; background-color:#ccc;}
 #main .container .section .posts .post .permalink{display:inline-flex; gap:7px; align-items:center;}
-#main .container .section .posts .post .permalink svg{width:11px; height:11px;}
+#main .container .section .posts .post .permalink svg{width:12px; height:12px;}
