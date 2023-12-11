@@ -3,5 +3,5 @@
 /* posts */
 #main .container .section .posts .post{display:grid; gap:20px; align-content:flex-start;}
 #main .container .section .posts .post .thumbnail{width:100%; aspect-ratio:3/4; object-fit:cover;}
-#main .container .section .posts .post .publicate-date{position:relative;}
-#main .container .section .posts .post .publicate-date:before{content:''; width:37px; height:1px; top:50%; left:0; background-color:#ccc; padding-left:10px;}
+#main .container .section .posts .post .publicate-date{position:relative; padding-left:51px;}
+#main .container .section .posts .post .publicate-date:before{position:absolute; content:''; width:37px; height:1px; top:50%; left:0; background-color:#ccc;}
