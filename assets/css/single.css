@@ -84,7 +84,7 @@
     #main .container .single-post-pagination{padding:44px 0; width:min(100% - 60px); margin-inline:auto;}
 
     /* formulario */
-    .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:4rem 0;}
+    .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:0 30px;}
     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
 }
 
