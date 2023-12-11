@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
     $('.category-button').on('click', function() {
         var category = $(this).data('category');
+        console.log(category); // Añade esta línea para depurar
 
         $.ajax({
             type: 'POST',
