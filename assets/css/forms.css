@@ -5,7 +5,7 @@ input, textarea{transition:all .3s ease;}
 .comment-form-comment,
 .comment-form-author,
 .comment-form-email,
-.comment-form-url{display:grid; gap:5px;}
+.comment-form-url{display:grid; gap:5px; margin-bottom:16px;}
 
 /* formularios de ingreso de datos */
 main input[type=text],

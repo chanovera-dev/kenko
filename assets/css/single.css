@@ -71,6 +71,7 @@
     /* deja un comentario */
     #respond{padding-top:65px;}
     #reply-title{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); padding-bottom:3px;}
+    .comment-form :is(.logged-in-as, .comment-notes){margin-bottom:28px; font-size:var(--wp--preset--font-size--small);}
 
 @media(min-width:768px){
     /* generales */
