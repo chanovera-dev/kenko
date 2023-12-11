@@ -59,6 +59,7 @@
     /* comentarios */
     #comments{font-size:var(--wp--preset--font-size--x-large); text-align:center; padding:68px 0 54px;}
     .commentlist{list-style:none;}
+    .commentlist li .comment-body{padding-top:20px; border-top:1px solid var(--wp--preset--color--line); margin-top:29px;}
     /* deja un comentario */
     #respond{padding-top:65px;}
     #reply-title{font-size:var(--wp--preset--font-size--x-large); padding-bottom:3px;}
