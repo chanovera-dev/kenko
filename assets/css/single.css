@@ -57,13 +57,15 @@
 #main .container.comments-wrapper{background-color:var(--wp--preset--color--background-comments); padding-bottom:57px;}
 #main .container .section.comments-section{width:min(100%, 803px);}
     /* comentarios */
-    #comments{font-size:var(--wp--preset--font-size--x-large); text-align:center; padding:68px 0 54px;}
+    #comments{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); text-align:center; padding:68px 0 54px;}
     .commentlist{list-style:none;}
     .commentlist li:not(:first-child){border-top:1px solid var(--wp--preset--color--line-comments); margin-top:29px;}
     .commentlist li .comment-body{padding-top:20px;}
+    .commentlist li .comment-body .comment-metadata{font-size:var(--wp--preset--font-size--small); color:var(--wp--preset--color--text);}
+    .commentlist li .comment-body .comment-content
     /* deja un comentario */
     #respond{padding-top:65px;}
-    #reply-title{font-size:var(--wp--preset--font-size--x-large); padding-bottom:3px;}
+    #reply-title{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); padding-bottom:3px;}
 
 @media(min-width:768px){
     /* generales */
