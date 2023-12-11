@@ -94,5 +94,9 @@ function custom_comment_avatar_size($avatar, $id_or_email, $size, $default, $alt
     return $avatar;
 }
 
-// Aplicar el filtro
+// Eliminar el filtro original de get_avatar
+remove_filter('get_avatar', 'get_avatar', 10);
+
+// Aplicar el nuevo filtro
 add_filter('get_avatar', 'custom_comment_avatar_size', 10, 5);
+
