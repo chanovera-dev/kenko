@@ -2,4 +2,4 @@
 #main .container .section .posts{display:grid; gap:40px; grid-template-columns:repeat(auto-fill, minmax(286px, 1fr));}
 /* posts */
 #main .container .section .posts .post{display:grid; gap:20px; align-content:flex-start;}
-#main .container .section .posts .post .thumbnail{width:100%;}
+#main .container .section .posts .post .thumbnail{width:100%; aspect-ratio:3/5; object-fit:cover;}
