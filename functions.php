@@ -104,24 +104,3 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 
 
 
-add_action('wp_ajax_get_posts_by_category', 'get_posts_by_category');
-add_action('wp_ajax_nopriv_get_posts_by_category', 'get_posts_by_category');
-
-function get_posts_by_category() {
-    $category = $_POST['category'];
-    $args = array(
-        'category_name' => $category,
-        'posts_per_page' => -1
-    );
-    $posts = get_posts($args);
-    foreach($posts as $post) {
-        setup_postdata($post);
-        ?>
-        <div class="blog-post">
-            <h2 class="blog-post-title"><?php the_title(); ?></h2>
-        </div>
-        <?php
-    }
-    wp_reset_postdata();
-    die();
-}
