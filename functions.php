@@ -117,16 +117,18 @@ function filter_posts() {
         'category_name' => $category,
     );
 
-    query_posts($args);
+    $query = new WP_Query($args);
 
-    while (have_posts()) : the_post();
-        // Mostrar el contenido de la entrada aquí
-        the_title('<h2>', '</h2>');
-        
-    endwhile;
+    if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
+            // Mostrar el contenido de la entrada aquí
+            the_title('<h2>', '</h2>');
+        endwhile;
+        wp_reset_postdata();
+    else :
+        echo 'No hay entradas para esta categoría.';
+    endif;
 
     die();
 }
 
-add_action('wp_ajax_filter_posts', 'filter_posts');
-add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');

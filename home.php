@@ -18,14 +18,24 @@ get_header();
             
             <div id="post-list">';
     
-                // Muestra todas las entradas por defecto
-                query_posts('post_type=post&posts_per_page=-1');
-
-                while (have_posts()) : the_post();
-                    // Mostrar el contenido de la entrada aquí
-                    the_title('<h2>', '</h2>');
-
-                endwhile;
+                $default_args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => -1,
+                );
+            
+                $default_query = new WP_Query($default_args);
+            
+                if ($default_query->have_posts()) :
+                    while ($default_query->have_posts()) : $default_query->the_post();
+                        // Mostrar el contenido de la entrada aquí
+                        the_title('<h2>', '</h2>');
+                        the_content();
+                    endwhile;
+                    wp_reset_postdata();
+                else :
+                    echo 'No hay entradas disponibles.';
+                endif;
+                
             echo '
             </div>';
 
