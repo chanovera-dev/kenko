@@ -14,7 +14,7 @@ Text Domain: kenko
 Tags:
 
 /* ajustes globales */
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; margin:0;}
 *, :before, :after{box-sizing:border-box; margin:0;}
 body{position:relative;}
 :is(header,footer,aside,.resume-content) :is(ol,ul){padding:0; list-style:none;}
