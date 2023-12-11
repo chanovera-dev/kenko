@@ -101,3 +101,17 @@ add_filter('get_avatar', 'custom_comment_avatar_size', 10, 1);
 // Delimita el tamaño del excerpt a 15 palabras
 function limite_excerpt($limite) { return 15; }
 add_filter ('excerpt_length', 'limite_excerpt', 999);
+
+
+
+// ajax para los artículos del blog
+function enqueue_custom_scripts() {
+    wp_enqueue_script('jquery');
+
+    wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/ajax-blog.js', array('jquery'), null, true);
+
+    // Pasa la URL de admin-ajax.php a script.js
+    wp_localize_script('custom-script', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
