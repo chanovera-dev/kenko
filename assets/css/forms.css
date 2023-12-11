@@ -7,6 +7,12 @@ input, textarea{transition:all .3s ease;}
 .comment-form-email,
 .comment-form-url{display:grid; gap:5px; margin-bottom:16px;}
 
+/* etiquetas de los formularios */
+.comment-form-comment label,
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label{color:var(--wp--preset--color--title);}
+
 /* formularios de ingreso de datos */
 main input[type=text],
 main input[type=email],
