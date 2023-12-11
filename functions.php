@@ -105,7 +105,7 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 
 
 function enqueue_custom_scripts() {
-    wp_enqueue_script('custom-script', get_template_directory_uri() . 'assets/js/buttons-blog-ajax.js', array('jquery'), null, true);
+    wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/buttons-blog-ajax.js', array('jquery'), null, true);
   
     wp_localize_script('custom-script', 'ajax_object', array('ajaxurl' => admin_url('admin-ajax.php')));
   }
