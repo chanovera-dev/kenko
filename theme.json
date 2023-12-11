@@ -35,6 +35,11 @@
                     "slug": "line"
                 },
                 {
+                    "color": "#e7e7e7",
+                    "name": "Line comments",
+                    "slug": "line-comments"
+                },
+                {
                     "color": "#f7f7f7",
                     "name": "Background comments",
                     "slug": "background-comments"
