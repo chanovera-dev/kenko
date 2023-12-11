@@ -1,4 +1,5 @@
 /* generales */
+#main .container .section{width:min(100% - 30px, 921.19px);}
 #main .container .section :is(.post, aside){padding-bottom:50px; max-width:803px; margin-inline:auto;}
 #main .container .section .post > *:not(:last-child){margin-bottom:24px;}
 
