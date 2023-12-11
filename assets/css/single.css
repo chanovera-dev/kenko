@@ -60,7 +60,8 @@
     #comments{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); text-align:center; padding:68px 0 54px;}
     :is(.commentlist, .children){list-style:none;}
     .commentlist li:not(:first-child){border-top:1px solid var(--wp--preset--color--line-comments); margin-top:29px;}
-    .commentlist li .comment-body{padding-top:20px;}
+    .commentlist li .comment-body{position:relative; padding-top:20px; display:grid; gap:0 21px; grid-template-columns:60px 1fr;}
+    .commentlist li .comment-body :is(.comment-meta, .comment-metadata, .comment-content, .reply){grid-column:2/3;}
     .commentlist li .comment-body .comment-meta .comment-author .fn,
     .commentlist li .comment-body .comment-meta .comment-author .fn .url{color:var(--wp--preset--color--title); font-weight:400; font-size:18px;}
     .commentlist li .comment-body .comment-meta .comment-author .says{display:none;}
