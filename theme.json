@@ -28,6 +28,16 @@
                     "color": "#DC9814",
                     "name": "Links",
                     "slug": "links"
+                },
+                {
+                    "color": "#eeeeee",
+                    "name": "Line",
+                    "slug": "line"
+                },
+                {
+                    "color": "#f7f7f7",
+                    "name": "Background comments",
+                    "slug": "background-comments"
                 }
             ]
         },

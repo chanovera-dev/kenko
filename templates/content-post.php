@@ -78,4 +78,10 @@ echo '
             </div>
         </section>
     </div>
+    <div class="container comments-wrapper">
+        <section class="section">';
+        comments_template();
+        echo '
+        </section">
+    </div>
 </main>'; 
