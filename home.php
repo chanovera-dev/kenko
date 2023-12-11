@@ -25,7 +25,7 @@ get_header();
                     echo '<p>' . esc_html__('No se encontraron artículos', 'kenko') . '</p>';
                 }
 
-                the_post_pagination();
+
                 
             echo '
             </section>
