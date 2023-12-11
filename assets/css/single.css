@@ -55,6 +55,10 @@
 
 /* comentarios */
 #main .container.comments-wrapper{background-color:var(--wp--preset--color--background-comments);}
+#main .container .section.comments-section{width:min(100%, 803px);}
+    /* Deja un comentario */
+    #respond{padding-top:65px;}
+    #reply-title{font-size:var(--wp--preset--font-size--large); padding-bottom:3px;}
 
 @media(min-width:768px){
     /* generales */

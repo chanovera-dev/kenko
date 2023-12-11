@@ -79,7 +79,7 @@ echo '
         </section>
     </div>
     <div class="container comments-wrapper">
-        <section class="section">';
+        <section class="section comments-section">';
         comments_template();
         echo '
         </section">
