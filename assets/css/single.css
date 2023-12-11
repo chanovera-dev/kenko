@@ -55,7 +55,7 @@
 
 /* comentarios · contenedor */
 #main .container.comments-wrapper{background-color:var(--wp--preset--color--background-comments); padding-bottom:57px;}
-#main .container .section.comments-section{width:min(100%, 803px);}
+#main .container .section.comments-section{width:min(100% - 30px, 803px);}
     /* comentarios */
     #comments{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); text-align:center; padding:68px 0 54px;}
     :is(.commentlist, .children){list-style:none;}
