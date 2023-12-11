@@ -48,7 +48,7 @@
 #main .container .single-post-pagination{padding:44px 0; width:min(100% - 30px); display:flex; justify-content:space-between;}
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) svg{color:var(--wp--preset--color--text);}
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) .pagination-indicator{font-size:var(--wp--preset--font-size--small); color:var(--wp--preset--color--text);}
-#main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) .title-post{color:var(--wp--preset--color--text);}
+#main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) .title-post{color:var(--wp--preset--color--title);}
 
 @media(min-width:768px){
     /* generales */
