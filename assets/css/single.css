@@ -64,6 +64,7 @@
     .commentlist li .comment-body .comment-metadata{font-size:var(--wp--preset--font-size--small);}
     .commentlist li .comment-body .comment-metadata a:where(:not(.wp-element-button)):any-link{color:var(--wp--preset--color--text);}
     .commentlist li .comment-body .comment-content{padding-top:19px;}
+    .commentlist li .comment-body .reply{padding-top:19px;}
     /* deja un comentario */
     #respond{padding-top:65px;}
     #reply-title{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); padding-bottom:3px;}
