@@ -12,10 +12,7 @@ add_action( 'wp_enqueue_scripts', 'load_components_header' );
 
 // Carga componentes (estilos, javascript, etc) en el footer
 function load_components_footer(){
-    wp_enqueue_script('jquery');
-    wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/ajax-blog.js', array('jquery'), null, true);
-    // Pasa la URL de admin-ajax.php a script.js
-    wp_localize_script('custom-script', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
+
 }
 add_action( 'get_footer', 'load_components_footer' );
 
@@ -104,31 +101,3 @@ add_filter('get_avatar', 'custom_comment_avatar_size', 10, 1);
 // Delimita el tamaño del excerpt a 15 palabras
 function limite_excerpt($limite) { return 15; }
 add_filter ('excerpt_length', 'limite_excerpt', 999);
-
-
-
-// función de filtrado de posts
-function filter_posts() {
-    $category = $_POST['category'];
-
-    $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => -1,
-        'category_name' => $category,
-    );
-
-    $query = new WP_Query($args);
-
-    if ($query->have_posts()) :
-        while ($query->have_posts()) : $query->the_post();
-            // Mostrar el contenido de la entrada aquí
-            the_title('<h2>', '</h2>');
-        endwhile;
-        wp_reset_postdata();
-    else :
-        echo 'No hay entradas para esta categoría.';
-    endif;
-
-    die();
-}
-
