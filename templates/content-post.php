@@ -25,7 +25,7 @@ echo '
         </section>
     </div>';
     
-    include(TEMPLATEPATH . '/parts/sidebars/post-pagination.php');
+    include(TEMPLATEPATH . '/parts/post-pagination.php');
 
     echo '
     <div class="container comments-wrapper">
