@@ -10,7 +10,8 @@
         <img class="thumbnail" src="'; the_post_thumbnail_url( 'media' ); echo '" alt="Imagen del artículo" loading="lazy" width="300" height="200">';
     endif;
 
-    echo get_the_date();
+    echo '
+    <div class="publicate-date">' . get_the_date() . '</div>';
     the_title('<h2 class="title">', '</h2>');
     the_excerpt();
     echo '
@@ -23,4 +24,4 @@
         '</a>';
               
     echo '
-    </article>'; 
+    </article>';
