@@ -14,6 +14,19 @@ get_header();
                     echo '<button class="category-button" data-category="' . $category->slug . '">' . $category->name . '</button>';
                 }
             echo '
+            </div>
+            
+            <div id="post-list">';
+    
+                // Muestra todas las entradas por defecto
+                query_posts('post_type=post&posts_per_page=-1');
+
+                while (have_posts()) : the_post();
+                    // Mostrar el contenido de la entrada aquí
+                    the_title('<h2>', '</h2>');
+
+                endwhile;
+            echo '
             </div>';
 
                 if ( have_posts() ){           

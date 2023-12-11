@@ -115,3 +115,29 @@ function enqueue_custom_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+
+
+
+// función de filtrado de posts
+function filter_posts() {
+    $category = $_POST['category'];
+
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+        'category_name' => $category,
+    );
+
+    query_posts($args);
+
+    while (have_posts()) : the_post();
+        // Mostrar el contenido de la entrada aquí
+        the_title('<h2>', '</h2>');
+        
+    endwhile;
+
+    die();
+}
+
+add_action('wp_ajax_filter_posts', 'filter_posts');
+add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
