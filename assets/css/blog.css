@@ -1,0 +1,1 @@
+#main .container .section .posts{display:grid; gap:20px; grid-template-columns:repeat(auto-fill, minmax(218px, 1fr));}
