@@ -34,6 +34,16 @@
                     "name": "Line",
                     "slug": "line"
                 },
+				{
+                    "color": "#e1e1e1",
+                    "name": "Border input",
+                    "slug": "border-input"
+                },
+				{
+                    "color": "#cccccc",
+                    "name": "Border input on focus",
+                    "slug": "border-input-focus"
+                },
                 {
                     "color": "#e7e7e7",
                     "name": "Line comments",

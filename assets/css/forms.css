@@ -1,0 +1,24 @@
+/* generales */
+input, textarea{transition:all .3s ease;}
+
+/* contenedores de los formularios de ingresos de datos */
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url{display:grid; gap:5px;}
+
+/* formularios de ingreso de datos */
+main input[type=text],
+main input[type=email],
+main input[type=tel],
+main input[type=password],
+main input[type=search],
+main input[type=url],
+textarea{font-family:var(--wp--preset--font-family--system-font); line-height:1.6; outline:none; padding:8px 10px; border:1px solid var(--wp--present--color--border-input);}
+main input[type=text]:focus,
+main input[type=email]:focus,
+main input[type=tel]:focus,
+main input[type=password]:focus,
+main input[type=search]:focus,
+main input[type=url]:focus,
+textarea:focus{border-color:var(--wp--present--color--border-input-focus);}
