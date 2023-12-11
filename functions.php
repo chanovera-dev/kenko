@@ -95,3 +95,9 @@ function custom_comment_avatar_size($avatar) {
 
 // Aplicar el filtro
 add_filter('get_avatar', 'custom_comment_avatar_size', 10, 1);
+
+
+
+// Delimita el tamaño del excerpt a 20 palabras
+function limite_excerpt($limite) { return 20; }
+add_filter ('excerpt_length', 'limite_excerpt', 999);
