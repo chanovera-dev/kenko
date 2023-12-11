@@ -58,7 +58,7 @@
 #main .container .section.comments-section{width:min(100%, 803px);}
     /* comentarios */
     #comments{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); text-align:center; padding:68px 0 54px;}
-    .commentlist{list-style:none;}
+    :is(.commentlist, .children){list-style:none;}
     .commentlist li:not(:first-child){border-top:1px solid var(--wp--preset--color--line-comments); margin-top:29px;}
     .commentlist li .comment-body{padding-top:20px;}
     .commentlist li .comment-body .comment-metadata{font-size:var(--wp--preset--font-size--small);}
