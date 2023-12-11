@@ -57,7 +57,7 @@
 #main .container.comments-wrapper{background-color:var(--wp--preset--color--background-comments); padding-bottom:57px;}
 #main .container .section.comments-section{width:min(100%, 803px);}
     /* comentarios */
-    #comments{width:var(--wp--preset--font-size--x-large); text-align:center; padding:68px 0 54px;}
+    #comments{font-size:var(--wp--preset--font-size--x-large); text-align:center; padding:68px 0 54px;}
     /* deja un comentario */
     #respond{padding-top:65px;}
     #reply-title{font-size:var(--wp--preset--font-size--x-large); padding-bottom:3px;}
