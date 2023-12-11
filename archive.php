@@ -23,7 +23,7 @@ get_header();
                     echo '<p>' . esc_html__('No se encontraron coincidencias', 'kenko') . '</p>';
                 }
 
-                the_post_pagination();
+                the_posts_pagination();
                 
             echo '
             </section>

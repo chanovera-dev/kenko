@@ -5,9 +5,8 @@ get_header();
     <main id="main">
         <div class="container">
             <section class="section">';
-
-                if ( have_posts() ){   
-
+                  
+                if ( have_posts() ){           
                     echo '
                     <div class="posts">';
                         
@@ -17,14 +16,14 @@ get_header();
                             get_template_part( 'templates/content', 'archive' );    
                         }
 
-                    echo '    
-                    </div>';
-
-                    the_posts_pagination();
-
+                        echo '
+                        
+                    </div>';     
                 } else {
                     echo '<p>' . esc_html__('No se encontraron artículos', 'kenko') . '</p>';
                 }
+
+                the_posts_pagination();
                 
             echo '
             </section>
