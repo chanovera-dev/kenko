@@ -32,4 +32,4 @@ textarea:focus{border-color:var(--wp--preset--color--border-input-focus);}
 
 /* formulario de envio de datos */
 main input[type=submit]{display:inline-block; margin-top:9px; width:auto; min-width:140px; padding:10px; background-color:var(--wp--preset--color--title); border:1px solid var(--wp--preset--color--title); color:#fff; font-size:var(--wp--preset--font-size--medium);}
-main input[type=submit]:hover{filter:brightness(1.1);}
+main input[type=submit]:hover{filter:brightness(1.5);}
