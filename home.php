@@ -4,18 +4,7 @@ get_header();
     echo '
     <main id="main">
         <div class="container">
-            <section class="section">
-
-                <div id="category-buttons">';
-                    $categories = get_categories();
-                    foreach ($categories as $category) {
-                        echo '<button class="category-button" data-category="' . $category->slug . '">' . $category->name . '</button>';
-                    }
-
-                    filter_posts();
-                    
-                echo '
-                </div>';
+            <section class="section">';
 
                 if ( have_posts() ){           
                     echo '
