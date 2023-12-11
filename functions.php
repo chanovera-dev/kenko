@@ -84,5 +84,14 @@ require_once(get_template_directory() . '/functions/components.php');
 
 
 // cambia el tamaño del avatar de los comentarios en wordpress
+function custom_comment_avatar_size($avatar) {
+    // Cambiar el tamaño del avatar a 60 píxeles (o el tamaño deseado)
+    $avatar = preg_replace('/(width|height)="\d*"\s/', '', $avatar);
+    $avatar = preg_replace('/style=["\'](.*?)["\']/', '', $avatar);
+    $avatar = preg_replace('/src=([\'"])((?:(?!\1).)*?)\1/', 'src=$1$2$1 width="60" height="60"', $avatar);
 
+    return $avatar;
+}
 
+// Aplicar el filtro
+add_filter('get_avatar', 'custom_comment_avatar_size', 10, 1);
