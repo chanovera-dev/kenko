@@ -30,7 +30,7 @@ echo '
     echo '
     <div class="container comments-wrapper">
         <section class="section comments-section">';
-        comments_template();
+            comments_template();
         echo '
         </section">
     </div>
