@@ -14,9 +14,7 @@ echo '
         foreach($categories as $category) :
             echo '
             <li>
-            <a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' .
-                $category->name . '
-            </a>
+            <a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a>
             </li>';
         endforeach;
         echo '
@@ -29,7 +27,7 @@ echo '
         'order' => 'desc',
         ]);
 
-      
+
         if($projects->have_posts()):
         echo '
         <div class="posts">';
