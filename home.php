@@ -35,9 +35,9 @@ echo '
                     endif;
                 echo '
                 </form>
-            </div>';
+            </div>
         
-
+            <div id="site-content"></div>';
     
                 
             // if ( have_posts() ){           
