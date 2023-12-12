@@ -29,13 +29,13 @@ echo '
         ?>
       
         <?php if($projects->have_posts()): ?>
-            <ul class="posts">
+            <div class="posts">
             <?php
                 while($projects->have_posts()) : $projects->the_post();
                 get_template_part( 'templates/content', 'archive' ); 
                 endwhile;
             ?>
-            </ul>
+            </div>
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
         <?php
