@@ -5,20 +5,19 @@ echo '
 <main id="main">
     <div class="container">
         <section class="section">';
+        ?>
+        <?php $categories = get_categories(); ?>
+        <ul class="cat-list">
+            <li><a class="category-list_item active" href="#!" data-slug="">Todo</a></li>
 
-        $categories = get_categories();
-        echo '
-        <ul class="categories-list">
-            <li><a class="category-list_item active" href="#!" data-slug="">' . esc_html__('Todo', 'kenko') . '</a></li>';
-
-            foreach($categories as $category) :
-            echo '
+        <?php foreach($categories as $category) : ?>
             <li>
-                <a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a>
-            </li>';
-            endforeach;
-        echo '
-        </ul>';
+            <a class="category-list_item" href="#!" data-slug="<?= $category->slug; ?>">
+                <?= $category->name; ?>
+            </a>
+            </li>
+        <?php endforeach; ?>
+        </ul>
         ?>
         <?php 
             $projects = new WP_Query([
