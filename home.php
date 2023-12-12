@@ -21,46 +21,44 @@ echo '
         endforeach;
         echo '
         </ul>';
-        ?>
-        <?php 
-            $projects = new WP_Query([
-            'post_type' => 'post',
-            'posts_per_page' => -1,
-            'order_by' => 'date',
-            'order' => 'desc',
-            ]);
-        ?>
+
+        $projects = new WP_Query([
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+        'order_by' => 'date',
+        'order' => 'desc',
+        ]);
+
       
-        <?php if($projects->have_posts()): ?>
-            <div class="posts">
-            <?php
-                while($projects->have_posts()) : $projects->the_post();
-                get_template_part( 'templates/content', 'archive' ); 
-                endwhile;
-            ?>
-            </div>
-            <?php wp_reset_postdata(); ?>
-        <?php endif; ?>
-        <?php
-                // if ( have_posts() ){           
-                //     echo '
-                //     <div class="posts">';
-                        
+        if($projects->have_posts()):
+        echo '
+        <div class="posts">';
+            while($projects->have_posts()) : $projects->the_post();
+            get_template_part( 'templates/content', 'archive' ); 
+            endwhile;
+        echo '
+        </div>';
+            wp_reset_postdata();
+        endif;
+        
+        // if ( have_posts() ){           
+        //     echo '
+        //     <div class="posts">';
+                
 
-                //         while( have_posts() ){            
-                //             the_post();  
-                //             get_template_part( 'templates/content', 'archive' );    
-                //         }
+        //         while( have_posts() ){            
+        //             the_post();  
+        //             get_template_part( 'templates/content', 'archive' );    
+        //         }
 
-                //         echo '
-                        
-                //     </div>';     
-                // } else {
-                //     echo '<p>' . esc_html__('No se encontraron artículos', 'kenko') . '</p>';
-                // }
+        //         echo '
+                
+        //     </div>';     
+        // } else {
+        //     echo '<p>' . esc_html__('No se encontraron artículos', 'kenko') . '</p>';
+        // }
 
-                // the_posts_pagination();
-
+        // the_posts_pagination();
 
         echo '
         </section>
