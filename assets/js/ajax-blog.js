@@ -20,3 +20,12 @@ jQuery(document).ready(function($) {
 
 
 
+// Después de cargar las publicaciones con Ajax
+jQuery(document).ajaxComplete(function () {
+    // Puedes ajustar '15' según tus necesidades
+    jQuery('p').each(function () {
+        var excerpt = jQuery(this).text();
+        var limitedExcerpt = excerpt.split(' ').splice(0, 15).join(' ');
+        jQuery(this).text(limitedExcerpt);
+    });
+});
