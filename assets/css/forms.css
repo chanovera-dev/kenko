@@ -14,6 +14,11 @@ input, textarea{transition:all .3s ease;}
 .comment-form-email label,
 .comment-form-url label{color:var(--wp--preset--color--title);}
 
+/* marca de requerido */
+.comment-form-comment label .required,
+.comment-form-author label .required,
+.comment-form-email label .required{color:var(--wp--preset--color--text);}
+
 /* formularios de ingreso de datos */
 main input[type=text],
 main input[type=email],
