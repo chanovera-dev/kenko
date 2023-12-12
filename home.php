@@ -29,7 +29,7 @@ echo '
         ?>
       
         <?php if($projects->have_posts()): ?>
-            <ul class="project-tiles">
+            <ul class="posts">
             <?php
                 while($projects->have_posts()) : $projects->the_post();
                 get_template_part( 'templates/content', 'archive' ); 
