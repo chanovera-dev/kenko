@@ -33,7 +33,7 @@ echo '
             <ul class="project-tiles">
             <?php
                 while($projects->have_posts()) : $projects->the_post();
-                include('_components/project-list-item.php');
+                get_template_part( 'templates/content', 'archive' ); 
                 endwhile;
             ?>
             </ul>
