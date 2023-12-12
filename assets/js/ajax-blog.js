@@ -1,5 +1,6 @@
 const ajaxFilter = document.getElementById('ajax-filter');
 const siteContent = document.getElementById('site-content');
+const ajaxurl = misha_args.ajaxurl || '/wp-admin/admin-ajax.php';
 
 // Cambiando el evento de 'change' a 'click' para los inputs de radio
 ajaxFilter.querySelectorAll('input[type="radio"]').forEach(radio => {
