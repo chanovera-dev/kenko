@@ -6,7 +6,7 @@ ajaxFilter.querySelectorAll('input[type="radio"]').forEach(radio => {
     radio.addEventListener('click', event => {
         siteContent.classList.add('is-loading');
 
-        fetch(ajaxurl + '?action=ajaxfilter', {
+        fetch( misha_args.ajaxurl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
