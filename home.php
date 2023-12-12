@@ -9,33 +9,31 @@ echo '
             echo '
             <div class="ajax-filters">
                 <form id="ajax-filter">';
-            
-                $categories = get_terms(
-                    array(
-                        'taxonomy' => 'category',
-                        'orderby'  => 'name',
-                    )
-                );
-                if ($categories) :
-                    echo '
-                    <div>
-                        <label>
-                            <input type="radio" name="category" value="all" checked>Todas las categorías
-                        </label>';
-                        
-                        foreach ($categories as $category) :
-                            echo '
+                    $categories = get_terms(
+                        array(
+                            'taxonomy' => 'category',
+                            'orderby'  => 'name',
+                        )
+                    );
+                    if ($categories) :
+                        echo '
+                        <div>
                             <label>
-                                <input type="radio" name="category" value="' . $category->term_id . '">' .
-                                $category->name . '
+                                <input type="radio" name="category" value="all" checked>Todas las categorías
                             </label>';
-                        
-                        endforeach;
-                    echo '
-                    </div>';
-                
-                endif;
-            echo '
+                            
+                            foreach ($categories as $category) :
+                                echo '
+                                <label>
+                                    <input type="radio" name="category" value="' . $category->term_id . '">' .
+                                    $category->name . '
+                                </label>';
+                            
+                            endforeach;
+                        echo '
+                        </div>';
+                    endif;
+                echo '
                 </form>
             </div>';
         
