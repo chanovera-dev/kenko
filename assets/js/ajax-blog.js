@@ -18,15 +18,12 @@ jQuery(document).ready(function($) {
     });
 });
 
-jQuery(document).ready(function($) {
-    var maxLength = 15; // Establece el número máximo de palabras permitidas
 
-    // Itera sobre todas las etiquetas <p> en el documento
-    $("p").each(function() {
-        var text = $(this).text(); // Obtiene el texto de la etiqueta <p>
-        var words = text.split(" "); // Divide el texto en palabras
-        var truncatedWords = words.slice(0, maxLength); // Toma solo las primeras 'maxLength' palabras
-        var truncatedText = truncatedWords.join(" "); // Une las palabras truncadas en un nuevo texto
-        $(this).text(truncatedText); // Establece el nuevo texto en la etiqueta <p>
-    });
+
+// Después de cargar las publicaciones con Ajax
+jQuery(document).ajaxComplete(function () {
+    // Puedes ajustar '15' según tus necesidades
+    var excerpt = jQuery('p').text();
+    var limitedExcerpt = excerpt.split(' ').splice(0, 15).join(' ');
+    jQuery('p').text(limitedExcerpt);
 });
