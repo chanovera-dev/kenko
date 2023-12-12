@@ -18,8 +18,7 @@ echo '
                     );
                     if ($categories) :
                         echo '
-                        <div>
-                            <span>Select category:</span>';
+                        <div>';
                             
                             foreach ($categories as $category) :
                                 echo '
