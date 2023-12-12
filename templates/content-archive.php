@@ -7,7 +7,9 @@
         
     else:
         echo '
-        <img class="thumbnail" src="'; the_post_thumbnail_url( 'media' ); echo '" alt="Imagen del artículo" loading="lazy" width="300" height="200">';
+        <a class="permalink" href="'; the_permalink(); echo '" target="_blank">
+            <img class="thumbnail" src="'; the_post_thumbnail_url( 'media' ); echo '" alt="Imagen del artículo" loading="lazy" width="300" height="200">
+        </a>';
     endif;
 
     echo '
