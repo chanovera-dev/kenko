@@ -119,7 +119,7 @@ function filter_projects() {
   
     if($ajaxposts->have_posts()) {
       while($ajaxposts->have_posts()) : $ajaxposts->the_post();
-        $response .= get_template_part('templates/_components/project-list-item');
+        $response .= get_template_part('templates/content-archive');
       endwhile;
     } else {
       $response = 'empty';
