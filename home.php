@@ -18,7 +18,7 @@ echo '
             </li>
         <?php endforeach; ?>
         </ul>
-        ?>
+        
         <?php 
             $projects = new WP_Query([
             'post_type' => 'projecten',
