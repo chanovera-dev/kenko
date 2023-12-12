@@ -104,3 +104,30 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 
 
 
+// ajax para el blog
+add_action( 'wp_ajax_ajaxfilter', 'rudr_ajax_filter_by_category' );
+add_action( 'wp_ajax_nopriv_ajaxfilter', 'rudr_ajax_filter_by_category' );
+
+function rudr_ajax_filter_by_category() {
+
+	$args = json_decode( file_get_contents( "php://input" ), true );
+
+	query_posts( $args );
+	
+	// below is almost unchanged part from Twenty Twenty theme index.php file
+	$i = 0;
+
+	while( have_posts() ) {
+		++$i;
+		if ( $i > 1 ) {
+			echo '<hr class="post-separator styled-separator is-style-wide" />';
+		}
+		the_post();
+
+		get_template_part( 'template-parts/content', get_post_type() );
+
+	}
+
+	die;
+
+}

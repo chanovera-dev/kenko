@@ -37,7 +37,7 @@ echo '
                 </form>
             </div>';
         
-
+            rudr_ajax_filter_by_category();
     
                 
             // if ( have_posts() ){           
