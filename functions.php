@@ -124,7 +124,7 @@ function rudr_ajax_filter_by_category() {
 		}
 		the_post();
 
-		get_template_part( 'templates/content', get_post_type() );
+		get_template_part( 'templates/content-archive', get_post_type() );
 
 	}
 
