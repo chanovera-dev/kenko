@@ -99,10 +99,9 @@ add_filter('get_avatar', 'custom_comment_avatar_size', 10, 1);
 
 
 // Delimita el tamaño del excerpt a 15 palabras
-// function limite_excerpt($limite) { return 15; }
-// add_filter ('excerpt_length', 'limite_excerpt', 999);
-function my_excerpt_length($length){ return 15; }
-add_filter('excerpt_length', 'my_excerpt_length');
+function limite_excerpt($limite) { return 15; }
+add_filter ('excerpt_length', 'limite_excerpt', 999);
+
 
 
 // ajax para el blog
@@ -120,7 +119,7 @@ function filter_projects() {
   
     if($ajaxposts->have_posts()) {
       while($ajaxposts->have_posts()) : $ajaxposts->the_post();
-        $response .= get_template_part('templates/content-archive');
+        $response .= get_template_part( 'templates/content', 'archive' ); 
       endwhile;
     } else {
       $response = 'empty';
