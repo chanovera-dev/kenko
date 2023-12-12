@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
                 category: $(this).data('slug'),
             },
             success: function(res) {
-                $('.project-tiles').html(res);
+                $('.posts').html(res);
             }
         });
     });
