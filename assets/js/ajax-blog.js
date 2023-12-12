@@ -26,6 +26,7 @@ jQuery(document).ajaxComplete(function () {
     jQuery('p').each(function () {
         var excerpt = jQuery(this).text();
         var limitedExcerpt = excerpt.split(' ').splice(0, 15).join(' ');
+        limitedExcerpt += ' [...]'; // Agrega " [...]" al final del excerpt
         jQuery(this).text(limitedExcerpt);
     });
 });
