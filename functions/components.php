@@ -15,7 +15,7 @@ function archive_styles() {
         wp_dequeue_style( 'wp-block-library' );
         wp_enqueue_style( 'blog-styles', get_template_directory_uri() . '/assets/css/blog.css' );
         wp_enqueue_style( 'pagination-styles', get_template_directory_uri() . '/assets/css/pagination.css' );
-        wp_enqueue_script( 'ajax-blog-js', get_template_directory_uri() . '/assets/js/ajax-blog.js', array(), '1.0', true );
+        
     }
 }
 add_action( 'wp_enqueue_scripts', 'archive_styles' );
