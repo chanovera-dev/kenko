@@ -99,9 +99,10 @@ add_filter('get_avatar', 'custom_comment_avatar_size', 10, 1);
 
 
 // Delimita el tamaño del excerpt a 15 palabras
-function limite_excerpt($limite) { return 15; }
-add_filter ('excerpt_length', 'limite_excerpt', 999);
-
+// function limite_excerpt($limite) { return 15; }
+// add_filter ('excerpt_length', 'limite_excerpt', 999);
+function my_excerpt_length($length){ return 15; }
+add_filter('excerpt_length', 'my_excerpt_length');
 
 
 // ajax para el blog
