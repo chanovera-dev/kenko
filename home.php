@@ -14,7 +14,7 @@ echo '
             foreach($categories as $category) :
             echo '
             <li>
-                <a class="category-list_item" href="#!" data-slug="'; $category->slug; echo '">'; $category->name; echo '</a>
+                <a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a>
             </li>';
             endforeach;
         echo '
