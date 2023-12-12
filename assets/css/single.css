@@ -24,6 +24,8 @@
         #main .container .section .post .wp-block-gallery .wp-block-image:hover:before{background-color:#DC9814;}
         #main .container .section .post .wp-block-gallery .wp-block-image:after{content:''; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:50px; height:1px; background-color:transparent; z-index:1; transition:all .3s ease;}
         #main .container .section .post .wp-block-gallery .wp-block-image:hover:after{background-color:#DC9814;}
+        #main .container .section .post .wp-block-gallery .wp-block-image img{transition:all .3s ease;}
+        #main .container .section .post .wp-block-gallery .wp-block-image img:hover{filter:brightness(.3);}
         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image),
         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2), 
         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:100%;}
