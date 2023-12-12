@@ -7,7 +7,7 @@ echo '
         <section class="section">';
         ?>
         <?php $categories = get_categories(); ?>
-        <ul class="cat-list">
+        <ul class="categories-list">
             <li><a class="category-list_item active" href="#!" data-slug="">Todo</a></li>
 
         <?php foreach($categories as $category) : ?>
