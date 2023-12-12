@@ -19,7 +19,7 @@ echo '
                         echo '
                         <div>
                             <label>
-                                <input type="radio" name="category" value="all" checked>Todas las categorías
+                                <input type="radio" name="category" value="all" checked>' . esc_html__('Todo', 'kenko') . '
                             </label>';
                             
                             foreach ($categories as $category) :
@@ -35,9 +35,8 @@ echo '
                     endif;
                 echo '
                 </form>
-            </div>
+            </div>';
         
-            <div id="site-content"></div>';
     
                 
             // if ( have_posts() ){           
