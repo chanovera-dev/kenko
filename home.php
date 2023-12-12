@@ -18,10 +18,10 @@ echo '
             </li>
         <?php endforeach; ?>
         </ul>
-        
+
         <?php 
             $projects = new WP_Query([
-            'post_type' => 'projecten',
+            'post_type' => 'post',
             'posts_per_page' => -1,
             'order_by' => 'date',
             'order' => 'desc',
