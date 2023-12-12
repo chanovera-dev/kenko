@@ -13,8 +13,11 @@
     endif;
 
     echo '
-    <div class="publicate-date">' . get_the_date() . '</div>';
-    the_title('<h2 class="title">', '</h2>');
+    <div class="publicate-date">' . get_the_date() . '</div>
+    <a class="permalink-title" href="'; the_permalink(); echo '" target="_blank">';
+        the_title('<h2 class="title">', '</h2>');
+    echo '
+    </a>';
     the_excerpt();
     echo '
         <a class="permalink" href="'; the_permalink(); echo '" target="_blank">'; 
