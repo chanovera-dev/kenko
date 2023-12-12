@@ -18,6 +18,7 @@
     #main .container .section .categories-list{padding:29px 0 39px; display:inline-flex; align-items:center;}
     #main .container .section .categories-list li{position:relative;}
     #main .container .section .categories-list li:not(:last-child):after{content:'/';}
+    #main .container .section .categories-list li:first-child a{margin-left:0;}
     #main .container .section .categories-list li a{font-size:18px; margin:0 17px;}
 }
 
