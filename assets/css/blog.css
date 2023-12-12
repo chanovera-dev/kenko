@@ -8,7 +8,7 @@
     /* posts */
     #main .container .section .posts .post{display:grid; gap:14px; align-content:flex-start;}
     #main .container .section .posts .post .thumbnail{width:100%; aspect-ratio:3/4; object-fit:cover; transition:all .3s ease;}
-    #main .container .section .posts .post .thumbnail:hover{filter:brightness(.2);}
+    #main .container .section .posts .post .thumbnail:hover{filter:brightness(.3);}
     #main .container .section .posts .post .publicate-date{position:relative; padding-left:51px; font-size:var(--wp--preset--font-size--small);}
     #main .container .section .posts .post .publicate-date:before{position:absolute; content:''; width:37px; height:1px; top:50%; left:0; background-color:#ccc;}
     #main .container .section .posts .post .permalink{display:inline-flex; gap:7px; align-items:center;}
