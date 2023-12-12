@@ -19,9 +19,27 @@ echo '
             endforeach;
         echo '
         </ul>';
-            
-
-
+        ?>
+        <?php 
+            $projects = new WP_Query([
+            'post_type' => 'projecten',
+            'posts_per_page' => -1,
+            'order_by' => 'date',
+            'order' => 'desc',
+            ]);
+        ?>
+      
+        <?php if($projects->have_posts()): ?>
+            <ul class="project-tiles">
+            <?php
+                while($projects->have_posts()) : $projects->the_post();
+                include('_components/project-list-item.php');
+                endwhile;
+            ?>
+            </ul>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
+        <?php
                 // if ( have_posts() ){           
                 //     echo '
                 //     <div class="posts">';
