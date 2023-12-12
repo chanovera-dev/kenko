@@ -1,66 +1,49 @@
-<?php
-get_header();
+<?php get_header(); ?>
 
-echo '
 <main id="main">
     <div class="container">
         <section class="section">';
 
-            echo '
-            <div class="ajax-filters">
-                <form id="ajax-filter">';
-                    $categories = get_terms(
-                        array(
-                            'taxonomy' => 'category',
-                            'orderby'  => 'name',
-                        )
-                    );
-                    if ($categories) :
-                        echo '
-                        <div>
-                            <label>
-                                <input type="radio" name="category" value="all" checked>' . esc_html__('Todo', 'kenko') . '
-                            </label>';
-                            
-                            foreach ($categories as $category) :
-                                echo '
-                                <label>
-                                    <input type="radio" name="category" value="' . $category->term_id . '">' .
-                                    $category->name . '
-                                </label>';
-                            
-                            endforeach;
-                        echo '
-                        </div>';
-                    endif;
-                echo '
-                </form>
-            </div>';
+        <?php $categories = get_categories(); ?>
+        <ul class="cat-list">
+            <li><a class="cat-list_item active" href="#!" data-slug="">All projects</a></li>
+
+            <?php foreach($categories as $category) : ?>
+                <li>
+                    <a class="cat-list_item" href="#!" data-slug="<?= $category->slug; ?>">
+                        <?= $category->name; ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+            
         
     
-                
-            // if ( have_posts() ){           
-            //     echo '
-            //     <div class="posts">';
-                    
+            <?php
 
-            //         while( have_posts() ){            
-            //             the_post();  
-            //             get_template_part( 'templates/content', 'archive' );    
-            //         }
+                // if ( have_posts() ){           
+                //     echo '
+                //     <div class="posts">';
+                        
 
-            //         echo '
-                    
-            //     </div>';     
-            // } else {
-            //     echo '<p>' . esc_html__('No se encontraron artículos', 'kenko') . '</p>';
-            // }
+                //         while( have_posts() ){            
+                //             the_post();  
+                //             get_template_part( 'templates/content', 'archive' );    
+                //         }
 
-            // the_posts_pagination();
-            
-        echo '
+                //         echo '
+                        
+                //     </div>';     
+                // } else {
+                //     echo '<p>' . esc_html__('No se encontraron artículos', 'kenko') . '</p>';
+                // }
+
+                // the_posts_pagination();
+
+            ?>
+        
         </section>
     </div>
 </main>';
     
-get_footer();
+<?php get_footer(); ?>
