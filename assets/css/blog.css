@@ -1,9 +1,24 @@
+/* lista de categorías */
+#main .container .section .categories-list{padding:30px 0; list-style:none;}
 /* rejilla */
 #main .container .section .posts{display:grid; gap:40px; grid-template-columns:repeat(auto-fill, minmax(286px, 1fr));}
-/* posts */
-#main .container .section .posts .post{display:grid; gap:14px; align-content:flex-start;}
-#main .container .section .posts .post .thumbnail{width:100%; aspect-ratio:3/4; object-fit:cover;}
-#main .container .section .posts .post .publicate-date{position:relative; padding-left:51px; font-size:var(--wp--preset--font-size--small);}
-#main .container .section .posts .post .publicate-date:before{position:absolute; content:''; width:37px; height:1px; top:50%; left:0; background-color:#ccc;}
-#main .container .section .posts .post .permalink{display:inline-flex; gap:7px; align-items:center;}
-#main .container .section .posts .post .permalink svg{width:12px; height:12px;}
+    /* posts */
+    #main .container .section .posts .post{display:grid; gap:14px; align-content:flex-start;}
+    #main .container .section .posts .post .thumbnail{width:100%; aspect-ratio:3/4; object-fit:cover;}
+    #main .container .section .posts .post .publicate-date{position:relative; padding-left:51px; font-size:var(--wp--preset--font-size--small);}
+    #main .container .section .posts .post .publicate-date:before{position:absolute; content:''; width:37px; height:1px; top:50%; left:0; background-color:#ccc;}
+    #main .container .section .posts .post .permalink{display:inline-flex; gap:7px; align-items:center;}
+    #main .container .section .posts .post .permalink svg{width:12px; height:12px;}
+
+@media(min-width:768px){
+    /* lista de categorías */
+    #main .container .section .categories-list{padding:29px 0 39px; display:inline-flex; align-items:center;}
+    #main .container .section .categories-list li{position:relative;}
+    #main .container .section .categories-list li:not(:last-child):after{content:'/';}
+    #main .container .section .categories-list li a{font-size:18px; margin:0 17px;}
+}
+
+@media(min-width:1024px){
+    /* lista de categorías */
+    #main .container .section .categories-list{padding:29px 0 108px;}
+}
