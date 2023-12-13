@@ -1,4 +1,4 @@
-let galleryElements = document.getElementsByClassName('wp-block-galley');
+let galleryElements = document.getElementsByClassName('wp-block-gallery');
 
 // Verificar si la cantidad de elementos es par
 if (galleryElements.length % 2 === 0) {
