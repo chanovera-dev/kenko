@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let galleryElements = document.getElementsByClassName('wp-block-gallery');
+    let galleryElements = document.querySelectorAll('.post .wp-block-gallery');
 
     // Verificar si la cantidad de elementos es par
     if (galleryElements.length % 2 === 0) {
