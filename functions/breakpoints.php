@@ -4,6 +4,11 @@ function kenko_theme_custom_breakpoints() {
     ?>
         <style>
             :root{
+                /* blog */
+                --categories-list--padding:30px 0;
+                --categories-list--display:inherit;
+                --categories-list-link--font-size:16px;
+                --categories-list-link--margin:0;
                 /* single post */
                 --aspect-ratio--featured-picture:1/1;
                 --padding-top--post-wrapper:0;
@@ -23,6 +28,11 @@ function kenko_theme_custom_breakpoints() {
 
             @media(min-width:768px){
                 :root{
+                    /* blog */
+                    --categories-list--padding:29px 0 39px;
+                    --categories-list--display:inline-flex;
+                    --categories-list-link--font-size:18px;
+                    --categories-list-link--margin:0 17px;
                     /* single post */
                     --padding-top--post-wrapper:68px;
                     --aspect-ratio--featured-picture:16/9;
@@ -32,6 +42,9 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-grid-row:1/3;
                     --single-post-pagination--svg-size:45px;
                 }
+                /* blog */
+                    /* lista de categorías */
+                    #main .container .section .categories-list li:not(:last-child):after{content:'/'; color:var(--wp--preset--color--border-input-focus);}
                 /* single post */
                     /* formulario */
                     .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:0 30px;}
@@ -40,6 +53,8 @@ function kenko_theme_custom_breakpoints() {
 
             @media(min-width:1024px){
                 :root{
+                    /* blog */
+                    --categories-list--padding:29px 0 108px;
                     /* single post */
                     --width-single-post-pagination:min(100% - 90px);
                 }

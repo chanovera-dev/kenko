@@ -1,5 +1,8 @@
 /* lista de categorías */
-#main .container .section .categories-list{padding:30px 0; list-style:none; width:100%;}
+#main .container .section .categories-list{padding:var(--categories-list--padding); display:var(--categories-list--display); list-style:none; width:100%;}
+#main .container .section .categories-list li{position:relative;}
+#main .container .section .categories-list li a{font-size:var(--categories-list-link--font-size); margin:var(--categories-list-link--margin);}
+#main .container .section .categories-list li:first-child a{margin-left:0;}
 #main .container .section .categories-list li a:not(.active){color:var(--wp--preset--color--text);}
 #main .container .section .categories-list li a:not(.active):hover{color:var(--wp--preset--color--links);}
 
@@ -19,17 +22,3 @@
     #main .container .section .posts .post .permalink{display:inline-flex; gap:7px; align-items:center;}
     #main .container .section .posts .post .permalink:hover{color:var(--wp--preset--color--title);}
     #main .container .section .posts .post .permalink svg{width:12px; height:12px;}
-
-@media(min-width:768px){
-    /* lista de categorías */
-    #main .container .section .categories-list{padding:29px 0 39px; display:inline-flex; align-items:center;}
-    #main .container .section .categories-list li{position:relative;}
-    #main .container .section .categories-list li:not(:last-child):after{content:'/'; color:var(--wp--preset--color--border-input-focus);}
-    #main .container .section .categories-list li:first-child a{margin-left:0;}
-    #main .container .section .categories-list li a{font-size:18px; margin:0 17px;}
-}
-
-@media(min-width:1024px){
-    /* lista de categorías */
-    #main .container .section .categories-list{padding:29px 0 108px;}
-}
