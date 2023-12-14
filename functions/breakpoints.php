@@ -47,7 +47,7 @@ function kenko_theme_custom_breakpoints() {
                         #main .container .section .post .wp-block-gallery.grid{display:grid; grid-template-columns:1fr 1fr;}
                         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image),
                         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2), 
-                        .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px)*.66667);}
+                        .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px)*.66667)!important;}
                         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image),
                         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2), 
                         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:100%;}
