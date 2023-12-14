@@ -50,7 +50,7 @@ function kenko_theme_custom_breakpoints() {
                         .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px)*.66667)!important;}
                         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image),
                         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2), 
-                        .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:100%;}
+                        .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:100%!important;}
                     /* formulario */
                     .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:0 30px;}
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
