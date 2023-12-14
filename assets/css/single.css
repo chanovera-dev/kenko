@@ -18,6 +18,8 @@
     #main .container .section .post .wp-block-quote p{color:var(--wp--preset--color--title); text-align:center;}
     /* imágenes */
         /* galería */
+        #main .container .section .post .wp-block-image img{transition:all .3s ease;}
+        #main .container .section .post .wp-block-image img:hover{filter:brightness(1.1);}
         #main .container .section .post .wp-block-image.size-full img{width:100%;}
         #main .container .section .post .wp-block-gallery.grid{display:grid; grid-template-columns:1fr 1fr;}
         #main .container .section .post .wp-block-gallery .wp-block-image{position:relative;}
