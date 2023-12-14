@@ -12,4 +12,7 @@ echo '
     echo '
     </head>
     <body id="body" '; body_class(); echo '>
-        <header id="main-header" class="container main-header"></header>';
+        <header id="main-header" class="container main-header">';
+            include(TEMPLATEPATH . '/parts/header/mobile-header.php');
+        echo '
+        </header>';

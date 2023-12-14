@@ -67,6 +67,7 @@ add_action('after_setup_theme', 'kenko_theme_support');
 // Registro de menús
 register_nav_menus( 
     array(
+        'mobile' => __( 'Mobile', 'kenko' ),
         'primary' => __( 'Primary', 'kenko' ),
         'secondary' => __( 'Secondary', 'kenko' ),
         'tertiary' => __( 'Tertiary', 'kenko' ),
