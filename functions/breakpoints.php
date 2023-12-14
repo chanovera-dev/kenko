@@ -39,11 +39,15 @@ function kenko_theme_custom_breakpoints() {
                 /* blog */
                     /* lista de categorías */
                     #main .container .section .categories-list li:not(:last-child):after{content:'/'; color:var(--wp--preset--color--border-input-focus);}
+                    
                 /* single post */
                     /* imágenes */
                         /* galería */
                         #main .container .section .post .wp-block-gallery{display:inherit; grid-template-columns:1fr 1fr;}
                         #main .container .section .post .wp-block-gallery.grid{display:grid; grid-template-columns:1fr 1fr;}
+                        .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image),
+                        .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2), 
+                        .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:100%;}
                     /* formulario */
                     .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:0 30px;}
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
