@@ -30,6 +30,9 @@
         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image),
         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2), 
         .wp-block-gallery.grid.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:100%;}
+    /* texto */
+    #main .container .section .post p.has-title-color{color:var(--wp--preset--color--title)!important;}
+    #main .container .section .post p.has-large-font-size{font-size:19px!important;}
 
 /* aside */
 #main .container .section aside{display:grid; gap:15px;}
