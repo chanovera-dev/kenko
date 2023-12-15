@@ -43,7 +43,7 @@ img{display:block; height:auto;}
         /* menú attachment */
         #main-header .mobile-header .header-content .attachment-list{margin-left:auto; display:inline-flex;}
         #main-header .mobile-header .header-content .attachment-list li{display:inline-flex; align-items:center;}
-        #main-header .mobile-header .header-content .attachment-list li a{color:var(--wp--preset--color--text);}
+        #main-header .mobile-header .header-content .attachment-list li a{color:var(--wp--preset--color--text); display:inline-flex; align-items:center;}
         #main-header .mobile-header .header-content .attachment-list li a:hover{color:var(--wp--preset--color--title);}
         #main-header .mobile-header .header-content .attachment-list :is(.wishlist-wrapper, .sign-in-wrapper){display:none;}
         #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:0;}
