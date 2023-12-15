@@ -6,9 +6,10 @@ function kenko_theme_custom_breakpoints() {
             :root{
                 /* blog */
                 --categories-list--padding:30px 0;
-                --categories-list--display:inherit;
+                --categories-list--display:block;
                 --categories-list-link--font-size:16px;
                 --categories-list-link--margin:0;
+
                 /* single post */
                 --aspect-ratio--featured-picture:1/1;
                 --padding-top--post-wrapper:0;
@@ -27,6 +28,7 @@ function kenko_theme_custom_breakpoints() {
                     --categories-list--display:inline-flex;
                     --categories-list-link--font-size:18px;
                     --categories-list-link--margin:0 17px;
+                    
                     /* single post */
                     --padding-top--post-wrapper:68px;
                     --aspect-ratio--featured-picture:16/9;
