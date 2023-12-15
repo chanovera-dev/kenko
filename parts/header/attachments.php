@@ -3,13 +3,13 @@ echo '
 <ul class="attachment-list">';
 if (is_plugin_active('yith-woocommerce-wishlist/init.php')) {
     echo '
-    <li>'.
+    <li class="wishlist-wrapper">'.
         do_shortcode('[yith_wcwl_items_count]').'
     </li>';
 } else {}
 if (is_plugin_active('woocommerce/woocommerce.php')) {
     echo '
-    <li>
+    <li class="sign-in-wrapper">
         <a href="' . esc_url(home_url('/mi-cuenta')) . '">' . esc_html__('Acceso', 'kenko') . '</a>
     </li>
     <li>
