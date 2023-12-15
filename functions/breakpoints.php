@@ -28,7 +28,7 @@ function kenko_theme_custom_breakpoints() {
                     --categories-list--display:inline-flex;
                     --categories-list-link--font-size:18px;
                     --categories-list-link--margin:0 17px;
-                    
+
                     /* single post */
                     --padding-top--post-wrapper:68px;
                     --aspect-ratio--featured-picture:16/9;
@@ -38,6 +38,11 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-grid-row:1/3;
                     --single-post-pagination--svg-size:45px;
                 }
+                /* cabecera */
+                    /* carrito */
+                    #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:16px;}
+                    #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .parentesis{display:none;}
+                    #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
                 /* blog */
                     /* lista de categorías */
                     #main .container .section .categories-list li:not(:last-child):after{content:'/'; color:var(--wp--preset--color--border-input-focus);}
