@@ -40,7 +40,7 @@ function kenko_theme_custom_breakpoints() {
                 }
                 /* cabecera */
                     /* carrito */
-                    #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:16px;}
+                    #main-header .mobile-header .header-content .attachment-list li a{font-size:16px;}
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .parentesis{display:none;}
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
                 /* blog */
