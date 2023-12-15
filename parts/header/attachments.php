@@ -1,6 +1,6 @@
 <?php
 echo '
-<nav>
+<nav class="attachment-nav">
     <ul class="attachment-list">';
     if (is_plugin_active('yith-woocommerce-wishlist/init.php')) {
         echo '
