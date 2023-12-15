@@ -67,9 +67,13 @@ function kenko_theme_custom_breakpoints() {
                 :root{
                     /* blog */
                     --categories-list--padding:29px 0 108px;
+
                     /* single post */
                     --width-single-post-pagination:min(100% - 90px);
                 }
+                /* cabecera */
+                    /* carrito */
+                    #main-header .mobile-header .header-content .attachment-list :is(.wishlist-wrapper, .sign-in-wrapper){display:inherit;}
             }
         </style>
     <?php
