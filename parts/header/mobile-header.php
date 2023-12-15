@@ -9,7 +9,7 @@ echo '
                 'container_class' => 'primary', 
                 'theme_location' => 'primary',
             ) 
-        );
+        ); 
         include(TEMPLATEPATH . '/parts/header/brand.php');
         include(TEMPLATEPATH . '/parts/header/attachments.php');
     echo '
