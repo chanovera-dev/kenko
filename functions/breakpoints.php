@@ -42,7 +42,7 @@ function kenko_theme_custom_breakpoints() {
                     /* carrito */
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:16px;}
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .parentesis{display:none;}
-                    #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
+                    #main-header .mobile-header .header-content .attachment-list :is(.wishlist-wrapper, .cart-wrapper) .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
                 /* blog */
                     /* lista de categorías */
                     #main .container .section .categories-list li:not(:last-child):after{content:'/'; color:var(--wp--preset--color--border-input-focus);}
