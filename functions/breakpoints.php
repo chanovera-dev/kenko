@@ -63,6 +63,11 @@ function kenko_theme_custom_breakpoints() {
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
             }
 
+            @media(min-width:991px){
+                /* cabecera */
+                #main-header .mobile-header .header-content{height:81px;}
+            }
+
             @media(min-width:1024px){
                 :root{
                     /* blog */
