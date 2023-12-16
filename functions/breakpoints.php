@@ -93,6 +93,8 @@ function kenko_theme_custom_breakpoints() {
                 
                 /* footer */
                 #main-footer .footer-content{grid-template-columns:auto auto 1fr;}
+                    /* menú secundario */
+                    #main-footer .secondary ul li{padding:0;}
             }
         </style>
     <?php
