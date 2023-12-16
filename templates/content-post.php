@@ -26,12 +26,16 @@ echo '
     </div>';
     
     include(TEMPLATEPATH . '/parts/post-pagination.php');
-
+    
+    if ( comments_open() ) :
     echo '
     <div class="container comments-wrapper">
         <section class="section comments-section">';
             comments_template();
         echo '
         </section">
-    </div>
+    </div>';
+    else:
+    endif;
+ echo '   
 </main>';
