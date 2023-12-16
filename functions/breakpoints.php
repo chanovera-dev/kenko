@@ -61,6 +61,13 @@ function kenko_theme_custom_breakpoints() {
                     /* formulario */
                     .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:0 30px;}
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
+                
+                    /* footer */
+                        /* footer parrafo */
+                        #main-footer p{font-size:14px; padding:7.3px;}
+                        /* menú secundario */
+                        #main-footer .secondary ul{display:inline-flex; gap:18px;}
+                        #main-footer .secondary ul li{border-bottom:none;}
             }
 
             @media(min-width:991px){
