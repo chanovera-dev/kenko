@@ -46,7 +46,7 @@
         #main .container .section aside .tags-and-share .tags a:before{content:'#';}
         #main .container .section aside .tags-and-share .tags a:hover{background-color:var(--wp--preset--color--links);}
         /* compartir */
-        #main .container .section aside .tags-and-share .share a{color:var(--wp--preset--color--text);}
+        #main .container .section aside .tags-and-share .share a{color:#a1a1a1;}
         #main .container .section aside .tags-and-share .share a:hover{color:var(--wp--preset--color--title);}
         #main .container .section aside .tags-and-share .share a:not(:last-child){margin-right:20px;}
         #main .container .section aside .tags-and-share .share a svg{width:21px; height:21px;}
