@@ -1,7 +1,7 @@
 <?php
         echo '
         <footer id="main-footer" class="container">
-            <section class="section">';
+            <section class="section footer-content">';
 
             $menu_secondary_id = get_nav_menu_locations()['secondary'];
             $menu_secondary = wp_get_nav_menu_object($menu_secondary_id);
@@ -32,7 +32,7 @@
                     )
                 );
             }
-            
+
             echo '
             </section>
         </footer>';

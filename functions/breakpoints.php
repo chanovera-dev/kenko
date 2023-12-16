@@ -63,9 +63,11 @@ function kenko_theme_custom_breakpoints() {
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
                 
                     /* footer */
+                    #main-footer .footer-content{display:grid;}
                         /* footer parrafo */
-                        #main-footer p{font-size:14px; padding:7.3px;}
+                        #main-footer p{font-size:14px; padding:7.3px; grid-column:2/3;}
                         /* menú secundario */
+                        #main-footer .secondary{grid-column:1/2;}
                         #main-footer .secondary ul{display:inline-flex; gap:18px;}
                         #main-footer .secondary ul li{border-bottom:none;}
             }
