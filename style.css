@@ -52,9 +52,12 @@ img{display:block; height:auto;}
 
         /* footer */
         #main-footer{background-color:#282828; color:#aaa; padding:30px 0 31px;}
-        #main-footer a{color:#aaa;}
-        #main-footer a:hover{color:#fff;}
-        /* menú secundario */
-        #main-footer .secondary ul{display:grid;}
-        #main-footer .secondary ul li{display:inline-flex; align-items:center; padding:3px 0; border-bottom:1px solid #3A3A3A;}
-        #main-footer .secondary ul li a{display:inline-flex; align-items:center; height:30px;}
+            /* footer links */
+            #main-footer a{color:#aaa; font-size:14px;}
+            #main-footer a:hover{color:var(--wp--preset--color--links);}
+            /* footer parrafo */
+            #main-footer p{font-size:14px; padding:7.3px;}
+            /* menú secundario */
+            #main-footer .secondary ul{display:grid;}
+            #main-footer .secondary ul li{display:inline-flex; align-items:center; padding:3px 0; border-bottom:1px solid #3A3A3A;}
+            #main-footer .secondary ul li a{display:inline-flex; align-items:center; height:30px;}
