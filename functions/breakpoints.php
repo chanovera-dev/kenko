@@ -65,7 +65,7 @@ function kenko_theme_custom_breakpoints() {
                     /* footer */
                     #main-footer .footer-content{display:grid; grid-template-columns:auto 1fr; gap:18px 14px;}
                         /* footer parrafo */
-                        #main-footer p{font-size:14px; padding:7.3px; grid-column:2/3;}
+                        #main-footer p{font-size:14px; padding:3px; grid-column:2/3;}
                         /* menú secundario */
                         #main-footer .secondary{grid-column:1/2;}
                         #main-footer .secondary ul{display:inline-flex; gap:18px;}
