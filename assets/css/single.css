@@ -49,7 +49,7 @@
         #main .container .section aside .tags-and-share .share a{color:#a1a1a1;}
         #main .container .section aside .tags-and-share .share a:hover{color:var(--wp--preset--color--title);}
         #main .container .section aside .tags-and-share .share a:not(:last-child){margin-right:20px;}
-        #main .container .section aside .tags-and-share .share a svg{width:21px; height:21px;}
+        #main .container .section aside .tags-and-share .share a svg{width:18px; height:18px;}
     /* categorías */
     #main .container .section aside .categories{display:inline-flex; gap:7px;}
     #main .container .section aside .categories .post-categories{display:inline-flex; flex-wrap:wrap; gap:7px;}
