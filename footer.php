@@ -1,6 +1,6 @@
 <?php
         echo '
-        <footer id="main-footer">
+        <footer id="main-footer" class="container">
             <section class="section">';
             $menu_tertiary_id = get_nav_menu_locations()['tertiary'];
             $menu_tertiary = wp_get_nav_menu_object($menu_tertiary_id);
