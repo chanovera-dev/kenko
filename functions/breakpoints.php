@@ -90,6 +90,9 @@ function kenko_theme_custom_breakpoints() {
                     .mobile-menu--button{display:none;}
                     /* carrito */
                     #main-header .mobile-header .header-content .attachment-list :is(.wishlist-wrapper, .sign-in-wrapper){display:inherit;}
+                
+                /* footer */
+                #main-footer .footer-content{grid-template-columns:auto auto 1fr;}
             }
         </style>
     <?php
