@@ -70,7 +70,6 @@ register_nav_menus(
         'mobile' => __( 'Mobile', 'kenko' ),
         'primary' => __( 'Primary', 'kenko' ),
         'secondary' => __( 'Secondary', 'kenko' ),
-        'tertiary' => __( 'Tertiary', 'kenko' ),
         'social' => __( 'Social', 'kenko' ), 
     ) 
 );
