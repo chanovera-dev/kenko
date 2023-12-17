@@ -86,6 +86,8 @@ function kenko_theme_custom_breakpoints() {
                 #main-header .mobile-header{height:81px;}
                 /* botón del menú mobile */
                 .mobile-menu--button{display:none;}
+                /* menú mobile */
+                #main-header .mobile-header .menu-mobile{display:none;}
                 /* menú principal */
                 #main-header .mobile-header .header-content .primary{display:inherit;}
             }
