@@ -43,6 +43,7 @@ function kenko_theme_custom_breakpoints() {
                     .mobile-menu--button .bars{width:21px; height:16px;}
                     .mobile-menu--button .bars :is(.bar1, .bar2, .bar3){width:21px; height:1px;}
                     .mobile-menu--button .bars > div:not(:last-child){margin-bottom:6px;}
+                    .mobile-menu--button .bars.active .bar3{transform:translateY(-5px) rotate(90deg);}
                     /* carrito */
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:16px;}
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .parentesis{display:none;}
