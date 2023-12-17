@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let button = document.createElement('button');
       // Agregar la clase 'mobile-links__item-toggle' al botón
       button.classList.add('mobile-links__item-toggle');
-      button.setAttribute('onclick', 'toggleSubMenu(this)');
+      button.setAttribute('onclick', 'toggleSubMenu(this); changeSVG(this);');
       
       // Crear el elemento SVG
       let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -56,8 +56,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
- // función toggle para el botón del submenú mobile
- function toggleSubMenu(button) {
+// función toggle para el botón del submenú mobile
+function toggleSubMenu(button) {
     let subMenu = button.closest('li').querySelector('.sub-menu');
     subMenu.classList.toggle('open');
+}
+
+// función para cambiar el contenido del SVG
+function changeSVG(button) {
+    let svg = button.querySelector('svg');
+    let path = svg.querySelector('path');
+
+    // Cambiar el contenido del SVG
+    svg.setAttribute('class', 'bi bi-dash-lg');
+    path.setAttribute('d', 'M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8');
 }
