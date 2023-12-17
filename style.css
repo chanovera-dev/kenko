@@ -49,8 +49,7 @@ img{display:block; height:auto;}
         #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li a:hover{color:var(--wp--preset--color--title);}
         /* menu mobile · abierto */
         #main-header .mobile-header .menu-mobile.open{
-            height:0; padding:0 15px;
-            animation-name:animation-menu-mobile; animation-direction:normal; animation-duration:2s; animation-timing-function:ease; animation-iteration-count:1;
+            animation-name:animation-menu-mobile; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
         }
         @keyframes animation-menu-mobile{
             0%  {height:0; padding:0 15px;}
