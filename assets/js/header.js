@@ -21,6 +21,7 @@ function myFunction(x) {
     //     footer.classList.add("menu-inactive");
          setTimeout(function() {
             navMobile.classList.remove('open');
+            navMobile.classList.remove('close');
     //         header.classList.remove("menu-inactive");
     //         header.classList.remove("menu-active");
     //         main.classList.remove("menu-inactive");
