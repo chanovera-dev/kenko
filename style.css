@@ -39,7 +39,7 @@ img{display:block; height:auto;}
         .mobile-menu--button .bars.change .bar1{transform:translateY(9px);}
         .mobile-menu--button .bars.change .bar3{transform:translateY(-9px) rotate(90deg);}
         /* menú mobile */
-        .menu-mobile{position:absolute; bottom:-100%; background-color:var(--wp--preset--color--background); width:100%;}
+        #main-header .mobile-header .menu-mobile{position:absolute; top:81px; background-color:var(--wp--preset--color--background); width:100%;}
         /* marca */
         #main-header .mobile-header .header-content .site-brand{grid-column:2/3;}
         #main-header .mobile-header .header-content .site-brand a{color:var(--wp--preset--color--title); text-transform:uppercase; text-align:center; letter-spacing:10px; font-size:var(--wp--preset--font-size--x-large); font-weight:700;}
