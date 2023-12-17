@@ -36,7 +36,7 @@ img{display:block; height:auto;}
         .mobile-menu--button .bars:hover :is(.bar1, .bar2, .bar3){background-color:var(--wp--preset--color--title);}
         .mobile-menu--button .bars > div:not(:last-child){margin-bottom:5px;}
         /* botón del menú · activo */
-        .mobile-menu--button .bars.active{transition-delay:.5s; transform:rotate(45deg);}
+        .mobile-menu--button .bars.active{transform:rotate(45deg);}
         .mobile-menu--button .bars.active .bar2{width:0;}
         .mobile-menu--button .bars.active .bar1{transform:translateY(9px);}
         .mobile-menu--button .bars.active .bar3{transform:translateY(-3px) rotate(90deg);}
