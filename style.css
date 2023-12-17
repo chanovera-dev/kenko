@@ -66,6 +66,7 @@ img{display:block; height:auto;}
             /* menú social */
             #main-footer .social{padding-top:14px;}
             #main-footer .social ul{display:inline-flex; align-items:center; gap:19px;}
+            #main-footer .social ul li{display:flex; align-items:center; height:18px;}
             #main-footer .social ul li a{display:inline-flex; align-items:center; gap:0; height:34px; font-size:0;}
             #main-footer .social ul li a:before{position:relative; padding:9px; display:inline-block;}
             #main-footer .social ul li a:hover{opacity:.7;}
