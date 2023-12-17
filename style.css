@@ -54,9 +54,11 @@ img{display:block; height:auto;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children.open a{color:var(--wp--preset--color--title);}
                 /* botón de sub menú */
                 #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children .mobile-links__item-toggle{position:absolute; top:13px; right:0; width:16px; height:16px; border:none; background-color:transparent; padding:0; color:var(--wp--preset--color--title);}
-            #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu{border-top:1px solid #eee;}
-            #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li{border-bottom:none; min-height:31px;}
-            #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li a{min-height:31px; font-size:14px; padding-left:20px;}
+                #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu{border-top:1px solid #eee; min-height:0; transition:all .3s ease;}
+                #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li{border-bottom:none; min-height:31px;}
+                #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li a{min-height:31px; font-size:14px; padding-left:20px;}
+                /* menu-mobile · abierto · submenús */
+                #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu.open{min-height:500px;}
         /* wishlist */
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
