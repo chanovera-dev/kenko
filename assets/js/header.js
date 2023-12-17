@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", function() {
       // Agregar el botón al elemento li sin borrar su contenido existente
       item.appendChild(button);
     });
-
-    // función toggle para el botón del submenú mobile
-    function toggleSubMenu(button) {
-        let subMenu = button.closest('li').querySelector('.sub-menu');
-        subMenu.classList.toggle('open');
-    }
   });
+
+ // función toggle para el botón del submenú mobile
+ function toggleSubMenu(button) {
+    let subMenu = button.closest('li').querySelector('.sub-menu');
+    subMenu.classList.toggle('open');
+}
