@@ -48,7 +48,7 @@ img{display:block; height:auto;}
         #main-header .mobile-header .header-content .site-brand{grid-column:2/3;}
         #main-header .mobile-header .header-content .site-brand a{color:var(--wp--preset--color--title); text-transform:uppercase; text-align:center; letter-spacing:10px; font-size:var(--wp--preset--font-size--x-large); font-weight:700;}
         /* menús directamente dentro de la cabecera */
-        #main-header .mobile-header .header-content > nav.attachment-nav{margin-left:auto;}
+        #main-header .mobile-header .header-content > nav.attachment-nav{margin-left:auto; display:flex; align-items:center;}
         #main-header .mobile-header .header-content > nav ul{display:inline-flex; gap:24px;}
         #main-header .mobile-header .header-content > nav ul li{display:inline-flex; align-items:center;}
         #main-header .mobile-header .header-content > nav ul li a{color:var(--wp--preset--color--text); display:inline-flex; align-items:center; gap:3px;}
