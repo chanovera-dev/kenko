@@ -44,11 +44,13 @@ img{display:block; height:auto;}
         /* menú mobile */
         #main-header .mobile-header .menu-mobile{position:absolute; top:71px; background-color:var(--wp--preset--color--background); width:100%; max-height:0; overflow:hidden; display:grid; gap:17px; padding:0 15px; transition:all .3s ease;}
         #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul{display:grid;}
-        #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li{display:inline-flex; align-items:center; height:43px; border-bottom:1px solid #eee;}
+        #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li{display:inline-flex; align-items:center; min-height:43px; border-bottom:1px solid #eee;}
         #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li a{color:var(--wp--preset--color--text); display:inline-flex; align-items:center; gap:3px;}
         #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li a:hover{color:var(--wp--preset--color--title);}
         /* menu mobile · abierto */
         #main-header .mobile-header .menu-mobile.open{max-height:500px; padding:17px 15px;}
+            /* menu-mobile · abierto · submenús */
+            #main-header .mobile-header .menu-mobile.open nav ul li .sub-menu li{border-bottom:none;}
         /* wishlist */
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
