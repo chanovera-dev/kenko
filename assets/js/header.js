@@ -77,27 +77,3 @@ function changeSVG(button) {
         path.setAttribute('d', 'M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2');
     }
 }
-
-
-
-// Agregar un manejador de clics al documento
-    document.addEventListener('click', function(event) {
-        // Obtener el elemento que se hizo clic
-        let targetElement = event.target;
-
-        // Verificar si el elemento clicado no está dentro del menú
-        if (!targetElement.closest('.menu-mobile')) {
-            // Cerrar el menú (ajusta '.menu-container' según la clase que rodea tu menú)
-            closeMenu();
-        }
-    });
-
-
-// Función para cerrar el menú
-function closeMenu() {
-    // Cierra todos los submenús abiertos
-    let openSubMenus = document.querySelectorAll('.menu-mobile.open');
-    openSubMenus.forEach(function(subMenu) {
-        subMenu.classList.remove('open');
-    });
-}
