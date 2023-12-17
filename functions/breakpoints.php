@@ -78,7 +78,7 @@ function kenko_theme_custom_breakpoints() {
 
             @media(min-width:991px){
                 /* cabecera */
-                #main-header .mobile-header .header-content{height:81px;}
+                #main-header{height:81px;}
             }
 
             @media(min-width:1024px){
