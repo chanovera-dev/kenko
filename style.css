@@ -40,6 +40,10 @@ img{display:block; height:auto;}
         .mobile-menu--button .bars.change .bar3{transform:translateY(-9px) rotate(90deg);}
         /* menú mobile */
         #main-header .mobile-header .menu-mobile{position:absolute; top:81px; background-color:var(--wp--preset--color--background); width:100%;}
+            /* wishlist */
+            #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
+            #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper svg{display:none;}
+            #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
         /* marca */
         #main-header .mobile-header .header-content .site-brand{grid-column:2/3;}
         #main-header .mobile-header .header-content .site-brand a{color:var(--wp--preset--color--title); text-transform:uppercase; text-align:center; letter-spacing:10px; font-size:var(--wp--preset--font-size--x-large); font-weight:700;}
