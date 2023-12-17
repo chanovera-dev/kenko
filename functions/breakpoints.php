@@ -39,6 +39,9 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-size:45px;
                 }
                 /* cabecera */
+                    /* botón del menú */
+                    .mobile-menu--button .bars :is(.bar1, .bar2, .bar3){width:21px; height:1px;}
+                    .mobile-menu--button .bars > div:not(:last-child){margin-bottom:6px;}
                     /* carrito */
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:16px;}
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .parentesis{display:none;}
