@@ -5,7 +5,7 @@ function myFunction(x) {
     // let header = document.getElementById("responsive-header");
     // let main = document.getElementById("main");
     // let footer = document.getElementById("main-footer");
-    x.classList.toggle("open");
+    x.classList.toggle("active");
 
     // if (!nav.classList.contains("active")) {
     //     nav.classList.add("active");
