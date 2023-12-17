@@ -52,7 +52,6 @@ img{display:block; height:auto;}
 
         /* wishlist */
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
-            #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper svg{display:none;}
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
             /* menú social */
             #main-header .mobile-header .social{padding-top:14px;}
