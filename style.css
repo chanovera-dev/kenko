@@ -61,3 +61,5 @@ img{display:block; height:auto;}
             #main-footer .secondary ul{display:grid;}
             #main-footer .secondary ul li{display:inline-flex; align-items:center; padding:3px 0; border-bottom:1px solid #3A3A3A;}
             #main-footer .secondary ul li a{display:inline-flex; align-items:center; height:30px;}
+            /* menú social */
+            #main-footer .social ul{display:inline-flex; align-items:center; gap:18px;}
