@@ -1,6 +1,6 @@
 <?php
 echo '
-<div class="mobile-menu">';
+<div class="menu-mobile">';
 
     $menu_mobile_id = get_nav_menu_locations()['mobile'];
     $menu_mobile = wp_get_nav_menu_object($menu_mobile_id);
