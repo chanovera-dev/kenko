@@ -66,8 +66,13 @@ function toggleSubMenu(button) {
 function changeSVG(button) {
     let svg = button.querySelector('svg');
     let path = svg.querySelector('path');
-
-    // Cambiar el contenido del SVG
-    svg.setAttribute('class', 'bi bi-dash-lg');
-    path.setAttribute('d', 'M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8');
+    
+    // Verificar el estado actual del botón y cambiar el SVG en consecuencia
+    if (svg.classList.contains('bi-plus-lg')) {
+        svg.setAttribute('class', 'bi bi-dash-lg');
+        path.setAttribute('d', 'M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8');
+    } else {
+        svg.setAttribute('class', 'bi bi-plus-lg');
+        path.setAttribute('d', 'M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2');
+    }
 }
