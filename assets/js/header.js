@@ -22,18 +22,18 @@ function myFunction(x) {
 // Agrega el botón para abrir el submenú en el menú mobile
 document.addEventListener("DOMContentLoaded", function() {
     // Obtener todos los elementos li con la clase 'menu-item-has-children'
-    var menuItems = document.querySelectorAll('.menu-item-has-children');
+    let menuItems = document.querySelectorAll('.menu-item-has-children');
   
     // Iterar sobre cada elemento y agregar el botón con el SVG
     menuItems.forEach(function(item) {
       // Crear un nuevo botón
-      var button = document.createElement('button');
+      let button = document.createElement('button');
       // Agregar la clase 'mobile-links__item-toggle' al botón
       button.classList.add('mobile-links__item-toggle');
       button.setAttribute('onclick', 'toggleSubMenu(this)');
       
       // Crear el elemento SVG
-      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
       svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
       svg.setAttribute('width', '16');
       svg.setAttribute('height', '16');
@@ -54,4 +54,10 @@ document.addEventListener("DOMContentLoaded", function() {
       // Agregar el botón al elemento li sin borrar su contenido existente
       item.appendChild(button);
     });
+
+    // función toggle para el botón del submenú mobile
+    function toggleSubMenu(button) {
+        let subMenu = button.closest('li').querySelector('.sub-menu');
+        subMenu.classList.toggle('open');
+    }
   });
