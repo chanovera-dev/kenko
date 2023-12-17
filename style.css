@@ -53,7 +53,7 @@ img{display:block; height:auto;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children{position:relative; display:block;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children.open a{color:var(--wp--preset--color--title);}
                 /* botón de sub menú */
-                #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children .mobile-links__item-toggle{position:absolute; top:6px; right:0; width:31px; height:31px; border:none; background-color:transparent; color:var(--wp--preset--color--text);}
+                #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children .mobile-links__item-toggle{position:absolute; top:13px; right:0; width:16px; height:16px; border:none; background-color:transparent; padding:0; color:var(--wp--preset--color--title);}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu{border-top:1px solid #eee;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li{border-bottom:none; min-height:31px;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li a{min-height:31px; font-size:14px; padding-left:20px;}
