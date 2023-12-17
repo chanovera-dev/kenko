@@ -6,7 +6,8 @@ if ( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_get_items_count' ) 
       ob_start();
       ?>
         <a href="<?php echo esc_url( YITH_WCWL()->get_wishlist_url() ); ?>" class="counter">
-        <?php echo esc_html__('Wishlist', 'kenko'); ?>
+          <?php echo esc_html__('Wishlist', 'kenko'); ?>
+          <div class="wrapper">
             <span class="yith-wcwl-items-count number"><?php echo esc_html( yith_wcwl_count_all_products() ); ?></span>
           </div>
         </a>
