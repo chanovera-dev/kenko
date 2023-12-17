@@ -72,6 +72,8 @@ function kenko_theme_custom_breakpoints() {
                         #main-footer .secondary{grid-column:1/2;}
                         #main-footer .secondary ul{display:inline-flex; gap:18px;}
                         #main-footer .secondary ul li{border-bottom:none;}
+                        /* menú social */
+                        #main-footer .social{padding-top:0;}
             }
 
             @media(min-width:991px){
