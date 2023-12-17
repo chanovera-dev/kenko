@@ -40,8 +40,8 @@ img{display:block; height:auto;}
         .mobile-menu--button .bars.change .bar3{transform:translateY(-9px) rotate(90deg);}
         /* menú mobile */
         #main-header .mobile-header .menu-mobile{position:absolute; top:81px; background-color:var(--wp--preset--color--background); width:100%;}
-        #main-header .mobile-header .menu-mobile > nav ul{display:inline-flex; gap:24px;}
-        #main-header .mobile-header .menu-mobile > nav ul li{display:inline-flex; align-items:center;}
+        #main-header .mobile-header .menu-mobile > nav ul{display:grid;}
+        #main-header .mobile-header .menu-mobile > nav ul li{display:inline-flex; align-items:center; height:43px; border-bottom:1px solid #eee;}
         #main-header .mobile-header .menu-mobile > nav ul li a{color:var(--wp--preset--color--text); display:inline-flex; align-items:center; gap:3px;}
         #main-header .mobile-header .menu-mobile > nav ul li a:hover{color:var(--wp--preset--color--title);}
             /* wishlist */
