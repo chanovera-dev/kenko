@@ -82,6 +82,8 @@ register_nav_menus(
 require_once(get_template_directory() . '/functions/components.php');
 // Anexo para establecer los breakpoints
 require_once(get_template_directory() . '/functions/breakpoints.php');
+// Anexo para establecer iconos
+require_once(get_template_directory() . '/functions/icons.php');
 // anexo para activar woocommerce
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
     require_once(get_template_directory() . '/functions/woocommerce.php');
