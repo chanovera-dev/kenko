@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
       svg.setAttribute('width', '16');
       svg.setAttribute('height', '16');
       svg.setAttribute('fill', 'currentColor');
-      svg.setAttribute('class', 'bi bi-plus');
+      svg.setAttribute('class', 'bi bi-plus-lg');
       svg.setAttribute('viewBox', '0 0 16 16');
   
       // Crear el elemento path dentro del SVG
       var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
       path.setAttribute('fill-rule', 'evenodd');
-      path.setAttribute('d', 'M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4');
+      path.setAttribute('d', 'M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2');
   
       // Agregar el path al elemento SVG
       svg.appendChild(path);
