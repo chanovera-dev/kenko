@@ -56,10 +56,11 @@ img{display:block; height:auto;}
             #main-footer a{color:#aaa; font-size:14px;}
             #main-footer a:hover{color:var(--wp--preset--color--links);}
             /* footer parrafo */
-            #main-footer p{font-size:14px; padding:7.3px;}
+            #main-footer p{font-size:14px; padding:7.3px 0;}
             /* menú secundario */
             #main-footer .secondary ul{display:grid;}
             #main-footer .secondary ul li{display:inline-flex; align-items:center; padding:3px 0; border-bottom:1px solid #3A3A3A;}
             #main-footer .secondary ul li a{display:inline-flex; align-items:center; height:30px;}
             /* menú social */
+            #main-footer .social{padding-top:14px;}
             #main-footer .social ul{display:inline-flex; align-items:center; gap:18px;}
