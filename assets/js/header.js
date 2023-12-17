@@ -16,7 +16,7 @@ function myFunction(x) {
     //     footer.classList.add("menu-active");
     } else {
         navMobile.classList.add('close');
-        main.style.filter = "brightness(1)";
+        main.style.filter = null;
     //     body.classList.remove("menu-active");
     //     header.classList.add("menu-inactive");
     //     main.classList.add("menu-inactive");
