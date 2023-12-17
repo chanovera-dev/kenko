@@ -38,7 +38,7 @@ img{display:block; height:auto;}
         .mobile-menu--button .bars.active{transition-delay:.5s; transform:rotate(45deg);}
         .mobile-menu--button .bars.active .bar2{width:0;}
         .mobile-menu--button .bars.active .bar1{transform:translateY(9px);}
-        .mobile-menu--button .bars.active .bar3{transform:translateY(-3px) rotate(90deg); width:1.8rem;}
+        .mobile-menu--button .bars.active .bar3{transform:translateY(-3px) rotate(90deg);}
         .mobile-menu--button .bars.active :is(.bar1, .bar2, .bar3){background-color:var(--wp--preset--color--text);}
         /* menú mobile */
         #main-header .mobile-header .menu-mobile{position:absolute; top:71px; background-color:var(--wp--preset--color--background); width:100%; display:grid; gap:17px; padding:17px 15px;}
