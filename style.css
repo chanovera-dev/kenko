@@ -26,6 +26,7 @@ img{display:block; height:auto;}
 /* cabecera */
 #main-header{position:sticky; top:0; background-color:var(--wp--preset--color--background); border-bottom:1px solid var(--wp--preset--color--line); transform:translate3d(0, 0, 0);  height:71px; display:grid; align-items:center; z-index:1;}
     /* responsive header */
+    #main-header .mobile-header{position:relative;}
     #main-header .mobile-header .header-content{display:grid; align-items:center; grid-template-columns:1fr auto 1fr;}
         /* botón del menú */
         .mobile-menu--button{position:relative; display:grid; place-content:center; margin-right:auto; cursor:pointer; z-index:1;}
