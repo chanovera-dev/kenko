@@ -51,7 +51,7 @@ img{display:block; height:auto;}
         #main-header .mobile-header .menu-mobile.open{max-height:500px; padding:17px 15px;}
             /* menu-mobile · abierto · submenús */
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children{display:block;}
-            #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children a{color:var(--wp--preset--color--title);}
+            #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children.open a{color:var(--wp--preset--color--title);}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu{border-top:1px solid #eee;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li{border-bottom:none; min-height:31px;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li a{min-height:31px; font-size:14px; padding-left:20px;}
