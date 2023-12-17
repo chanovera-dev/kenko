@@ -99,6 +99,8 @@ function kenko_theme_custom_breakpoints() {
                 #main-footer .footer-content{grid-template-columns:auto auto 1fr;}
                     /* menú secundario */
                     #main-footer .secondary ul li{padding:0;}
+                    /* menú social */
+                    #main-footer .social{margin-left:auto;}
             }
         </style>
     <?php
