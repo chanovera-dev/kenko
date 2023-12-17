@@ -48,10 +48,7 @@ img{display:block; height:auto;}
         #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li a{color:var(--wp--preset--color--text); display:inline-flex; align-items:center; gap:3px;}
         #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li a:hover{color:var(--wp--preset--color--title);}
         /* menu mobile · abierto */
-        #main-header .mobile-header .menu-mobile.open{
-
-            max-height:500px; padding:17px 15px;
-        }
+        #main-header .mobile-header .menu-mobile.open{max-height:500px; padding:17px 15px;}
 
         /* wishlist */
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
