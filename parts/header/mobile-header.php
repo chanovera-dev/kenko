@@ -1,7 +1,7 @@
 <?php
 echo '
 <div class="container mobile-header">';
-include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
+// include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
     echo '
     <section class="section header-content">';
         include(TEMPLATEPATH . '/parts/header/menu-button.php');
