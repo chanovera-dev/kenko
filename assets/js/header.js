@@ -9,6 +9,7 @@ function myFunction(x) {
 
     if (!navMobile.classList.contains('open')) {
         navMobile.classList.add('open');
+        main.style.filter = "brightness(.75)";
     //     body.classList.add("menu-active");
     //     header.classList.add("menu-active");
     //     main.classList.add("menu-active");
