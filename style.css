@@ -48,6 +48,15 @@ img{display:block; height:auto;}
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper svg{display:none;}
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
+            /* menú social */
+            #main-header .mobile-header .social{padding-top:14px;}
+            #main-header .mobile-header .social ul{display:inline-flex; align-items:center; gap:19px;}
+            #main-header .mobile-header .social ul li{display:flex; align-items:center; height:18px;}
+            #main-header .mobile-header .social ul li a{display:inline-flex; align-items:center; gap:0; height:34px; font-size:0;}
+            #main-header .mobile-header .social ul li a:before{position:relative; padding:9px; display:inline-block;}
+            #main-header .mobile-header .social ul li a:hover{opacity:.7;}
+            #main-header .mobile-header .social ul li a[href*="facebook"]:before{position:relative; padding:9px 5px; display:inline-block;}
+            #main-header .mobile-header .social ul li a[href*="facebook"]:before{padding:9px 5px;}
         /* marca */
         #main-header .mobile-header .header-content .site-brand{grid-column:2/3;}
         #main-header .mobile-header .header-content .site-brand a{color:var(--wp--preset--color--title); text-transform:uppercase; text-align:center; letter-spacing:10px; font-size:var(--wp--preset--font-size--x-large); font-weight:700;}
@@ -81,4 +90,4 @@ img{display:block; height:auto;}
             #main-footer .social ul li a{display:inline-flex; align-items:center; gap:0; height:34px; font-size:0;}
             #main-footer .social ul li a:before{position:relative; padding:9px; display:inline-block;}
             #main-footer .social ul li a:hover{opacity:.7;}
-            #main-footer .social ul li a[href*="facebook"]:before{position:relative; padding:9px 5px; display:inline-block;}
+            #main-footer .social ul li a[href*="facebook"]:before{padding:9px 5px;}
