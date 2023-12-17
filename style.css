@@ -52,7 +52,7 @@ img{display:block; height:auto;}
             /* menu-mobile · abierto · submenús */
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li.menu-item-has-children{display:block;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu{border-top:1px solid #eee;}
-            #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li{border-bottom:none;}
+            #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li{border-bottom:none; min-height:31px;}
             #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu li a{min-height:31px; font-size:14px; padding-left:20px;}
         /* wishlist */
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
