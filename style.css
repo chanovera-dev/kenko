@@ -52,6 +52,8 @@ img{display:block; height:auto;}
         #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .sign-in-wrapper){display:none;}
         #main-header .mobile-header .header-content > nav ul .cart-wrapper .counter{font-size:0;}
         #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .cart-wrapper) .counter :is(.parentesis, .number){font-size:14px;}
+        /* menú principal */
+        #main-header .mobile-header .header-content .primary{display:none;}
 
         /* footer */
         #main-footer{background-color:#282828; color:#aaa; padding:30px 0 31px;}

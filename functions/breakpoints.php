@@ -80,6 +80,10 @@ function kenko_theme_custom_breakpoints() {
                 /* cabecera */
                 #main-header,
                 #main-header .mobile-header{height:81px;}
+                /* botón del menú mobile */
+                .mobile-menu--button{display:none;}
+                /* menú principal */
+                #main-header .mobile-header .header-content .primary{display:inherit;}
             }
 
             @media(min-width:1024px){
@@ -91,8 +95,6 @@ function kenko_theme_custom_breakpoints() {
                     --width-single-post-pagination:min(100% - 90px);
                 }
                 /* cabecera */
-                    /* botón del menú mobile */
-                    .mobile-menu--button{display:none;}
                     /* carrito */
                     #main-header .mobile-header .header-content .attachment-list :is(.wishlist-wrapper, .sign-in-wrapper){display:inherit;}
                 
