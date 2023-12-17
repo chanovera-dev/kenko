@@ -50,11 +50,11 @@ img{display:block; height:auto;}
         /* menu mobile · abierto */
         #main-header .mobile-header .menu-mobile.open{
             animation-name:animation-menu-mobile--open; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
-            height:inherit; padding:17px 15px;
+            height:auto; padding:17px 15px;
         }
         @keyframes animation-menu-mobile--open{
             0%  {height:0; padding:0 15px;}
-            100%{height:inherit; padding:17px 15px;}
+            100%{height:auto; padding:17px 15px;}
         } 
         /* wishlist */
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
