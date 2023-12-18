@@ -3,7 +3,7 @@
 function kenko_theme_custom_icons() {
     ?>
         <style>          
-            /* iconos de redes sociales */
+            /* iconos de redes sociales *
             @font-face {
                 font-family: 'nm-font';
                 src: url(<?php echo get_template_directory_uri(); ?>/assets/fonts/nm-font.ttf?32v7kg) format('truetype'),
