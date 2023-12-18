@@ -19,6 +19,9 @@ function kenko_theme_custom_breakpoints() {
                 --single-post-pagination--svg-opacity:1;
                 --single-post-pagination--svg-grid-row:1/2;
                 --single-post-pagination--svg-size:12px;
+
+                /* error 404 */
+                --padding-not-found:46px 0 55px;
             }
 
             @media(min-width:768px){
@@ -36,6 +39,9 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-opacity:.3;
                     --single-post-pagination--svg-grid-row:1/3;
                     --single-post-pagination--svg-size:45px;
+
+                    /* error 404 */
+                    --padding-not-found:68px 0 82px;
                 }
                 /* cabecera */
                     /* botón del menú */

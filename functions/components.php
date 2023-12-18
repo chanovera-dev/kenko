@@ -25,7 +25,7 @@ add_action( 'wp_enqueue_scripts', 'kenko_page_styles' );
 
 
 // Estilos para la página archivo
-function archive_styles() {
+function kenko_archive_styles() {
     if ( is_home() or is_page_template('home.php') or is_archive() or is_search() ) {
         wp_dequeue_style( 'wp-block-library' );
         wp_enqueue_style( 'blog-styles', get_template_directory_uri() . '/assets/css/blog.css' );
@@ -33,4 +33,14 @@ function archive_styles() {
         wp_enqueue_script( 'ajax-blog-js', get_template_directory_uri() . '/assets/js/ajax-blog.js', array(), '1.0', true );
     }
 }
-add_action( 'wp_enqueue_scripts', 'archive_styles' );
+add_action( 'wp_enqueue_scripts', 'kenko_archive_styles' );
+
+
+
+// Estilos para la página 404
+function kenko_page404_styles() {
+    if ( is_404() ) {
+        wp_enqueue_style( 'error404-styles', get_template_directory_uri() . '/assets/css/error404.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'kenko_page404_styles' );
