@@ -2,3 +2,6 @@
 
 .contact-page .title-section{padding:47px 0 44px; max-width:1011px; margin-inline:auto;}
 .contact-page iframe{width:100%; height:var(--height--map); margin-bottom:0;}
+.contact-page .info-and-contact--wrapper{padding:48px 0;}
+.contact-page .info-and-contact--wrapper .info{display:grid; gap:20px;}
+.contact-page .info-and-contact--wrapper .info div *:not(:last-child){margin-bottom:20px;}
