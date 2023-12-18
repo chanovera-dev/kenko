@@ -99,16 +99,10 @@ window.addEventListener("scroll", () => {
     // down
     body.classList.remove(scrollUp);
     body.classList.add(scrollDown);
-    header.style.height = "71px";
-    mobileHeader.style.height = "71px";
   } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
     // up
     body.classList.remove(scrollDown);
     body.classList.add(scrollUp);
-    header.style.height = "71px";
-    mobileHeader.style.height = "71px";
   }
-  header.style.height = null;
-  mobileHeader.style.height = null;
   lastScroll = currentScroll;
 });
