@@ -7,7 +7,7 @@ echo '
     <div class="container not-found--wrapper">
         <section class="section not-found">
             <div class="not-found--icon"></div>
-            <h2>' . esc_html__('Página no encontrada', 'kenko') . '</h2>
+            <h2>' . esc_html__('Página no encontrada.', 'kenko') . '</h2>
             <p>' . esc_html__('Parece que no se encontró nada en esta ubicación. Haz clic en el enlace de abajo para regresar a la página de inicio.', 'kenko') . '</p>
             <a href="' . site_url() . '">' . '
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
