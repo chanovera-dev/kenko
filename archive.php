@@ -5,6 +5,8 @@ echo '
 <main id="main">
     <div class="container">
         <section class="section">';
+
+            the_archive_title( '<h1 class="title">', '</h1>' );
                 
             if ( have_posts() ){           
                 echo '
