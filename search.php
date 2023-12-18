@@ -6,7 +6,7 @@ echo '
     <div class="container">
         <section class="section">';
 
-        echo '<h1 class="title-section">' . esc_html__('Resultados de búsqueda para: ', 'kenko'); the_search_query(); echo '</h1>';
+        echo '<h1 class="title-section">' . esc_html__('Resultados de búsqueda para: ', 'kenko'); echo the_search_query(); echo '</h1>';
                 
             if ( have_posts() ){           
                 echo '
