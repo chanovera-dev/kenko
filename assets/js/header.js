@@ -83,7 +83,6 @@ function changeSVG(button) {
 // detecta el scroll en el sitio
 const body = document.body;
 const header = document.querySelector(".main-header");
-// const menu = document.querySelector(".main-header .menu");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
@@ -99,10 +98,12 @@ window.addEventListener("scroll", () => {
     // down
     body.classList.remove(scrollUp);
     body.classList.add(scrollDown);
+    myFunction(x);
   } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
     // up
     body.classList.remove(scrollDown);
     body.classList.add(scrollUp);
+    myFunction(x);
   }
   lastScroll = currentScroll;
 });
