@@ -132,10 +132,12 @@ window.addEventListener("scroll", () => {
     // down
     body.classList.remove(scrollUp);
     body.classList.add(scrollDown);
+    closeMenu();
   } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
     // up
     body.classList.remove(scrollDown);
     body.classList.add(scrollUp);
+    closeMenu();
   }
   lastScroll = currentScroll;
 });
