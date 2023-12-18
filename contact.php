@@ -17,6 +17,10 @@ echo '
                         <p>' . get_theme_mod('address_line1', 'Mártires del HTML #404') . '<br>' . get_theme_mod('address_line2', 'Veracruz, México.') . '</p>
                     </div>
                 </div>
+                <div class="contact">
+                    <div><h3>' . esc_html__('Contáctanos', 'kenko') . '</h3></div>
+                    <div>'; the_content(); echo '</div>
+                </div>
             </div>
         </section>
     </div>
