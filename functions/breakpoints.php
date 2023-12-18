@@ -25,6 +25,9 @@ function kenko_theme_custom_breakpoints() {
                 --padding--featured-product:41px 0;
                 --font-size--featured-products-title--error404:18px;
                 --margin-bottom--featured-products-title--error404:39px;
+
+                /* contacto */
+                --height--map:340px;
             }
 
             @media(min-width:768px){
@@ -48,6 +51,9 @@ function kenko_theme_custom_breakpoints() {
                     --padding--featured-product:44px 0 25px;
                     --font-size--featured-products-title--error404:20px;
                     --margin-bottom--featured-products-title--error404:43px;
+
+                    /* contacto */
+                    --height--map:500px;
                 }
                 /* cabecera */
                     /* botón del menú */
