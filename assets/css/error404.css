@@ -1,4 +1,4 @@
-.not-found{padding:var(--padding-not-found);}
+.not-found{padding:var(--padding-not-found); text-align:center;}
 .not-found--icon:before,
 .not-found--icon:after{position:absolute; content:''; width:20px; height:2px; background-color:var(--wp--preset--color--title); top:50%; left:50%;}
 .not-found--icon:before{transform:translate(-50%, -50%) rotate(45deg);}
@@ -6,5 +6,5 @@
 .not-found--icon{position:relative; width:50px; height:50px; background-color:var(--wp--preset--color--line); border-radius:50%; margin-inline:auto;}
 .not-found h2{text-align:center; margin-top:14px;}
 .not-found p{max-width:330px; margin:18px auto 20px; text-align:center; font-size:14px;}
-.not-found a{background-color:var(--wp--preset--color--title); color:#fff; padding:9px 15px 10px; display:inline-flex; align-items:center; gap:10px; margin-inline:auto; font-size:14px; border-radius:0;}
+.not-found a{background-color:var(--wp--preset--color--title); color:#fff; padding:9px 15px 10px; display:inline-flex; align-items:center; gap:10px; font-size:14px; border-radius:0;}
 .not-found a:hover{filter:brightness(1.75);}
