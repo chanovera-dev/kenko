@@ -1,4 +1,4 @@
 #body{display:grid; min-height:100vh; align-content:flex-start; grid-template-rows:auto 1fr auto; background-color:var(--wp--preset--color--background);}
 
-.contact-page .title-section{padding:47px 0 44px;}
+.contact-page .title-section{padding:47px 0 44px; max-width:1011px; margin-inline:auto;}
 .contact-page iframe{width:100%; height:var(--height--map); margin-bottom:0;}
