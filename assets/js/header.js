@@ -83,6 +83,8 @@ function changeSVG(button) {
 // detecta el scroll en el sitio y agrega clases según el evento desencadenado
 window.addEventListener("scroll", () => {
     const body = document.body;
+    const scrollUp = "scroll-up";
+    const scrollDown = "scroll-down";
 
     // // Comprobar si la clase "open" está presente y eliminarla
     // if (categoriesList.classList.contains('open')) {
@@ -90,7 +92,7 @@ window.addEventListener("scroll", () => {
     //   chevronDepartmentsButton.classList.remove('rotate');
     // }
   
-    // const currentScroll = window.pageYOffset;
+    const currentScroll = window.pageYOffset;
     // if (currentScroll <= 0) {
     //   body.classList.remove(scrollUp);
     //   if (isHome) {
