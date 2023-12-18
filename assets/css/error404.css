@@ -1,3 +1,4 @@
+#body{display:grid; min-height:100vh; align-content:flex-start; grid-template-rows:auto 1fr auto;}
 .not-found{padding:var(--padding-not-found); text-align:center;}
 .not-found--icon:before,
 .not-found--icon:after{position:absolute; content:''; width:20px; height:2px; background-color:var(--wp--preset--color--title); top:50%; left:50%;}
