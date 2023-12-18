@@ -1,3 +1,6 @@
+/* título */
+.title-section{padding:var(--categories-list--padding);}
+
 /* lista de categorías */
 #main .container .section .categories-list{padding:var(--categories-list--padding); display:var(--categories-list--display); list-style:none; width:100%;}
 #main .container .section .categories-list li{position:relative;}

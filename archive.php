@@ -6,7 +6,7 @@ echo '
     <div class="container">
         <section class="section">';
 
-            the_archive_title( '<h1 class="title">', '</h1>' );
+            the_archive_title( '<h1 class="title-section">', '</h1>' );
                 
             if ( have_posts() ){           
                 echo '
