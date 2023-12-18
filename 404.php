@@ -4,7 +4,7 @@ get_header();
 
 echo '
 <main id="main">
-    <div class="container">
+    <div class="container not-found--wrapper">
         <section class="section not-found">
             <div class="not-found--icon"></div>
             <h2>' . esc_html__('Página no encontrada', 'kenko') . '</h2>
