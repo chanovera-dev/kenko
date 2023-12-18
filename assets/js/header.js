@@ -82,7 +82,8 @@ function changeSVG(button) {
 
 // detecta el scroll en el sitio
 const body = document.body;
-const header = document.querySelector(".main-header");
+const header = document.querySelector('.main-header');
+const mobileHeader = document.querySelector('.main-header .mobile-header');
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
@@ -99,12 +100,15 @@ window.addEventListener("scroll", () => {
     body.classList.remove(scrollUp);
     body.classList.add(scrollDown);
     header.style.height = "71px";
+    mobileHeader.style.height = "71px";
   } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
     // up
     body.classList.remove(scrollDown);
     body.classList.add(scrollUp);
     header.style.height = "71px";
+    mobileHeader.style.height = "71px";
   }
   header.style.height = null;
+  mobileHeader.style.height = null;
   lastScroll = currentScroll;
 });
