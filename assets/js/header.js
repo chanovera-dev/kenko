@@ -18,17 +18,37 @@ function myFunction(x) {
 }
 
 
+
+// cierra el menú en caso de presionar sobre main o sobre el footer
 let main = document.getElementById('main');
-main.addEventListener('click', function(event) {
+let footer = document.getElementById('main-footer');
+
+function closeMenu() {
     let navMobile = document.querySelector('.menu-mobile');
     let bars = document.querySelector('.bars');
-    // Verificar si se hizo clic fuera del menú y si el menú está abierto
-    if (!navMobile.contains(event.target) && navMobile.classList.contains('open')) {
+
+    // Verificar si el menú está abierto
+    if (navMobile.classList.contains('open')) {
         // Llamar a la función para cerrar el menú
-        myFunction(document.querySelector('.mobile-menu--button')); // Reemplaza 'tuBotonMenu' con el ID o clase correcta de tu botón del menú
+        myFunction(document.querySelector('.mobile-menu--button'));
         bars.classList.remove('active');
     }
+}
+
+main.addEventListener('click', function(event) {
+    // Verificar si se hizo clic fuera del menú
+    if (!document.querySelector('.menu-mobile').contains(event.target)) {
+        closeMenu();
+    }
 });
+
+footer.addEventListener('click', function(event) {
+    // Verificar si se hizo clic fuera del menú
+    if (!document.querySelector('.menu-mobile').contains(event.target)) {
+        closeMenu();
+    }
+});
+
 
 
 
