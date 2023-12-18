@@ -80,37 +80,29 @@ function changeSVG(button) {
 
 
 
-// detecta el scroll en el sitio y agrega clases según el evento desencadenado
-window.addEventListener("scroll", () => {
-    const body = document.body;
-    const scrollUp = "scroll-up";
-    const scrollDown = "scroll-down";
+// detecta el scroll en el sitio
+const body = document.body;
+const header = document.querySelector(".main-header");
+// const menu = document.querySelector(".main-header .menu");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
 
-    // // Comprobar si la clase "open" está presente y eliminarla
-    // if (categoriesList.classList.contains('open')) {
-    //   categoriesList.classList.remove('open');
-    //   chevronDepartmentsButton.classList.remove('rotate');
-    // }
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove(scrollUp);
+    return;
+  }
   
-    const currentScroll = window.pageYOffset;
-    // if (currentScroll <= 0) {
-    //   body.classList.remove(scrollUp);
-    //   if (isHome) {
-    //     categoriesList.classList.add('open');
-    //     chevronDepartmentsButton.classList.add('rotate');
-    //     departmentsButton.disabled = true;
-    //   }
-    //   return;
-    // }
-    
-    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-      // down
-      body.classList.remove(scrollUp);
-      body.classList.add(scrollDown);
-    } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
-      // up
-      body.classList.remove(scrollDown);
-      body.classList.add(scrollUp);
-    }
-    lastScroll = currentScroll;
-  });
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    // down
+    body.classList.remove(scrollUp);
+    body.classList.add(scrollDown);
+  } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
+    // up
+    body.classList.remove(scrollDown);
+    body.classList.add(scrollUp);
+  }
+  lastScroll = currentScroll;
+});
