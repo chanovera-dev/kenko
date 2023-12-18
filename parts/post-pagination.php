@@ -20,7 +20,7 @@ echo '
             if ($next_post) :
             echo '
             <a href="' . esc_url(get_permalink($next_post->ID)); echo '" class="next-post-link">
-                <i class="nm-font nm-font-angle-thin-left"></i>
+                <i class="nm-font nm-font-angle-thin-right"></i>
                 <p class="pagination-indicator">' . esc_html__('Siguiente', 'kenko') . '</p>
                 <p class="title-post">' . esc_html($next_post->post_title); echo '</p>
             </a>';
