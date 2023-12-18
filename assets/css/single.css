@@ -63,7 +63,7 @@
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link){display:grid; gap:0 10px; align-items:center;}
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) .title-post{display:var(--single-post-pagination--title-post);}
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) i{color:var(--wp--preset--color--text); grid-row:var(--single-post-pagination--svg-grid-row); font-size:var(--single-post-pagination--svg-size);}
-#main .container .single-post-pagination .right .next-post-link svg{grid-column:2/3;}
+#main .container .single-post-pagination .right .next-post-link i{grid-column:2/3;}
 #main .container .single-post-pagination .right .next-post-link :is(.pagination-indicator, .title-post){text-align:right;}
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) .pagination-indicator{font-size:var(--wp--preset--font-size--small); color:var(--wp--preset--color--text); grid-row:1/2;}
 #main .container .single-post-pagination :is(.left, .right) :is(.previous-post-link, .next-post-link) .title-post{color:var(--wp--preset--color--title); grid-row:2/3;}
