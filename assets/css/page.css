@@ -1,1 +1,4 @@
 .page main .container article.section{padding-top:var(--padding-top--post-wrapper); padding-bottom:var(--padding-top--post-wrapper);}
+.page main .container article.section > *:not(:last-child){margin-bottom:24px;}
+.page main .container article.section .title{text-align:center;}
+.page main .container article.section p{line-height:1.6;}
