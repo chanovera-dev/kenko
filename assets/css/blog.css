@@ -10,7 +10,7 @@
 #main .container .section .categories-list li a:not(.active):hover{color:var(--wp--preset--color--links);}
 
 /* rejilla */
-#main .container .section .posts{display:grid; gap:40px; grid-template-columns:repeat(auto-fill, minmax(286px, 1fr)); padding-left:0;}
+#main .container .section .posts{display:grid; gap:66px 40px; grid-template-columns:repeat(auto-fill, minmax(286px, 1fr)); padding-bottom:66px;}
     /* posts */
     #main .container .section .posts .post{display:grid; gap:14px; align-content:flex-start;}
     #main .container .section .posts .post .permalink-thumbnail{position:relative;}
