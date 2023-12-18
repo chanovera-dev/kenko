@@ -17,6 +17,11 @@ echo '
             </a>
         </section>
     </div>
+    <div class="container featured-products--wrapper">
+    <section class="section featured-products">
+        <h2>' . esc_html__('Productos destacados', 'kenko') . '</h2>
+    </section>
+</div>
 </main>';
 
 get_footer();

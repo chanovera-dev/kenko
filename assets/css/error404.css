@@ -8,3 +8,5 @@
 .not-found p{max-width:330px; margin:18px auto 20px; text-align:center; font-size:14px;}
 .not-found a{background-color:var(--wp--preset--color--title); color:#fff; padding:9px 15px 10px; display:inline-flex; align-items:center; gap:10px; font-size:14px; border-radius:0;}
 .not-found a:hover{filter:brightness(1.75);}
+.featured-products{padding:var(--padding--featured-product);}
+.featured-products h2{font-size:var(--font-size--featured-products-title--error404); margin-bottom:var(--margin-bottom--featured-products-title--error404); text-align:center;}

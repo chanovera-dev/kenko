@@ -22,6 +22,9 @@ function kenko_theme_custom_breakpoints() {
 
                 /* error 404 */
                 --padding-not-found:46px 0 55px;
+                --padding--featured-product:41px 0;
+                --font-size--featured-products-title--error404:18px;
+                --margin-bottom--featured-products-title--error404:39px;
             }
 
             @media(min-width:768px){
@@ -42,6 +45,9 @@ function kenko_theme_custom_breakpoints() {
 
                     /* error 404 */
                     --padding-not-found:68px 0 82px;
+                    --padding--featured-product:44px 0 25px;
+                    --font-size--featured-products-title--error404:20px;
+                    --margin-bottom--featured-products-title--error404:43px;
                 }
                 /* cabecera */
                     /* botón del menú */
