@@ -116,11 +116,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Obtén referencias a los elementos por sus ID
     let main = document.getElementById('main');
     let footer = document.getElementById('main-footer');
-    let buttonMenuMobile = document.querySelector('mobile-menu--button');
-    let menuMobile = document.querySelector('menu-mobile');
+    let buttonMenuMobile = document.querySelector('.mobile-menu--button');
+    let menuMobile = document.querySelector('.menu-mobile');
   
     // Agrega un evento de clic al botón
     main.addEventListener('click', function () {
+        if(buttonMenuMobile.classList.contains('active') && menuMobile.classList.contains('open')){
+            buttonMenuMobile.classList.remove('active');
+            menuMobile.classList.remove('open');
+        }
+    });
+
+    footer.addEventListener('click', function () {
         if(buttonMenuMobile.classList.contains('active') && menuMobile.classList.contains('open')){
             buttonMenuMobile.classList.remove('active');
             menuMobile.classList.remove('open');
