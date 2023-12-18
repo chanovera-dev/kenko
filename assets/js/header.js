@@ -19,6 +19,19 @@ function myFunction(x) {
 
 
 
+document.addEventListener('click', function(event) {
+    let navMobile = document.querySelector('.menu-mobile');
+    let main = document.getElementById('main');
+
+    // Verificar si se hizo clic fuera del menú y si el menú está abierto
+    if (!navMobile.contains(event.target) && navMobile.classList.contains('open')) {
+        // Llamar a la función para cerrar el menú
+        myFunction(document.querySelector('.mobile-menu--button')); // Reemplaza 'tuBotonMenu' con el ID o clase correcta de tu botón del menú
+    }
+});
+
+
+
 // Agrega el botón para abrir el submenú en el menú mobile
 document.addEventListener("DOMContentLoaded", function() {
     // Obtener todos los elementos li con la clase 'menu-item-has-children'
