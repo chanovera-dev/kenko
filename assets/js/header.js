@@ -87,7 +87,7 @@ const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
 
-window.addEventListener("scroll", (event) => {
+window.addEventListener("scroll", (event) => { // Pasa el evento como parámetro
   const currentScroll = window.pageYOffset;
   if (currentScroll <= 0) {
     body.classList.remove(scrollUp);
@@ -98,12 +98,12 @@ window.addEventListener("scroll", (event) => {
     // down
     body.classList.remove(scrollUp);
     body.classList.add(scrollDown);
-    myFunction(event.target); 
+    myFunction(event.target); // Pasa el elemento que activa la función
   } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
     // up
     body.classList.remove(scrollDown);
     body.classList.add(scrollUp);
-    myFunction(event.target); 
+    myFunction(event.target); // Pasa el elemento que activa la función
   }
   lastScroll = currentScroll;
 });
