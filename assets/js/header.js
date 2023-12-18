@@ -18,10 +18,9 @@ function myFunction(x) {
 }
 
 
-
-document.addEventListener('click', function(event) {
+let main = document.getElementById('main');
+main.addEventListener('click', function(event) {
     let navMobile = document.querySelector('.menu-mobile');
-    let main = document.getElementById('main');
 
     // Verificar si se hizo clic fuera del menú y si el menú está abierto
     if (!navMobile.contains(event.target) && navMobile.classList.contains('open')) {
