@@ -85,7 +85,7 @@ function kenko_theme_custom_breakpoints() {
                     /* formulario */
                     .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:0 30px;}
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
-                    
+
                 /* contacto */
                 .contact-page .info-and-contact--wrapper .info{grid-template-columns:1fr 1fr;}
 
@@ -111,6 +111,9 @@ function kenko_theme_custom_breakpoints() {
                 #main-header .mobile-header .menu-mobile{display:none;}
                 /* menú principal */
                 #main-header .mobile-header .header-content .primary{display:inherit;}
+
+                /* contacto */
+                .contact-page .info-and-contact--wrapper .info{grid-template-columns:350px 1fr;}
             }
 
             @media(min-width:1024px){
