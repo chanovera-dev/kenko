@@ -25,12 +25,12 @@ img{display:block; height:auto;}
 .container .section{width:min(100% - 30px, 1220px); margin-inline:auto;}
 
 /* cabecera */
-#main-header{position:sticky; top:0; background-color:var(--wp--preset--color--background); border-bottom:1px solid var(--wp--preset--color--line); transform:translate3d(0, 0, 0);  height:71px; display:grid; align-items:center; z-index:1;}
+#main-header{position:sticky; top:0; background-color:var(--wp--preset--color--background); border-bottom:1px solid var(--wp--preset--color--line); transform:translate3d(0, 0, 0);  height:71px; display:grid; align-items:center; transition:all .3s ease; z-index:1;}
     /* scroll actions */    
     .scroll-down :is(#main-header, .mobile-header){height:71px!important;}
     .scroll-up :is(#main-header, .mobile-header){height:71px!important;}    
 /* responsive header */
-    #main-header .mobile-header{position:relative; height:71px; display:grid; align-items:center;}
+    #main-header .mobile-header{position:relative; height:71px; display:grid; align-items:center; transition:all .3s ease;}
     #main-header .mobile-header .header-content{display:grid; align-items:center; grid-template-columns:1fr auto 1fr;}
         /* botón del menú */
         .mobile-menu--button{position:relative; display:grid; place-content:center; margin-right:auto; cursor:pointer; z-index:1;}
