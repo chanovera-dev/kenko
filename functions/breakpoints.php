@@ -18,7 +18,7 @@ function kenko_theme_custom_breakpoints() {
                 --single-post-pagination--title-post:none;
                 --single-post-pagination--svg-opacity:1;
                 --single-post-pagination--svg-grid-row:1/2;
-                --single-post-pagination--svg-size:12px;
+                --single-post-pagination--svg-size:30px;
 
                 /* error 404 */
                 --padding-not-found:46px 0 55px;
@@ -41,7 +41,7 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--title-post:inherit;
                     --single-post-pagination--svg-opacity:.3;
                     --single-post-pagination--svg-grid-row:1/3;
-                    --single-post-pagination--svg-size:45px;
+                    --single-post-pagination--svg-size:50px;
 
                     /* error 404 */
                     --padding-not-found:68px 0 82px;
