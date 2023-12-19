@@ -153,10 +153,15 @@ const principal = document.getElementById('main');
 
 abrirCarrito.addEventListener("click", function() {
     panelCarrito.style.right = "0";
-    cabecera.style.filter = "brightness(1.7)";
+    cabecera.style.filter = "contrast(.2)";
+    principal.style.filter = "contrast(.2)";
+    footer.style.filter = "contrast(.2)";
 
 });
 
 cerrarCarrito.addEventListener("click", function() {
     panelCarrito.style.right = null;
+    cabecera.style.filter = null;
+    principal.style.filter = null;
+    footer.style.filter = null;
 });
