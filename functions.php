@@ -141,3 +141,9 @@ function filter_projects() {
 }
 add_action('wp_ajax_filter_projects', 'filter_projects');
 add_action('wp_ajax_nopriv_filter_projects', 'filter_projects');
+
+
+
+// deshabilita contact form 7 en todas las páginas
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
