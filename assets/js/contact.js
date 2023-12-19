@@ -1,11 +1,23 @@
-// Paso 1: Obtener el elemento a través del id
-var enlace = document.getElementById('number-contact');
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtén el elemento con el ID "number-contact"
+    var numeroContacto = document.getElementById('number-contact');
 
-// Paso 2: Obtener el contenido y convertirlo a un número
-var numeroOriginal = parseInt(enlace.textContent);
+    // Obtén el contenido actual del elemento
+    var numeroCompleto = numeroContacto.textContent;
 
-// Paso 3: Formatear el número según el formato deseado
-var numeroFormateado = numeroOriginal.toString().padStart(10, '0').replace(/(\d{3})(?=\d{1,})/g, '$1.');
+    // Aplica el formato deseado
+    var numeroFormateado = formatoNumero(numeroCompleto);
 
-// Paso 4: Actualizar el contenido del elemento a con el nuevo formato
-enlace.textContent = numeroFormateado;
+    // Actualiza el contenido del elemento con el número formateado
+    numeroContacto.textContent = numeroFormateado;
+  });
+
+  function formatoNumero(numero) {
+    // Inserta un punto después del tercer número
+    numero = numero.slice(0, 3) + '.' + numero.slice(3);
+
+    // Inserta otro punto después del sexto número
+    numero = numero.slice(0, 7) + '.' + numero.slice(7);
+
+    return numero;
+  }
