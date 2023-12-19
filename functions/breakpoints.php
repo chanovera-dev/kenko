@@ -87,7 +87,7 @@ function kenko_theme_custom_breakpoints() {
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
 
                 /* contacto */
-                .contact-page .info-and-contact--wrapper .info{grid-template-columns:1fr 1fr;}
+                .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:1fr 1fr;}
 
                 /* footer */
                 #main-footer .footer-content{display:grid; grid-template-columns:auto 1fr; gap:18px 14px; align-items:baseline;}
@@ -113,7 +113,7 @@ function kenko_theme_custom_breakpoints() {
                 #main-header .mobile-header .header-content .primary{display:inherit;}
 
                 /* contacto */
-                .contact-page .info-and-contact--wrapper .info{grid-template-columns:350px 1fr;}
+                .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:350px 1fr;}
             }
 
             @media(min-width:1024px){
