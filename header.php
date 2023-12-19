@@ -11,7 +11,9 @@ echo '
         wp_head();
     echo '
     </head>
-    <body id="body" '; body_class(); echo '>
+    <body id="body" '; body_class(); echo '>';
+        include(TEMPLATEPATH . '/cart.php'); 
+        echo '
         <header id="main-header" class="container main-header">';
             include(TEMPLATEPATH . '/parts/header/mobile-header.php');
         echo '

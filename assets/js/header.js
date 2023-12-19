@@ -150,9 +150,9 @@ let abrirCarrito = document.getElementById('open-cart-panel');
 let cerrarCarrito = document.getElementById('close-cart-panel');
 
 abrirCarrito.addEventListener("click", function() {
-    panelCarrito.classList.add('open');
+    panelCarrito.style.left = "0";
 });
 
 cerrarCarrito.addEventListener("click", function() {
-    panelCarrito.classList.remove('open');
+    panelCarrito.style.left = null;
 });
