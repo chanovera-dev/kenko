@@ -6,3 +6,4 @@
 .contact-page .info-and-contact--wrapper :is(.info, .contact){display:grid; gap:20px;}
 .contact-page .info-and-contact--wrapper :is(.info, .contact) div *:not(:last-child, p, input){margin-bottom:20px;}
 .contact-page .info-and-contact--wrapper .contact .wpcf7-form{display:grid; gap:19px;}
+.contact-page .info-and-contact--wrapper .contact .wpcf7-form :is(input[type=text], input[type=email], textarea){width:100%;}
