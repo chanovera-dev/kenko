@@ -100,6 +100,9 @@ function kenko_theme_custom_breakpoints() {
                     #main-footer .secondary ul li{border-bottom:none;}
                     /* menú social */
                     #main-footer .social{padding-top:0;}
+                
+                /* panel carrito */
+                #cart-panel{max-width:425px;}
             }
 
             @media(min-width:991px){
