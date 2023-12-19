@@ -4,4 +4,5 @@
 .contact-page iframe{width:100%; height:var(--height--map); margin-bottom:0;}
 .contact-page .info-and-contact--wrapper{padding:48px 0; display:grid; gap:47px; max-width:1011px; margin-inline:auto;}
 .contact-page .info-and-contact--wrapper :is(.info, .contact){display:grid; gap:20px;}
-.contact-page .info-and-contact--wrapper :is(.info, .contact) div *:not(:last-child, p){margin-bottom:20px;}
+.contact-page .info-and-contact--wrapper :is(.info, .contact) div *:not(:last-child, p, input){margin-bottom:20px;}
+.contact-page .info-and-contact--wrapper .contact .wpcf7-form{display:grid; gap:19px;}
