@@ -108,3 +108,6 @@ img{display:block; height:auto;}
             #main-footer .social ul li a:before{position:relative; padding:9px; display:inline-block;}
             #main-footer .social ul li a:hover{opacity:.7;}
             #main-footer .social ul li a[href*="facebook"]:before{padding:9px 5px;}
+
+/* panel carrito */
+#cart-panel{background-color:#333; color:#fff; position:absolute; top:0; right:-100%; width:auto; height:100svh;}

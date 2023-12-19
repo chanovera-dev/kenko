@@ -141,3 +141,18 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
+
+
+
+// botón para abrir y cerrar el carrito
+let panelCarrito = document.getElementById('cart-panel');
+let abrirCarrito = document.getElementById('open-cart-panel');
+let cerrarCarrito = document.getElementById('close-cart-panel');
+
+abrirCarrito.addEventListener("click", function() {
+    panelCarrito.style.left = "0";
+});
+
+cerrarCarrito.addEventListener("click", function() {
+    panelCarrito.style.left = null;
+});
