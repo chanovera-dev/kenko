@@ -5,7 +5,7 @@ var enlace = document.getElementById('number-contact');
 var numeroOriginal = parseInt(enlace.textContent);
 
 // Paso 3: Formatear el número según el formato deseado
-var numeroFormateado = numeroOriginal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+var numeroFormateado = numeroOriginal.toString().padStart(10, '0').replace(/(\d{3})(?=\d)/g, '$1.');
 
 // Paso 4: Actualizar el contenido del elemento a con el nuevo formato
 enlace.textContent = numeroFormateado;
