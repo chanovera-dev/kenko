@@ -148,20 +148,11 @@ window.addEventListener("scroll", () => {
 const panelCarrito = document.getElementById('cart-panel');
 const abrirCarrito = document.getElementById('open-cart-panel');
 const cerrarCarrito = document.getElementById('close-cart-panel');
-const cabecera = document.getElementById('main-header');
-const principal = document.getElementById('main');
 
 abrirCarrito.addEventListener("click", function() {
     panelCarrito.style.right = "0";
-    cabecera.style.filter = "contrast(80%)";
-    principal.style.filter = "contrast(80%)";
-    footer.style.filter = "contrast(80%)";
-
 });
 
 cerrarCarrito.addEventListener("click", function() {
     panelCarrito.style.right = null;
-    cabecera.style.filter = null;
-    principal.style.filter = null;
-    footer.style.filter = null;
 });
