@@ -58,6 +58,8 @@ function kenko_contact_styles() {
         if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
             wpcf7_enqueue_styles();
         }
+        /* js */
+        wp_enqueue_script( 'contact-js', get_template_directory_uri() . '/assets/js/contact.js', array(), '1.0', true );
     }
 }
 add_action( 'wp_enqueue_scripts', 'kenko_contact_styles' );
