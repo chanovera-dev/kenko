@@ -153,9 +153,9 @@ const principal = document.getElementById('main');
 
 abrirCarrito.addEventListener("click", function() {
     panelCarrito.style.right = "0";
-    cabecera.style.filter = "contrast(.2)";
-    principal.style.filter = "contrast(.2)";
-    footer.style.filter = "contrast(.2)";
+    cabecera.style.filter = "contrast(90%)";
+    principal.style.filter = "contrast(90%)";
+    footer.style.filter = "contrast(90%)";
 
 });
 
