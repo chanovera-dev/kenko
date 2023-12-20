@@ -12,6 +12,11 @@ add_theme_support( 'wc-product-gallery-slider' );
 
 
 
+//Disable all woocommerce stylesheets
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+
+
 // mostrar el carrito en tiempo real
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
 
@@ -28,11 +33,6 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
-
-
-
-//Disable all woocommerce stylesheets
-add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 
 
