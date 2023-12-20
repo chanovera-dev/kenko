@@ -167,3 +167,14 @@ cerrarCarrito.addEventListener("click", function() {
         panelCarritoWrapper.style.transition = null;
     }, 500); 
 });
+
+panelOverlay.addEventListener('click', function(event) {
+    panelCarritoWrapper.style.transition = "all 1s ease";
+    panelCarritoWrapper.style.right = null;
+    panelOverlay.style.transition = null;
+    panelOverlay.style.transitionDelay = null;
+    panelOverlay.style.backgroundColor = null;
+    setTimeout(function() {
+        panelCarritoWrapper.style.transition = null;
+    }, 500); 
+});
