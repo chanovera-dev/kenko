@@ -110,4 +110,5 @@ img{display:block; height:auto;}
             #main-footer .social ul li a[href*="facebook"]:before{padding:9px 5px;}
 
 /* panel carrito */
-#cart-panel{background-color:#333; color:#fff; position:absolute; top:0; right:-100%; max-width:360px; height:100svh; overflow:hidden; transition:all .3s ease; z-index:2;}
+#cart-panel--wrapper{position:absolute; top:0; width:100%; background-color:transparent; right:-100%;}
+#cart-panel{background-color:#333; color:#fff; max-width:360px; height:100svh; overflow:hidden; transition:all .3s ease; z-index:2;}
