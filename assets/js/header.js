@@ -181,16 +181,22 @@ panelOverlay.addEventListener('click', function(event) {
 
 
 
+// Obtén el elemento div con las clases 'wc-block-components-notice-banner is-info'
 var noticeBanner = document.querySelector('.wc-block-components-notice-banner.is-info');
 
-  if (noticeBanner) {
-    // Crea un elemento 'i' con las clases 'nm-font nm-font-close2'
-    var iconElement = document.createElement('i');
-    iconElement.className = 'nm-font nm-font-close2';
+if (noticeBanner) {
+  // Elimina el contenido actual del div
+  noticeBanner.innerHTML = '';
 
-    // Elimina el contenido actual del div
-    noticeBanner.innerHTML = '';
+  // Crea un nuevo elemento 'i' con las clases 'nm-font nm-font-close2'
+  var iconElement = document.createElement('i');
+  iconElement.className = 'nm-font nm-font-close2';
 
-    // Agrega el nuevo elemento 'i' al div
-    noticeBanner.appendChild(iconElement);
-  }
+  // Agrega el nuevo elemento 'i' al div
+  noticeBanner.appendChild(iconElement);
+
+  // También puedes agregar otros elementos al div si es necesario
+  var otherDivElement = document.createElement('div');
+  otherDivElement.textContent = 'No hay productos en el carrito';
+  noticeBanner.appendChild(otherDivElement);
+}
