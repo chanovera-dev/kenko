@@ -159,6 +159,7 @@ abrirCarrito.addEventListener("click", function() {
 
 cerrarCarrito.addEventListener("click", function() {
     panelCarritoWrapper.style.right = null;
+    panelOverlay.style.transition = null;
     panelOverlay.style.transitionDelay = null;
     panelOverlay.style.backgroundColor = null;
 });
