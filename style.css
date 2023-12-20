@@ -144,19 +144,5 @@ img{display:block; height:auto;}
 #cart-panel .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button{display:grid; width:100%; height:44px; place-content:center; background-color:#111; color:#fff; margin-top:13px;}
 #cart-panel .woocommerce .return-to-shop .button.wc-backward{border:1px solid #5f5f5f; color:#fff; display:grid; place-content:center; width:100%; height:42px; border-radius:0; transition:all .3s ease;}
 #cart-panel .woocommerce .wc-block-components-notice-banner.is-info{background-color:transparent; display:grid; justify-content:center; color:#fff; border-color:none;}
-#cart-panel .woocommerce .wc-block-components-notice-banner.is-info i{
-    display: block;
-    font-size: 20px;
-    line-height: 29px;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 21px;
-    padding: 10px;
-    text-align: center;
-    background: #eee;
-    border-radius: 50px;
-    opacity: .5;
-    transition: opacity 0.2s ease,transform 0.2s ease;
-    transition-delay: 0.25s;
-}
+#cart-panel .woocommerce .wc-block-components-notice-banner.is-info i{font-size:20px; line-height:29px; width:50px; height:50px; margin:0 auto 11px; padding:10px; text-align:center; background:#414141; border-radius:50px;}
 #cart-panel .woocommerce .return-to-shop .button.wc-backward:hover{border:1px solid #777;}
