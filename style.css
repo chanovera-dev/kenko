@@ -111,4 +111,4 @@ img{display:block; height:auto;}
 
 /* panel carrito */
 #cart-panel--wrapper{position:absolute; top:0; width:100%; background-color:transparent; transition:all .3s ease; right:-100%; z-index:2;}
-#cart-panel{background-color:#333; color:#fff; position:relative; top:0; right:0; max-width:360px; height:100svh; overflow:hidden; transition:all .3s ease;}
+#cart-panel{background-color:#333; color:#fff; position:absolute; top:0; right:0; max-width:360px; height:100svh; overflow:hidden; transition:all .3s ease;}
