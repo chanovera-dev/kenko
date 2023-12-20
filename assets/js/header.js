@@ -152,7 +152,8 @@ const cerrarCarrito = document.getElementById('close-cart-panel');
 
 abrirCarrito.addEventListener("click", function() {
     panelCarritoWrapper.style.right = "0";
-    panelOverlay.style.backgroundColor = "rgba(255,255,255,.25)";
+    panelOverlay.style.transitionDelay = ".5s";
+    panelOverlay.style.backgroundColor = "rgba(255,255,255,.5)";
 });
 
 cerrarCarrito.addEventListener("click", function() {
