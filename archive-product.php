@@ -29,7 +29,7 @@
         </div>
         <div class="container">
             <section class="section">';
-                the_post_pagination();
+                
             echo '
             </section>
         </div>';
