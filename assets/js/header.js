@@ -178,3 +178,19 @@ panelOverlay.addEventListener('click', function(event) {
         panelCarritoWrapper.style.transition = null;
     }, 500); 
 });
+
+
+
+var noticeBanner = document.querySelector('.wc-block-components-notice-banner.is-info');
+
+  if (noticeBanner) {
+    // Crea un elemento 'i' con las clases 'nm-font nm-font-close2'
+    var iconElement = document.createElement('i');
+    iconElement.className = 'nm-font nm-font-close2';
+
+    // Elimina el contenido actual del div
+    noticeBanner.innerHTML = '';
+
+    // Agrega el nuevo elemento 'i' al div
+    noticeBanner.appendChild(iconElement);
+  }
