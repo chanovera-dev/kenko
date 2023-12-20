@@ -152,7 +152,7 @@ const cerrarCarrito = document.getElementById('close-cart-panel');
 
 abrirCarrito.addEventListener("click", function() {
     panelCarritoWrapper.style.right = "0";
-    panelOverlay.style.transitionDelay = ".5s";
+    panelOverlay.style.transitionDelay = ".3s";
     panelOverlay.style.backgroundColor = "rgba(255,255,255,.5)";
 });
 
