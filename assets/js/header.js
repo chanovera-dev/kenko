@@ -181,6 +181,7 @@ panelOverlay.addEventListener('click', function(event) {
 
 
 
+// borrar el contenido del mensaje de 'no hay productos en el carrito' y reponerlo con contenido personalizado'
 // Obtén el elemento div con las clases 'wc-block-components-notice-banner is-info'
 var noticeBanner = document.querySelector('.wc-block-components-notice-banner.is-info');
 
@@ -197,6 +198,6 @@ if (noticeBanner) {
 
   // También puedes agregar otros elementos al div si es necesario
   var otherDivElement = document.createElement('div');
-  otherDivElement.textContent = 'No hay productos en el carrito';
+  otherDivElement.textContent = 'No hay productos en el carrito.';
   noticeBanner.appendChild(otherDivElement);
 }
