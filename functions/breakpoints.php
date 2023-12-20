@@ -30,7 +30,8 @@ function kenko_theme_custom_breakpoints() {
                 --height--map:340px;
 
                 /* carrito */
-                --padding-cart-panel:21px;
+                --padding-cart-panel:28px 21px;
+                --padding-close--cart-panel:28px;
             }
 
             @media(min-width:768px){
@@ -59,7 +60,7 @@ function kenko_theme_custom_breakpoints() {
                     --height--map:500px;
 
                     /* carrito */
-                    --padding-cart-panel:37px;
+                    --padding-cart-panel:28px 37px;
                 }
                 /* cabecera */
                     /* botón del menú */
@@ -134,6 +135,10 @@ function kenko_theme_custom_breakpoints() {
                     /* single post */
                     --padding-top--post-wrapper:68px;
                     --width-single-post-pagination:min(100% - 90px);
+
+                    /* carrito */
+                    --padding-cart-panel:32px 37px;
+                    --padding-close--cart-panel:32px;
                 }
                 /* cabecera */
                     /* carrito */
