@@ -28,6 +28,9 @@ function kenko_theme_custom_breakpoints() {
 
                 /* contacto */
                 --height--map:340px;
+
+                /* carrito */
+                --padding-cart-panel:21px;
             }
 
             @media(min-width:768px){
@@ -54,6 +57,9 @@ function kenko_theme_custom_breakpoints() {
 
                     /* contacto */
                     --height--map:500px;
+
+                    /* carrito */
+                    --padding-cart-panel:37px;
                 }
                 /* cabecera */
                     /* botón del menú */
