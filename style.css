@@ -16,7 +16,7 @@ Tags:
 /* ajustes globales */
 html{scroll-behavior:smooth;}
 *, :before, :after{box-sizing:border-box; margin:0;}
-body{position:relative; overflow:hidden;}
+body{position:relative;}
 main{background-color:var(--wp--preset--color--background); transition:all .3s ease;}
 :is(header,footer,aside,.resume-content) :is(ol,ul){padding:0; list-style:none;}
 a{transition:all .3s ease; border-radius:.2rem;}
