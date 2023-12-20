@@ -130,4 +130,6 @@ img{display:block; height:auto;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity input[type=number]{background-color:#333; border:none; width:20px; color:#fff; -moz-appearance:textfield;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity input[type=number]:focus{outline:none;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity button{background-color:#333; border:none; color:#fff; border-radius:0;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity button:focus{outline:none;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-subtotal{display:none;}
