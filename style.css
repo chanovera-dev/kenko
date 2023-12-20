@@ -125,4 +125,5 @@ img{display:block; height:auto;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-name a{color:#fff;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-price{grid-column:3/4; grid-row:2/3;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity{grid-column:2/3; grid-row:2/3;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity label{display:none;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-subtotal{display:none;}
