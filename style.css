@@ -114,3 +114,15 @@ img{display:block; height:auto;}
 #panel-overlay{position:absolute; top:0; width:100%; height:100%;}
 #cart-panel{background-color:#333; color:#fff; position:absolute; top:0; right:0; max-width:360px; height:100%; overflow:hidden; padding:var(--padding-cart-panel); transition:all .3s ease;}
 #close-cart-panel{padding-bottom:var(--padding-close--cart-panel); color:#fff; display:flex; flex-direction:row-reverse; border-bottom:1px solid #464646; border-radius:0;}
+#cart-panel .woocommerce .woocommerce-cart-form .shop_table_responsive{width:100%; border-collapse:separate; text-align:left;}
+#cart-panel .woocommerce .woocommerce-cart-form .shop_table_responsive thead{display:none;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item{position:relative; display:grid; grid-template-columns:auto 1fr auto; gap:0 20px; padding:15px 0;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-remove{position:absolute; top:15px; right:0; display:grid; height:18px; place-content:center;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-remove a{color:#fff;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-thumbnail{grid-column:1/2; grid-row:1/3;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-thumbnail a img{width:60px;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-name{grid-column:2/3; grid-row:1/2;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-name a{color:#fff;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-price{grid-column:3/4; grid-row:2/3;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity{grid-column:2/3; grid-row:2/3;}
+#cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-subtotal{display:none;}
