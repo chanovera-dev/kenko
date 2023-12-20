@@ -30,6 +30,7 @@ function kenko_theme_custom_breakpoints() {
                 --height--map:340px;
 
                 /* carrito */
+                --width--cart-panel:360px;
                 --padding-cart-panel:28px 21px;
                 --padding-close--cart-panel:28px;
                 --spacing-cart:55.88px;
@@ -61,6 +62,7 @@ function kenko_theme_custom_breakpoints() {
                     --height--map:500px;
 
                     /* carrito */
+                    --width--cart-panel:410px;
                     --padding-cart-panel:28px 37px;
                 }
                 /* cabecera */
