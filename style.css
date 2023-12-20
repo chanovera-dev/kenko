@@ -114,6 +114,7 @@ img{display:block; height:auto;}
 #panel-overlay{position:absolute; top:0; width:100%; height:100%;}
 #cart-panel{background-color:#333; color:#fff; position:absolute; top:0; right:0; max-width:360px; height:100%; overflow:hidden; padding:var(--padding-cart-panel); transition:all .3s ease;}
 #close-cart-panel{padding-bottom:var(--padding-close--cart-panel); color:#fff; display:flex; flex-direction:row-reverse; border-bottom:1px solid #464646; border-radius:0;}
+#cart-panel .woocommerce{display:grid; grid-template-rows:auto 1fr auto; height:calc(100% - var(--spacing-cart));}
 #cart-panel .woocommerce .woocommerce-cart-form .shop_table_responsive{width:100%; border-collapse:separate; text-align:left;}
 #cart-panel .woocommerce .woocommerce-cart-form .shop_table_responsive thead{display:none;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item{position:relative; display:grid; grid-template-columns:auto 1fr auto; gap:0 20px; padding:15px 0;}
