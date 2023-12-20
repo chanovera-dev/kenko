@@ -134,6 +134,7 @@ img{display:block; height:auto;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity button{background-color:#333; border:none; color:#fff; border-radius:0;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity button:focus{outline:none;}
 #cart-panel .woocommerce .woocommerce-cart-form .woocommerce-cart-form__cart-item.cart_item .product-subtotal{grid-column:3/4; grid-row:2/3;}
+#cart-panel .woocommerce .woocommerce-cart-form tbody tr:last-child .actions .coupon{display:none;}
 #cart-panel .woocommerce .cart-collaterals .cart_totals h2{display:none;}
 #cart-panel .woocommerce .cart-collaterals .cart_totals .shop_table_responsive{width:100%;}
 #cart-panel .woocommerce .cart-collaterals .cart_totals .shop_table_responsive tbody .cart-subtotal{display:flex; align-items:center; justify-content:space-between; height:60px; border-top:1px solid #464646; border-bottom:1px solid #464646;}
