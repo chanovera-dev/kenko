@@ -158,6 +158,6 @@ abrirCarrito.addEventListener("click", function() {
 
 cerrarCarrito.addEventListener("click", function() {
     panelCarritoWrapper.style.right = null;
-    panelOverlay.style.transitionDelay = ".3s";
+    panelOverlay.style.transitionDelay = null;
     panelOverlay.style.backgroundColor = null;
 });
