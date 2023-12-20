@@ -21,7 +21,7 @@
                 <ul class="product-list">';
                     while( have_posts() ){         
                         the_post();
-                        get_template_part( 'templates/content', 'archive-product' );          
+                        get_template_part( 'templates/content', 'products' );          
                     }
                 echo '
                 </ul>
