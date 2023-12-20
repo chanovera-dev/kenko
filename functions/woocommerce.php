@@ -39,3 +39,21 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 // Anexos
 // Estilos particulares para los templates
 require_once(get_template_directory() . '/functions/woocommerce/woocommerce-components.php');
+
+
+
+/* Actualizar de manera asincrona los importes de carrito al cambiar cantidades */
+
+add_action( 'wp_footer', 'dlanau_actualizar_importe_carrito_' );
+function dlanau_actualizar_importe_carrito_() {
+if (is_cart()) :
+?>
+<script>
+jQuery('div.woocommerce').on('change', '.qty', function(){
+jQuery("[name='update_cart']").prop("disabled", false);
+jQuery("[name='update_cart']").trigger("click"); 
+});
+</script>
+<?php
+endif;
+}
