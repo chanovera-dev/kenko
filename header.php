@@ -12,7 +12,7 @@ echo '
     echo '
     </head>
     <body id="body" '; body_class(); echo '>';
-        include(TEMPLATEPATH . '/cart.php'); 
+        include(TEMPLATEPATH . '/parts/sidebars/cart-panel.php'); 
         echo '
         <header id="main-header" class="container main-header">';
             include(TEMPLATEPATH . '/parts/header/mobile-header.php');
