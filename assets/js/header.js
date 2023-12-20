@@ -158,7 +158,7 @@ abrirCarrito.addEventListener("click", function() {
 });
 
 cerrarCarrito.addEventListener("click", function() {
-    panelCarritoWrapper.style.transition = "all 1s ease";
+    panelCarritoWrapper.style.transition = "all ease 1s";
     panelCarritoWrapper.style.right = null;
     panelOverlay.style.transition = null;
     panelOverlay.style.transitionDelay = null;
