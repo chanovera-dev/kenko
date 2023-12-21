@@ -1,4 +1,7 @@
 #main .container .section{width:min(100% - 30px, 1220px); margin-inline:auto;}
+
+/* breadcrumb */
+#main .container.breadcrumb-wrapper{background-color:var(--wp--preset--color--line); padding-top:20px;}
 /* star rating *
 .woocommerce .star-rating {
     float: right;
