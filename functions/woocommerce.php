@@ -90,4 +90,4 @@ function agregar_contenido_antes_de_tabs() {
     </section></div><div class="container"><section class="section">
     <?php
 }
-add_action('woocommerce_after_single_product_summary', 'agregar_contenido_antes_de_tabs');
+add_action('woocommerce_after_single_product_summary', 'agregar_contenido_antes_de_tabs', 9);
