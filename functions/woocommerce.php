@@ -82,11 +82,7 @@ add_action('woocommerce_before_single_product', 'my_custom_content_single_produc
 add_action('woocommerce_after_single_product', 'my_custom_content_single_product_end', 10);
 
 function my_custom_content_single_product_start() {}
-function my_custom_content_single_product_end() {}
-
-// Agregar contenido HTML antes del gancho woocommerce_after_single_product_summary
-function my_custom_content_before_single_product_summary() {
-    echo '</section></div><div class="container"><section class="section">';
+function my_custom_content_single_product_end() {
+	echo '</section></div><div class="container"><section class="section">';
 }
-add_action('woocommerce_output_product_data_tabs', 'my_custom_content_before_single_product_summary', 10);
 
