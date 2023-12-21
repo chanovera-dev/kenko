@@ -81,10 +81,8 @@ remove_action('woocommerce_before_single_product', 'wc_print_notices', 10);
 add_action('woocommerce_before_single_product', 'my_custom_content_single_product_start', 10);
 add_action('woocommerce_after_single_product', 'my_custom_content_single_product_end', 10);
 
-function my_custom_content_single_product_start() {
-	echo 'bla';
-}
+function my_custom_content_single_product_start() {}
 function my_custom_content_single_product_end() {
-	echo '</section></div><div class="container"><section class="section">';
+	echo 'bla';
 }
 
