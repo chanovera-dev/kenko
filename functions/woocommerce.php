@@ -46,9 +46,9 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
-    echo '<main id="main"><div class="container breadcrumb-wrapper"><section class="section">';
+    echo '<main id="main"><div class="container breadcrumb-wrapper"><section class="section breadcrumb-and-pagination">';
 	echo '
-	<section class="single-post-pagination">
+	<section class="single-product-pagination">
 		<div class="left">';
 			global $post;
 
