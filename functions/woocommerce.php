@@ -48,7 +48,7 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 function my_custom_content_before_wrapper() {
     echo '<main id="main"><div class="container breadcrumb-wrapper"><section class="section breadcrumb-and-pagination">';
 	echo '
-	<section class="single-product-pagination">
+	<div class="single-product-pagination">
 		<div class="left">';
 			global $post;
 
@@ -74,7 +74,7 @@ function my_custom_content_before_wrapper() {
 			endif;
 			echo '
    		</div>
-	</section>';
+	</div>';
 }
 add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper', 10);
 
