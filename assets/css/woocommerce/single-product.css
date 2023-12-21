@@ -1,3 +1,4 @@
+#main .container .section{width:min(100% - 30px, 1220px); margin-inline:auto;}
 /* star rating *
 .woocommerce .star-rating {
     float: right;
