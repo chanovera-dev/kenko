@@ -47,6 +47,34 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
     echo '<main id="main"><div class="container"><section class="section">';
+	echo '
+	<section class="single-post-pagination">
+		<div class="left">';
+			global $post;
+
+			// Obtener el producto anterior
+			$prev_product = wc_get_product(get_previous_post()->ID);
+			if ($prev_product) :
+				echo '
+				<a href="' .esc_url(get_permalink($prev_product->get_id())) . '" class="previous-post-link">
+					<i class="nm-font nm-font-media-play flip"></i>
+				</a>';
+			endif;
+		echo '
+		</div>
+		<div class="right">';
+
+			// Obtener el producto siguiente
+			$next_product = wc_get_product(get_next_post()->ID);
+			if ($next_product) :
+				echo '
+				<a href="' . esc_url(get_permalink($next_product->get_id())) . '" class="next-post-link">
+					<i class="nm-font nm-font-media-play"></i>
+				</a>';
+			endif;
+			echo '
+   		</div>
+	</section>';
 }
 add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper', 10);
 
