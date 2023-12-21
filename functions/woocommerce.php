@@ -91,3 +91,15 @@ function agregar_contenido_antes_de_tabs() {
     <?php
 }
 add_action('woocommerce_after_single_product_summary', 'agregar_contenido_antes_de_tabs', 9);
+
+// Función para deshabilitar la información del producto antes de las pestañas
+function deshabilitar_meta_producto_anterior_tabs() {
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+}
+add_action('woocommerce_before_single_product', 'deshabilitar_meta_producto_anterior_tabs');
+
+// Función para habilitar la información del producto después de las pestañas
+function habilitar_meta_producto_despues_tabs() {
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+}
+add_action('woocommerce_after_single_product', 'habilitar_meta_producto_despues_tabs');
