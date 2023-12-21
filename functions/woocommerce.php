@@ -52,7 +52,7 @@ add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper'
 
 // Agregar contenido HTML después del gancho woocommerce_output_content_wrapper
 function my_custom_content_after_wrapper() {
-    echo '</div></main>';
+    echo '</section></div></main>';
 }
 add_action('woocommerce_after_main_content', 'my_custom_content_after_wrapper', 10);
 
