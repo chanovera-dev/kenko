@@ -2,6 +2,8 @@
 
 /* breadcrumb */
 #main .container.breadcrumb-wrapper{background-color:var(--wp--preset--color--line); padding-top:20px;}
+#main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb{display:inline-flex; flex-wrap:wrap; gap:7px 0; font-size:14px;}
+#main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb a{color:var(--wp--preset--color--title);}
 /* star rating *
 .woocommerce .star-rating {
     float: right;
