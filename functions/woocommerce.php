@@ -44,3 +44,13 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 // C O N T E N E D O R E S   P A R A    S I N G L E    P R O D U C T
 
+// Agrega un contenedor para el hook woocommerce_output_all_notices
+add_action('woocommerce_before_main_content', 'container_breadcrumb', 19);
+
+function container_notices() {
+    echo '
+	<div class="container">';
+    	add_action('woocommerce_breadcrumb', 'container_breadcrumb', 20);
+    echo '
+	</div>';
+}
