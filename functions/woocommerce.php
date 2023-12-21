@@ -46,7 +46,7 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
-    echo '<main id="main"><div class="container">';
+    echo '<main id="main"><div class="container"><section class="section">';
 }
 add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper', 10);
 
@@ -58,7 +58,7 @@ add_action('woocommerce_after_main_content', 'my_custom_content_after_wrapper', 
 
 // Agregar contenido HTML antes de las migas de pan (breadcrumb)
 function my_custom_content_before_breadcrumb() {
-    echo '<div class="container">';
+    echo '</section></div><div class="container">';
 }
 add_action('woocommerce_before_main_content', 'my_custom_content_before_breadcrumb', 20);
 
