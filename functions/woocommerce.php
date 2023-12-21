@@ -44,24 +44,34 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 // C O N T E N E D O R E S   P A R A    S I N G L E    P R O D U C T
 
-/* contenedor para las notificaciones */
-function container_before_notices() {
+// Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
+function my_custom_content_before_wrapper() {
     echo '<div class="container">';
 }
-add_action('woocommerce_before_main_content', 'container_before_notices', 9);
+add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper', 10);
 
-function container_after_notices() {
+// Agregar contenido HTML después del gancho woocommerce_output_content_wrapper
+function my_custom_content_after_wrapper() {
     echo '</div>';
 }
-add_action('woocommerce_after_main_content', 'container_after_notices', 11);
+add_action('woocommerce_after_main_content', 'my_custom_content_after_wrapper', 10);
 
-/* contenedor para las migas de pan */
-function container_before_breadcrumb() {
+// Agregar contenido HTML antes de las migas de pan (breadcrumb)
+function my_custom_content_before_breadcrumb() {
     echo '<div class="container">';
 }
-add_action('woocommerce_before_main_content', 'container_before_breadcrumb', 19);
+add_action('woocommerce_before_main_content', 'my_custom_content_before_breadcrumb', 20);
 
-function container_after_breadcrumb() {
-    echo '</div>';
+// Personalizar el gancho woocommerce_output_content_wrapper para excluir las migas de pan
+remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+add_action('woocommerce_before_main_content', 'my_custom_content_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_custom_content_wrapper_end', 10);
+
+function my_custom_content_wrapper_start() {
+    echo '<div id="primary" class="content-area">';
+    echo '<main id="main" class="site-main" role="main">';
 }
-add_action('woocommerce_after_main_content', 'container_after_breadcrumb', 21);
+
+function my_custom_content_wrapper_end() {
+    echo '</main></div>';
+}
