@@ -88,5 +88,5 @@ function my_custom_content_single_product_end() {}
 function my_custom_content_before_single_product_summary() {
     echo '</section></div><div class="container"><section class="section">';
 }
-add_action('woocommerce_after_single_product_summary', 'my_custom_content_before_single_product_summary', 10);
+add_action('woocommerce_output_product_data_tabs', 'my_custom_content_before_single_product_summary', 10);
 
