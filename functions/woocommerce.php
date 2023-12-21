@@ -70,8 +70,17 @@ add_action('woocommerce_after_main_content', 'my_custom_content_wrapper_end', 10
 function my_custom_content_wrapper_start() {}
 function my_custom_content_wrapper_end() {}
 
-// agregar contenido HTML antes del producto
-function my_custom_content_before_product_wrapper() {
-	echo '</section></div><div class="container"><section class="section">';
+// Agregar contenido HTML antes del gancho woocommerce_before_single_product
+function my_custom_content_before_single_product() {
+    echo '</section></div><div class="container"><section class="section">';
 }
-add_action('woocommerce_output_all_notices', 'my_custom_content_before_product_wrapper', 10);
+add_action('woocommerce_before_single_product', 'my_custom_content_before_single_product', 10);
+
+// Personalizar el gancho woocommerce_before_single_product
+remove_action('woocommerce_before_single_product', 'wc_print_notices', 10);
+add_action('woocommerce_before_single_product', 'my_custom_content_single_product_start', 10);
+add_action('woocommerce_after_single_product', 'my_custom_content_single_product_end', 10);
+
+function my_custom_content_single_product_start() {}
+
+function my_custom_content_single_product_end() {}
