@@ -68,10 +68,9 @@ add_action('woocommerce_before_main_content', 'my_custom_content_wrapper_start',
 add_action('woocommerce_after_main_content', 'my_custom_content_wrapper_end', 10);
 
 function my_custom_content_wrapper_start() {
-    echo '';
-    echo '';
+    echo '<main id="main" class="site-main" role="main">';
 }
 
 function my_custom_content_wrapper_end() {
-    echo '';
+    echo '</main>';
 }
