@@ -100,7 +100,7 @@ function my_custom_content_wrapper_end() {}
 
 // Agregar contenido HTML antes del gancho woocommerce_before_single_product
 function my_custom_content_before_single_product() {
-    echo '</section></div><div class="container"><section class="section">';
+    echo '</section></div><div class="container product-wrapper"><section class="section">';
 }
 add_action('woocommerce_before_single_product', 'my_custom_content_before_single_product', 10);
 
