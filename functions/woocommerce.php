@@ -44,13 +44,24 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 // C O N T E N E D O R E S   P A R A    S I N G L E    P R O D U C T
 
-/* contenedor para los mesajes */
+/* contenedor para las notificaciones */
 function container_before_notices() {
     echo '<div class="container">';
 }
-add_action('woocommerce_before_main_content', 'container_before_notices', 10);
+add_action('woocommerce_before_main_content', 'container_before_notices', 9);
 
 function container_after_notices() {
     echo '</div>';
 }
-add_action('woocommerce_after_main_content', 'container_after_notices', 10);
+add_action('woocommerce_after_main_content', 'container_after_notices', 11);
+
+/* contenedor para las migas de pan */
+function container_before_breadcrumb() {
+    echo '<div class="container">';
+}
+add_action('woocommerce_before_main_content', 'container_before_breadcrumb', 19);
+
+function container_after_breadcrumb() {
+    echo '</div>';
+}
+add_action('woocommerce_after_main_content', 'container_after_breadcrumb', 21);
