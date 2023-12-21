@@ -29,7 +29,7 @@ function kenko_theme_custom_breakpoints() {
                 /* contacto */
                 --height--map:340px;
 
-                /* carrito */
+                /* panel carrito */
                 --width--cart-panel:360px;
                 --padding-cart-panel:28px 21px;
                 --padding-close--cart-panel:28px;
@@ -61,7 +61,7 @@ function kenko_theme_custom_breakpoints() {
                     /* contacto */
                     --height--map:500px;
 
-                    /* carrito */
+                    /* panel carrito */
                     --width--cart-panel:410px;
                     --padding-cart-panel:28px 37px;
                 }
@@ -139,7 +139,7 @@ function kenko_theme_custom_breakpoints() {
                     --padding-top--post-wrapper:68px;
                     --width-single-post-pagination:min(100% - 90px);
 
-                    /* carrito */
+                    /* panel carrito */
                     --padding-cart-panel:32px 37px;
                     --padding-close--cart-panel:32px;
                     --spacing-cart:59.88px;
