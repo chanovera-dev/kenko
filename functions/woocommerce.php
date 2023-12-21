@@ -69,3 +69,9 @@ add_action('woocommerce_after_main_content', 'my_custom_content_wrapper_end', 10
 
 function my_custom_content_wrapper_start() {}
 function my_custom_content_wrapper_end() {}
+
+// agregar contenido HTML antes del producto
+function my_custom_content_before_product_wrapper() {
+	echo '</section></div><div class="container"><section class="section">';
+}
+add_action('woocommercebefore_single_product', 'my_custom_content_before_product_wrapper', 15);
