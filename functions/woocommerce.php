@@ -82,7 +82,12 @@ add_action('woocommerce_before_single_product', 'my_custom_content_single_produc
 add_action('woocommerce_after_single_product', 'my_custom_content_single_product_end', 10);
 
 function my_custom_content_single_product_start() {}
-function my_custom_content_single_product_end() {
-	echo 'bla';
-}
+function my_custom_content_single_product_end() {}
 
+// Personalizar el gancho woocommerce_before_single_product_tabs
+remove_action('woocommerce_before_single_product_tabs', 'woocommerce_output_product_data_tabs', 10);
+add_action('woocommerce_before_single_product_tabs', 'my_custom_content_before_single_product_tabs', 10);
+
+function my_custom_content_before_single_product_tabs() {
+    echo '</section></div><div class="container"><section class="section">';
+}
