@@ -46,13 +46,13 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
-    echo '<div class="container">';
+    echo '<main id="main"><div class="container">';
 }
 add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper', 10);
 
 // Agregar contenido HTML después del gancho woocommerce_output_content_wrapper
 function my_custom_content_after_wrapper() {
-    echo '</div>';
+    echo '</div></main>';
 }
 add_action('woocommerce_after_main_content', 'my_custom_content_after_wrapper', 10);
 
@@ -67,10 +67,5 @@ remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wra
 add_action('woocommerce_before_main_content', 'my_custom_content_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'my_custom_content_wrapper_end', 10);
 
-function my_custom_content_wrapper_start() {
-    echo '<main id="main" class="site-main" role="main">';
-}
-
-function my_custom_content_wrapper_end() {
-    echo '</main>';
-}
+function my_custom_content_wrapper_start() {}
+function my_custom_content_wrapper_end() {}
