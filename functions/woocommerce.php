@@ -102,4 +102,4 @@ add_action('woocommerce_before_single_product', 'deshabilitar_meta_producto_ante
 function habilitar_meta_producto_despues_tabs() {
     add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 }
-add_action('woocommerce_after_single_product', 'habilitar_meta_producto_despues_tabs');
+add_action('woocommerce_after_single_product', 'habilitar_meta_producto_despues_tabs', 20);
