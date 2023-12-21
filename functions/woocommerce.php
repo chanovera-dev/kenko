@@ -58,7 +58,7 @@ add_action('woocommerce_after_main_content', 'my_custom_content_after_wrapper', 
 
 // Agregar contenido HTML antes de las migas de pan (breadcrumb)
 function my_custom_content_before_breadcrumb() {
-    echo '</section></div><div class="container">';
+    echo '</section></div><div class="container"><section class="section">';
 }
 add_action('woocommerce_before_main_content', 'my_custom_content_before_breadcrumb', 20);
 
