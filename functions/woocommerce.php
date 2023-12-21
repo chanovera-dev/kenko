@@ -91,3 +91,6 @@ function agregar_contenido_antes_de_tabs() {
     <?php
 }
 add_action('woocommerce_after_single_product_summary', 'agregar_contenido_antes_de_tabs', 9);
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+add_action('woocommerce_after_single_product_summary', 'woocommerce_template_single_meta', 25);
