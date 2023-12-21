@@ -4,6 +4,10 @@
 #main .container.breadcrumb-wrapper{background-color:var(--wp--preset--color--line); padding-top:20px;}
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb{display:inline-flex; flex-wrap:wrap; gap:0 7px; font-size:14px;}
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb a{color:var(--wp--preset--color--title);}
+
+/* datos del producto */
+#main .container.product-wrapper{background-color:var(--wp--preset--color--line);}
+
 /* star rating *
 .woocommerce .star-rating {
     float: right;
