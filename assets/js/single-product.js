@@ -7,7 +7,7 @@ var classes = commentRating.classList;
 // Itera a través de las clases para encontrar la que tiene la propiedad active
 for (var i = 0; i < classes.length; i++) {
   switch (classes[i]) {
-    case 'star-5':
+    case 'star-5 active':
       document.querySelector('.star-5').style.color = '#dc9814';
       document.querySelector('.star-4').style.color = '#dc9814';
       document.querySelector('.star-3').style.color = '#dc9814';
@@ -15,25 +15,25 @@ for (var i = 0; i < classes.length; i++) {
       document.querySelector('.star-1').style.color = '#dc9814';
       break;
 
-    case 'star-4':
+    case 'star-4 active':
       document.querySelector('.star-4').style.color = '#dc9814';
       document.querySelector('.star-3').style.color = '#dc9814';
       document.querySelector('.star-2').style.color = '#dc9814';
       document.querySelector('.star-1').style.color = '#dc9814';
       break;
 
-    case 'star-3':
+    case 'star-3 active':
       document.querySelector('.star-3').style.color = '#dc9814';
       document.querySelector('.star-2').style.color = '#dc9814';
       document.querySelector('.star-1').style.color = '#dc9814';
       break;
 
-    case 'star-2':
+    case 'star-2 active':
     document.querySelector('.star-2').style.color = '#dc9814';
     document.querySelector('.star-1').style.color = '#dc9814';
     break;
 
-    case 'star-1':
+    case 'star-1 active':
       document.querySelector('.star-1').style.color = '#dc9814';
       break;
 
