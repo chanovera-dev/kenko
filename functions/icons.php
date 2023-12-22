@@ -666,13 +666,6 @@ function kenko_theme_custom_icons() {
                 content: "\f1bd"
             }
 
-
-            /* calificación con estrellas */
-            .comment-form-rating .stars.selected span a.star-1.active{color:#dc9814!important;}
-            .comment-form-rating .stars.selected span a.star-2.active{color:#dc9814!important;}
-            .comment-form-rating .stars.selected span a.star-3.active{color:#dc9814!important;}
-            .comment-form-rating .stars.selected span a.star-4.active{color:#dc9814!important;}
-            .comment-form-rating .stars.selected span a.star-5.active{color:#dc9814!important;}
     <?php
 }
 add_action('wp_head', 'kenko_theme_custom_icons');
