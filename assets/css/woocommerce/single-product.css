@@ -100,3 +100,4 @@
 }
 
 .comment-form-rating .stars.selected span .star-1.active{color:#dc9814!important;}
+.comment-form-rating .stars.selected span :is(.star-2.active, .star-1){color:#dc9814!important;}
