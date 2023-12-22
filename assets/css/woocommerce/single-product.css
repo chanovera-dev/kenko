@@ -42,6 +42,7 @@
     .product .summary .shop_attributes tr th,.product .summary .shop_attributes tr td{font-size:inherit; padding-bottom:12px;}
     .product .summary .shop_attributes tr:last-child th,.product .summary .shop_attributes tr:last-child td{padding-bottom:0;}
     /* pestaña valoraciones */
+    .commentlist li:not(:first-child){border-top:none;}
     .commentlist li .comment_container{position:relative;}
     .commentlist li .comment_container img{border-radius:50%; position:absolute; top:0; left:0; display:var(--display--avatar);}
     .commentlist li .comment_container .comment-text{text-align:left; font-size:16px; padding-bottom:28px; border-bottom:1px solid #f0f0f0; margin:var(--margin--comment-text);}
