@@ -19,6 +19,11 @@
 .star-rating span:before{left:0; content:"\e606\e606\e606\e606\e606"; font-size:27px; color:#dc9814; letter-spacing:-5px;}
 .star-rating span {position:absolute; top:0; left:0; padding-top:26px; overflow:hidden;}
 
+/* pestañas */
+.tabs.wc-tabs{padding-left:0; padding-top:18px; list-style:none;}
+.tabs.wc-tabs li a{margin:6px 0; color:var(--wp--preset--color--text); border-bottom:1px solid transparent;}
+.tabs.wc-tabs li.active a{color:var(--wp--preset--color--title); border-bottom:1px solid var(--wp--preset--color--line);}
+
 /* star rating · puesta de calificación */
 #review_form .comment-form-rating .stars {display:inline-block; height:28px; overflow:hidden; margin-bottom:0; margin-left:-7px;}
 #review_form .comment-form-rating .stars span{display:block}
