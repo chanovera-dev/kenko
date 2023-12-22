@@ -131,7 +131,7 @@ add_action('woocommerce_after_single_product_summary', 'my_custom_single_meta_be
 
 // Agregar contenido HTML después del gancho woocommerce_output_content_wrapper
 function my_custom_single_meta_after_wrapper() {
-	echo '</section></div>';
+	echo '</section></div><div class="container"><section class="section">';
 }
 add_action('woocommerce_after_single_product_summary', 'my_custom_single_meta_after_wrapper', 25);
 
