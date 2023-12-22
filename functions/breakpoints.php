@@ -28,6 +28,8 @@ function kenko_theme_custom_breakpoints() {
                     --display--product-meta:grid;
                     /* valoraciones */
                     --display--avatar:none;
+                    --font-size--review--published-date:16px;
+                    --font-size--review--description:14px;
                     --margin--comment-text:0 0 34px 0;
 
                 /* error 404 */
@@ -69,6 +71,8 @@ function kenko_theme_custom_breakpoints() {
                         --display--product-meta:inherit;
                         /* valoraciones */
                         --display--avatar:inherit;
+                        --font-size--review--published-date:14px;
+                        --font-size--review--description:16px;
                         --margin--comment-text:0 0 34px 81px;
 
                     /* error 404 */

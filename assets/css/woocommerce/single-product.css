@@ -49,8 +49,8 @@
     .commentlist li .comment_container .comment-text .meta{display:grid;}
     .commentlist li .comment_container .comment-text .meta .woocommerce-review__author{color:var(--wp--preset--color--title); font-size:18px; font-weight:400;}
     .commentlist li .comment_container .comment-text .meta .woocommerce-review__dash{display:none;}
-    .commentlist li .comment_container .comment-text .meta .woocommerce-review__published-date{color:var(--wp--preset--color--text);}
-    .commentlist li .comment_container .comment-text .description{padding-top:19px; color:var(--wp--preset--color--text); font-size:14px;}
+    .commentlist li .comment_container .comment-text .meta .woocommerce-review__published-date{color:var(--wp--preset--color--text); font-size:var(--font-size--review--published-date);}
+    .commentlist li .comment_container .comment-text .description{padding-top:19px; color:var(--wp--preset--color--text); font-size:var(--font-size--review--description);}
 
 /* información meta */
 .meta-wrapper{padding:20px 0 18px; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; text-align:var(--text-align--meta); font-size:14px;}
