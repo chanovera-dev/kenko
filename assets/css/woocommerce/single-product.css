@@ -26,6 +26,7 @@
 .tabs.wc-tabs li.active a{color:var(--wp--preset--color--title); border-bottom:1px solid var(--wp--preset--color--line);}
     /* pestaña valoraciones */
     #tab-title-reviews a span{position:relative; top:-7px; font-size:14px; color:var(--wp--preset--color--links);}
+    .woocommerce-Reviews-title{display:none;}
 
 /* star rating · puesta de calificación */
 #review_form .comment-form-rating .stars {display:inline-block; height:28px; overflow:hidden; margin-bottom:0; margin-left:-7px;}
