@@ -123,6 +123,17 @@ add_action('woocommerce_after_single_product_summary', 'agregar_contenido_antes_
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 add_action('woocommerce_after_single_product_summary', 'woocommerce_template_single_meta', 25);
 
+// Agregar contenido HTML antes del gancho woocommerce_template_single_meta
+function my_custom_single_meta_before_wrapper() {
+	echo 'bla';
+}
+add_action('woocommerce_before_single_product_summary', 'my_custom_single_meta_before_wrapper', 25);
+
+// Agregar contenido HTML después del gancho woocommerce_output_content_wrapper
+function my_custom_single_meta_after_wrapper() {
+	echo 'bla';
+}
+add_action('woocommerce_after_single_product_summary', 'my_custom_single_meta_after_wrapper', 25);
 
 
 // quita el h2 de las pestañas de woocommerce
