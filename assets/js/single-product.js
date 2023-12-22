@@ -1,5 +1,5 @@
 // Obtén el elemento con la clase .comment-form-rating
-var commentRating = document.querySelector('.comment-form-rating');
+var commentRating = document.querySelector('.comment-form-rating stars.selected');
 
 // Obtén la lista de clases del elemento
 var classes = commentRating.classList;
