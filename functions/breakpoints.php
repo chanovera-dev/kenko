@@ -99,7 +99,8 @@ function kenko_theme_custom_breakpoints() {
                 /* single product */
                     /* pestañas */
                     .tabs.wc-tabs{display:flex; justify-content:center; gap:31px;}
-                    
+                    .tabs.wc-tabs li{height:33px;}
+
                 /* contacto */
                 .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:226px 1fr;}
                 .contact-page .info-and-contact--wrapper .contact .wpcf7-form{grid-template-columns:1fr 1fr;}
