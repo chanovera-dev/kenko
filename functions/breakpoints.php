@@ -26,6 +26,9 @@ function kenko_theme_custom_breakpoints() {
                     /* info meta */
                     --text-align--meta:left;
                     --display--product-meta:grid;
+                    /* valoraciones */
+                    --display--avatar:none;
+                    --margin--comment-text:0 0 34px 0;
 
                 /* error 404 */
                 --padding-not-found:46px 0 55px;
@@ -64,6 +67,9 @@ function kenko_theme_custom_breakpoints() {
                         /* info meta */
                         --text-align--meta:center;
                         --display--product-meta:inherit;
+                        /* valoraciones */
+                        --display--avatar:inherit;
+                        --margin--comment-text:0 0 34px 81px;
 
                     /* error 404 */
                     --padding-not-found:68px 0 82px;
