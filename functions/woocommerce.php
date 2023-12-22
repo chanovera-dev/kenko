@@ -125,13 +125,13 @@ add_action('woocommerce_after_single_product_summary', 'woocommerce_template_sin
 
 // Agregar contenido HTML antes del gancho woocommerce_template_single_meta
 function my_custom_single_meta_before_wrapper() {
-	echo 'bla arriba';
+	echo '</section></div><div class="container meta-wrapper"><section class="section">';
 }
 add_action('woocommerce_after_single_product_summary', 'my_custom_single_meta_before_wrapper', 24);
 
 // Agregar contenido HTML después del gancho woocommerce_output_content_wrapper
 function my_custom_single_meta_after_wrapper() {
-	echo 'bla abajo';
+	echo '</section></div>';
 }
 add_action('woocommerce_after_single_product_summary', 'my_custom_single_meta_after_wrapper', 25);
 
