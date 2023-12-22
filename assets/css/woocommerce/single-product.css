@@ -76,12 +76,14 @@
     overflow: hidden;
 }
 
-#review_form .comment-form-rating .stars:hover a,#review_form .comment-form-rating .stars.has-active a {
+#review_form .comment-form-rating .stars:hover a,
+#review_form .comment-form-rating .stars.has-active a {
     color: #dc9814;
 }
 
-#review_form .comment-form-rating .stars a:hover~a,#review_form .comment-form-rating .stars.has-active a.active~a {
-    color: #dc9814;
+#review_form .comment-form-rating .stars a:hover ~ a,
+#review_form .comment-form-rating .stars.has-active a.active ~ a {
+    color: inherit;
 }
 
 #review_form .comment-form-rating .stars a:before {
