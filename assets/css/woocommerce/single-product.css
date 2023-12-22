@@ -32,6 +32,9 @@
     #tab-title-reviews a span{position:relative; top:-7px; font-size:14px; color:var(--wp--preset--color--links);}
     #comments .woocommerce-Reviews-title{display:none;}
 
+/* información meta */
+.meta-wrapper{padding:20px 0 18px; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; text-align:center;}
+
 /* star rating · puesta de calificación */
 #review_form .comment-form-rating .stars {display:inline-block; height:28px; overflow:hidden; margin-bottom:0; margin-left:-7px;}
 #review_form .comment-form-rating .stars span{display:block}
