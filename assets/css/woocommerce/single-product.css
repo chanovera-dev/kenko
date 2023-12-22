@@ -100,7 +100,7 @@
 }
 
 .comment-form-rating .stars.selected span .star-1.active{color:#dc9814!important;}
-.comment-form-rating .stars.selected span .star-1.active + :is(.star-2, .star-3, .star-4, .star-5){color:red!important;}
+.comment-form-rating .stars.selected span :is(.star-2, .star-3, .star-4, .star-5) + .star-1.active{color:red!important;}
 .comment-form-rating .stars.selected span :is(.star-2.active, .star-1):not(.star-3, .star-4, .star-5){color:#dc9814!important;}
 .comment-form-rating .stars.selected span :is(.star-3.active, .star-2, .star-1):not(.star-4, .star-5){color:#dc9814!important;}
 .comment-form-rating .stars.selected span :is(.star-4.active, .star-3, .star-2, .star-1):not(.star-5){color:#dc9814!important;}
