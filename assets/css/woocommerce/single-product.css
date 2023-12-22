@@ -98,3 +98,5 @@
     content: "\e606";
     text-indent: 0;
 }
+
+.comment-form-rating .stars.selected span .star-1.active{color:#dc9814;}
