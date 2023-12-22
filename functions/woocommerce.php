@@ -122,3 +122,8 @@ add_action('woocommerce_after_single_product_summary', 'agregar_contenido_antes_
 
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 add_action('woocommerce_after_single_product_summary', 'woocommerce_template_single_meta', 25);
+
+
+
+// quita el h2 de las pestañas de woocommerce
+add_filter( 'woocommerce_product_description_heading', '__return_null' );
