@@ -665,7 +665,7 @@ function kenko_theme_custom_icons() {
             .nm-font-deviantart:before {
                 content: "\f1bd"
             }
-
+        </style>        
     <?php
 }
 add_action('wp_head', 'kenko_theme_custom_icons');
