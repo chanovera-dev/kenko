@@ -22,8 +22,8 @@
 /* pestañas */
 .tabs.wc-tabs{padding-left:0; padding-top:18px; list-style:none;}
 .tabs.wc-tabs li{display:flex; align-items:center; height:38.59px;}
-.tabs.wc-tabs li a{color:var(--wp--preset--color--text); border-bottom:1px solid transparent; display:block; width:fit-content;}
-.tabs.wc-tabs li.active a{color:var(--wp--preset--color--title); border-bottom:1px solid var(--wp--preset--color--line);}
+.tabs.wc-tabs li a{color:var(--wp--preset--color--text); border-bottom:1px solid transparent; display:block; width:fit-content; display:flex; align-items:center; height:33px;}
+.tabs.wc-tabs li.active a{color:var(--wp--preset--color--title); border-bottom-color:#e0e0e0;}
 .woocommerce-Tabs-panel{padding:var(--padding--tabs-panel);}
 .woocommerce-Tabs-panel > *:not(:last-child){margin-bottom:24px;}
 .woocommerce-Tabs-panel > :is(ol, ul){padding-left:15px;}
