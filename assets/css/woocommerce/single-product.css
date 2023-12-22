@@ -8,6 +8,51 @@
 /* datos del producto */
 #main .container.product-wrapper{background-color:var(--wp--preset--color--line);}
 
+/* summary */
+.star-rating {
+    position: relative;
+    display: inline-block;
+    line-height: 26px;
+    width: 100px;
+    height: 26px;
+    overflow: hidden
+}
+
+.star-rating:before,.star-rating span:before {
+    position: absolute;
+    top: 0;
+    font-family: 'nm-font';
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 26px
+}
+
+.star-rating:before {
+    left: 9px;
+    content: "\e61f\e61f\e61f\e61f\e61f";
+    font-size: 5px;
+    color: #aaa;
+    letter-spacing: 14px
+}
+
+.star-rating span:before {
+    left: 0;
+    content: "\e606\e606\e606\e606\e606";
+    font-size: 24px;
+    color: #dc9814;
+    letter-spacing: -5px
+}
+
+.star-rating span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 26px;
+    overflow: hidden
+}
+
 /* star rating *
 .woocommerce .star-rating {
     float: right;
