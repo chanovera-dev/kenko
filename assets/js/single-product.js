@@ -1,12 +1,32 @@
-// Selecciona todas las estrellas
-var stars = document.querySelectorAll('.comment-form-rating .stars span');
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtén el elemento con la clase "star-1"
+    var star1Element = document.querySelector('.comment-form-rating .stars span .star-1');
+    var star2Element = document.querySelector('.comment-form-rating .stars span .star-2');
+    var star3Element = document.querySelector('.comment-form-rating .stars span .star-3');
+    var star4Element = document.querySelector('.comment-form-rating .stars span .star-4');
+    var star5Element = document.querySelector('.comment-form-rating .stars span .star-5');
 
-// Asigna un evento de clic a cada estrella
-stars.forEach(function(star, index) {
-  star.addEventListener('click', function() {
-    // Restablece el color de todas las estrellas
-    stars.forEach(function(s, i) {
-      s.style.color = i <= index ? '#dc9814' : ''; // Establece el color solo para las estrellas hasta la calificación actual
-    });
-  });
+    // Verifica si tiene la clase "selected"
+    if (star5Element.classList.contains('selected')) {
+        // La clase "selected" está presente
+        star5Element.style.color = "#dc9814";
+        star4Element.style.color = "#dc9814";
+        star3Element.style.color = "#dc9814";
+        star2Element.style.color = "#dc9814";
+        star1Element.style.color = "#dc9814";
+    } else if (star4Element.classList.contains('selected')) {
+        star4Element.style.color = "#dc9814";
+        star3Element.style.color = "#dc9814";
+        star2Element.style.color = "#dc9814";
+        star1Element.style.color = "#dc9814";
+    } else if (star3Element.classList.contains('selected')) {
+        star3Element.style.color = "#dc9814";
+        star2Element.style.color = "#dc9814";
+        star1Element.style.color = "#dc9814";
+    } else if (star2Element.classList.contains('selected')) {
+        star2Element.style.color = "#dc9814";
+        star1Element.style.color = "#dc9814";
+    } else if (star1Element.classList.contains('selected')) {
+        star1Element.style.color = "#dc9814";
+    } else {}
 });
