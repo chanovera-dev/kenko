@@ -129,3 +129,11 @@ add_action('woocommerce_after_single_product_summary', 'woocommerce_template_sin
 add_filter( 'woocommerce_product_description_heading', '__return_null' );
 add_filter( 'woocommerce_product_additional_information_heading', '__return_null' );
 add_filter( 'woocommerce_product_reviews_heading', '__return_null' );
+
+// personalizar la pestaña valoraciones
+// Quitar el h2 de las reseñas en pestañas de WooCommerce
+add_filter( 'woocommerce_product_reviews_tab_title', 'remove_reviews_tab_heading' );
+
+function remove_reviews_tab_heading( $title ) {
+    return sprintf( __( 'valoraciones <span>%d</span>', 'woocommerce' ), get_comments_number() );
+}
