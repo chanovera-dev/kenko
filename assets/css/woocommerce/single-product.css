@@ -9,7 +9,7 @@
 #main .container.product-wrapper{background-color:var(--wp--preset--color--line);}
 
 /* summary */
-.star-rating {
+.woocommerce-product-rating .star-rating {
     position: relative;
     display: inline-block;
     line-height: 26px;
@@ -18,7 +18,8 @@
     overflow: hidden
 }
 
-.star-rating:before,.star-rating span:before {
+.woocommerce-product-rating .star-rating:before,
+.woocommerce-product-rating .star-rating span:before {
     position: absolute;
     top: 0;
     font-family: 'nm-font';
@@ -29,7 +30,7 @@
     line-height: 26px
 }
 
-.star-rating:before {
+.woocommerce-product-rating .star-rating:before {
     left: 9px;
     content: "\e61f\e61f\e61f\e61f\e61f";
     font-size: 7px;
@@ -37,7 +38,7 @@
     letter-spacing: 15px
 }
 
-.star-rating span:before {
+.woocommerce-product-rating .star-rating span:before {
     left: 0;
     content: "\e606\e606\e606\e606\e606";
     font-size: 27px;
@@ -45,7 +46,7 @@
     letter-spacing: -5px
 }
 
-.star-rating span {
+.woocommerce-product-rating .star-rating span {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +54,7 @@
     overflow: hidden
 }
 
-/* star rating *
+/* star rating · calificación */
 .woocommerce .star-rating {
     float: right;
     overflow: hidden;
@@ -66,8 +67,8 @@
 }
 
 .woocommerce .star-rating::before {
-    content: "sssss";
-    color: #cfc8d8;
+    content: "\e606\e606\e606\e606\e606";
+    color: #aaa;
     float: left;
     top: 0;
     left: 0;
@@ -84,7 +85,7 @@
 }
 
 .woocommerce .star-rating span::before {
-    content: "SSSSS";
+    content: "\e606\e606\e606\e606\e606";
     top: 0;
     position: absolute;
     left: 0
