@@ -96,6 +96,10 @@ function kenko_theme_custom_breakpoints() {
                     .comment-form{display:grid; grid-template-columns:1fr 1fr; gap:0 30px;}
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
 
+                /* single product */
+                    /* pestañas */
+                    .tabs.wc-tabs{display:flex; justify-content:center; gap:31px;}
+                    
                 /* contacto */
                 .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:226px 1fr;}
                 .contact-page .info-and-contact--wrapper .contact .wpcf7-form{grid-template-columns:1fr 1fr;}
