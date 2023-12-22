@@ -128,7 +128,8 @@ add_action('woocommerce_after_single_product_summary', 'woocommerce_template_sin
 // quita el h2 de las pestañas de woocommerce
 add_filter( 'woocommerce_product_description_heading', '__return_null' );
 add_filter( 'woocommerce_product_additional_information_heading', '__return_null' );
-add_filter( 'woocommerce_product_reviews_heading', '__return_null' );
+add_filter( 'woocommerce_product_reviews_title', 'remove_reviews_title' );
+function remove_reviews_title( $title ) { return ''; }
 
 // personalizar la pestaña valoraciones
 add_filter( 'woocommerce_product_reviews_tab_title', 'remove_reviews_tab_heading' );
