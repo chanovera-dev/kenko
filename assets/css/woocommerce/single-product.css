@@ -39,7 +39,9 @@
     .shop_attributes tr th,.shop_attributes tr td {
         font-size: 16px;
         line-height: 1.6;
-        padding-bottom: 19px
+        padding-bottom: 19px;
+        text-align: left;
+        font-weight: 400;
     }
     
     .shop_attributes tr:last-child th,.shop_attributes tr:last-child td {
