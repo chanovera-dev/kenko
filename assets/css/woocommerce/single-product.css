@@ -31,6 +31,46 @@
     /* pestaña valoraciones */
     #tab-title-reviews a span{position:relative; top:-7px; font-size:14px; color:var(--wp--preset--color--links);}
     #comments .woocommerce-Reviews-title{display:none;}
+    /* pestaña informqción adicional */
+    .shop_attributes {
+        width: 100%
+    }
+    
+    .shop_attributes tr th,.shop_attributes tr td {
+        font-size: 16px;
+        line-height: 1.6;
+        padding-bottom: 19px
+    }
+    
+    .shop_attributes tr:last-child th,.shop_attributes tr:last-child td {
+        padding-bottom: 0
+    }
+    
+    .shop_attributes th {
+        color: #282828;
+        width: 23%;
+        min-width: 120px;
+        padding-right: 10px
+    }
+    
+    .shop_attributes td {
+        width: 77%
+    }
+    
+    .product .summary .nm-additional-information-inner {
+        padding-top: 2px;
+        padding-bottom: 2px
+    }
+    
+    .product .summary .shop_attributes tr th,.product .summary .shop_attributes tr td {
+        font-size: inherit;
+        padding-bottom: 12px
+    }
+    
+    .product .summary .shop_attributes tr:last-child th,.product .summary .shop_attributes tr:last-child td {
+        padding-bottom: 0
+    }
+    
 
 /* información meta */
 .meta-wrapper{padding:20px 0 18px; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; text-align:var(--text-align--meta); font-size:14px;}
