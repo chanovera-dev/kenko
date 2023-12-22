@@ -25,7 +25,8 @@
 .tabs.wc-tabs li a{color:var(--wp--preset--color--text); border-bottom:1px solid transparent; display:block; width:fit-content;}
 .tabs.wc-tabs li.active a{color:var(--wp--preset--color--title); border-bottom:1px solid var(--wp--preset--color--line);}
 .woocommerce-Tabs-panel{padding:var(--padding--tabs-panel);}
-.woocommerce-Tabs-panel *:not(:last-child){margin-bottom:24px;}
+.woocommerce-Tabs-panel > *:not(:last-child){margin-bottom:24px;}
+.woocommerce-Tabs-panel > :is(ol, ul){padding-left:15px;}
     /* pestaña valoraciones */
     #tab-title-reviews a span{position:relative; top:-7px; font-size:14px; color:var(--wp--preset--color--links);}
     #comments .woocommerce-Reviews-title{display:none;}
