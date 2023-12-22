@@ -9,7 +9,7 @@
 #main .container.product-wrapper{background-color:var(--wp--preset--color--line);}
 
 /* summary */
-.woocommerce-product-rating .star-rating {
+.star-rating {
     position: relative;
     display: inline-block;
     line-height: 26px;
@@ -18,8 +18,8 @@
     overflow: hidden;
 }
 
-.woocommerce-product-rating .star-rating:before,
-.woocommerce-product-rating .star-rating span:before {
+.star-rating:before,
+.star-rating span:before {
     position: absolute;
     top: 0;
     font-family: 'nm-font';
@@ -30,7 +30,7 @@
     line-height: 26px;
 }
 
-.woocommerce-product-rating .star-rating:before {
+.star-rating:before {
     left: 9px;
     content: "\e61f\e61f\e61f\e61f\e61f";
     font-size: 7px;
@@ -38,7 +38,7 @@
     letter-spacing: 15px;
 }
 
-.woocommerce-product-rating .star-rating span:before {
+.star-rating span:before {
     left: 0;
     content: "\e606\e606\e606\e606\e606";
     font-size: 27px;
@@ -46,7 +46,7 @@
     letter-spacing: -5px;
 }
 
-.woocommerce-product-rating .star-rating span {
+.star-rating span {
     position: absolute;
     top: 0;
     left: 0;
