@@ -13,7 +13,7 @@
     position: relative;
     display: inline-block;
     line-height: 26px;
-    width: 100px;
+    width: 116px;
     height: 26px;
     overflow: hidden
 }
@@ -32,15 +32,15 @@
 .star-rating:before {
     left: 9px;
     content: "\e61f\e61f\e61f\e61f\e61f";
-    font-size: 5px;
+    font-size: 7px;
     color: #aaa;
-    letter-spacing: 14px
+    letter-spacing: 15px
 }
 
 .star-rating span:before {
     left: 0;
     content: "\e606\e606\e606\e606\e606";
-    font-size: 24px;
+    font-size: 27px;
     color: #dc9814;
     letter-spacing: -5px
 }
