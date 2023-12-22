@@ -27,7 +27,8 @@
 .woocommerce-Tabs-panel{padding:var(--padding--tabs-panel);}
 .woocommerce-Tabs-panel > *:not(:last-child){margin-bottom:24px;}
 .woocommerce-Tabs-panel > :is(ol, ul){padding-left:15px;}
-.woocommerce-Tabs-panel--description{width:var(--width--tab-description); margin-inline:auto;}
+.woocommerce-Tabs-panel--description,
+.commentlist{width:var(--width--tab-description); margin-inline:auto;}
     /* pestaña valoraciones */
     #tab-title-reviews a span{position:relative; top:-7px; font-size:14px; color:var(--wp--preset--color--links);}
     #comments .woocommerce-Reviews-title{display:none;}
