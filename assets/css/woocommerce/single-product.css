@@ -45,7 +45,8 @@
     .commentlist li:not(:first-child){border-top:none;}
     .commentlist li .comment_container{position:relative;}
     .commentlist li .comment_container img{border-radius:50%; position:absolute; top:0; left:0; display:var(--display--avatar);}
-    .commentlist li .comment_container .comment-text{text-align:left; font-size:16px; padding-bottom:28px; border-bottom:1px solid #f0f0f0; margin:var(--margin--comment-text);}
+    .commentlist li .comment_container .comment-text{text-align:left; font-size:16px; padding-bottom:28px; margin:var(--margin--comment-text);}
+    .commentlist li:not(:last-child) .comment_container .comment-text{border-bottom:1px solid #f0f0f0;}
     .commentlist li .comment_container .comment-text .star-rating{position:absolute; top:0; right:0;}
     .commentlist li .comment_container .comment-text .meta{display:grid;}
     .commentlist li .comment_container .comment-text .meta .woocommerce-review__author{color:var(--wp--preset--color--title); font-size:18px; font-weight:400;}
