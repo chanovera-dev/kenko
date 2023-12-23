@@ -47,12 +47,6 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 // quita la equita de de oferta
 remove_action ('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
 
-add_filter('woocommerce_template_single_meta', 'quitar_valoraciones_summary');
-
-function quitar_valoraciones_summary() {
-    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
-}
-
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
     echo '<main id="main"><div class="container breadcrumb-wrapper"><section class="section breadcrumb-and-pagination">';

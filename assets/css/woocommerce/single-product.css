@@ -18,6 +18,8 @@
 .star-rating:before{left:9px; content:"\e61f\e61f\e61f\e61f\e61f"; font-size:7px; color:#aaa; letter-spacing:15px;}
 .star-rating span:before{left:0; content:"\e606\e606\e606\e606\e606"; font-size:27px; color:#dc9814; letter-spacing:-5px;}
 .star-rating span {position:absolute; top:0; left:0; padding-top:26px; overflow:hidden;}
+/* quita el contador de cantidad de valoraciones */
+.woocommerce-review-link{display:none;}
 
 /* pestañas */
 .tabs.wc-tabs{padding-left:0; padding-top:18px; list-style:none;}
