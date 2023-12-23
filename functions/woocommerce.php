@@ -162,5 +162,26 @@ function change_displayed_sale_price_html( $price, $product ) {
 		$sale_price = (float) $product->get_price(); 
 		$precision = 1; 
 		$saving_percentage = round( 100 - ( $sale_price / $regular_price * 100 ), 1 ) . '%'; 
-		$price .= sprintf( __('<small><span class="onsale">-%s</span></small>', 'woocommerce' ), $saving_percentage ); } return $price; 
-	}
+		$price .= sprintf( __('<small><span class="onsale">-%s</span></small>', 'woocommerce' ), $saving_percentage ); 
+	} return $price; 
+}
+
+
+
+add_action('wp_footer', 'custom_zoom_on_click');
+
+function custom_zoom_on_click() {
+    if (is_product()) {
+        ?>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('.woocommerce-product-gallery__image a').on('click', function(e) {
+                    e.preventDefault();
+                    $(this).trigger('zoom.destroy'); // Desactiva el zoom existente si lo hay
+                    $(this).zoom(); // Vuelve a activar el zoom
+                });
+            });
+        </script>
+        <?php
+    }
+}
