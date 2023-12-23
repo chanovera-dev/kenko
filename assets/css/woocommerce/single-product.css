@@ -41,7 +41,8 @@
     .product .summary .shop_attributes tr th,.product .summary .shop_attributes tr td{font-size:inherit; padding-bottom:12px;}
     .product .summary .shop_attributes tr:last-child th,.product .summary .shop_attributes tr:last-child td{padding-bottom:0;}
     /* pestaña valoraciones */
-    .commentlist{width:min(100%, 802px); margin-inline:auto;}
+    .commentlist,
+    #review_form_wrapper{width:min(100%, 802px); margin-inline:auto;}
     .commentlist li:not(:first-child){border-top:none;}
     .commentlist li .comment_container{position:relative;}
     .commentlist li .comment_container img{border-radius:50%; position:absolute; top:0; left:0; display:var(--display--avatar);}
