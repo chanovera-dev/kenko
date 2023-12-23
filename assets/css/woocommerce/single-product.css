@@ -38,6 +38,7 @@
     .product .summary .shop_attributes tr th,.product .summary .shop_attributes tr td{font-size:inherit; padding-bottom:12px;}
     .product .summary .shop_attributes tr:last-child th,.product .summary .shop_attributes tr:last-child td{padding-bottom:0;}
     /* pestaña valoraciones */
+    #comments{padding:0;}
     #tab-title-reviews a span{position:relative; top:-7px; font-size:14px; color:var(--wp--preset--color--links);}
     #comments .woocommerce-Reviews-title{display:none;}
     .commentlist,
