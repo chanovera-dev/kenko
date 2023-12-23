@@ -11,6 +11,42 @@
 /* navegación de galería */
 .flex-control-nav{padding-left:0; list-style:none;}
 
+/* icono de zoom de la galería */
+.woocommerce-product-gallery__trigger {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    font-size: 0;
+    color: inherit;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    pointer-events: none;
+}
+
+.no-bg-color .woocommerce-product-gallery__trigger {
+    top: 21px;
+    right: 21px;
+}
+
+.has-featured-video .woocommerce-product-gallery__trigger {
+    display: none;
+}
+
+.woocommerce-product-gallery__trigger:hover {
+    color: #dc9814;
+}
+
+.woocommerce-product-gallery__trigger:after {
+    font-family: 'nm-font';
+    font-size: 20px;
+    line-height: 20px;
+    content: "\e114";
+}
+
+
 /* precio */
 .product .summary .price{line-height:1; vertical-align:top; margin-bottom:0; padding:12px 0 24px;}
 .product .summary .price.has-sale-flash{padding-top:24px;}
