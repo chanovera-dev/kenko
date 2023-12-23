@@ -164,5 +164,5 @@ function change_displayed_sale_price_html( $price, $product ) {
 		$precision = 1; 
 		$saving_percentage = round( 100 - ( $sale_price / $regular_price * 100 ), 1 ) . '%'; 
 		$price .= sprintf( __('<small><span class="snippet-dto-porcentaje">(%s)</span></small>', 'woocommerce' ), 
-		$saving_price, $saving_percentage ); } return $price; 
+		$saving_percentage ); } return $price; 
 	}
