@@ -50,6 +50,8 @@ function kenko_theme_custom_breakpoints() {
             }
 
             @media screen and (min-width: 31px) and (max-width: 767px){
+                /* galería */
+                .woocommerce-product-gallery__image a img{width:100%;}
                 /* navegación de galerías */
                 .flex-control-nav{display:flex; align-items:center; justify-content:center; gap:16px; padding:12px 18px; border-bottom:1px solid #eee;}
                 .flex-control-nav li{display:grid; place-content:center; height:28px;}
