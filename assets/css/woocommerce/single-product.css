@@ -7,7 +7,7 @@
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb a{color:var(--wp--preset--color--title);}
 
 /* datos del producto */
-#main .container.product-wrapper{background-color:var(--wp--preset--color--line);}
+#main .container.product-wrapper{background-color:var(--wp--preset--color--background);}
 
 /* navegación de galería */
 .flex-control-nav{padding-left:0; list-style:none;}
