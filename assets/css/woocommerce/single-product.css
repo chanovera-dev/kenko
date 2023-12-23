@@ -57,7 +57,7 @@
     #respond{padding-top:0;}
     #reply-title{display:block; font-size:24px; padding-bottom:34px;}
     .comment-form-rating{display:grid; margin-bottom:25px;}
-    .comment-form-rating label{color:var(--wp--preset--color--text);}
+    .comment-form-rating label{color:var(--wp--preset--color--title);}
     .required{color:var(--wp--preset--color--text);}
 
 /* información meta */
