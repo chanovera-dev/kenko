@@ -162,6 +162,7 @@ function change_displayed_sale_price_html( $price, $product ) {
 		$sale_price = (float) $product->get_price(); 
 		$saving_price = wc_price( $regular_price - $sale_price ); 
 		$precision = 1; 
-		$saving_percentage = round( 100 - ( $sale_price / $regular_price * 100 ), 1 ) . '%'; $price .= sprintf( __('<br><small><span class="porcent-desc">(%s)</span></small>', 'woocommerce' ), 
+		$saving_percentage = round( 100 - ( $sale_price / $regular_price * 100 ), 1 ) . '%'; 
+		$price .= sprintf( __('<br><small><span class="snippet-dto-ahorro"></span> <span class="snippet-dto-precio">%s</span> <span class="snippet-dto-porcentaje">(%s)</span></small>', 'woocommerce' ), 
 		$saving_price, $saving_percentage ); } return $price; 
 	}
