@@ -53,7 +53,7 @@ function kenko_theme_custom_breakpoints() {
                 /* navegación de galerías */
                 .flex-control-nav{display:flex; align-items:center; justify-content:center; gap:16px; padding:12px 18px; border-bottom:1px solid #eee;}
                 .flex-control-nav li{}
-                .flex-control-nav li img{width:6px; height:6px; border-radius:50%; background-color:#aaa;}
+                .flex-control-nav li img{width:6px; height:6px; padding: 6px 6px 0 0; border-radius:50%; background-color:#aaa;}
             }
 
             @media(min-width:768px){
