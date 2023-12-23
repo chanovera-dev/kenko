@@ -51,7 +51,7 @@ function kenko_theme_custom_breakpoints() {
 
             @media screen and (min-width: 31px) and (max-width: 767px){
                 /* navegación de galerías */
-                .flex-control-nav{display:flex; align-items:center; justify-content:center;}
+                .flex-control-nav{display:flex; align-items:center; justify-content:center; gap:16px; padding:12px 18px; border-bottom:1px solid #eee;}
                 .flex-control-nav li{}
                 .flex-control-nav li img{width:6px; height:6px; border-radius:50%; background-color:#aaa;}
             }
