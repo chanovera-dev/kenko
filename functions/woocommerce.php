@@ -160,9 +160,7 @@ function change_displayed_sale_price_html( $price, $product ) {
 	if( $product->is_on_sale() && ! is_admin() && ! $product->is_type('variable')) { 
 		$regular_price = (float) $product->get_regular_price(); 
 		$sale_price = (float) $product->get_price(); 
-		$saving_price = wc_price( $regular_price - $sale_price ); 
 		$precision = 1; 
 		$saving_percentage = round( 100 - ( $sale_price / $regular_price * 100 ), 1 ) . '%'; 
-		$price .= sprintf( __('<small><span class="snippet-dto-porcentaje">(%s)</span></small>', 'woocommerce' ), 
-		$saving_percentage ); } return $price; 
+		$price .= sprintf( __('<small><span class="onsale">%s</span></small>', 'woocommerce' ), $saving_percentage ); } return $price; 
 	}

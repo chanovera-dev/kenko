@@ -18,6 +18,7 @@
 .product .summary .price del,.product .summary .price ins{text-decoration:none; vertical-align:top;}
 .product .summary .price ins{color:#dc9814; text-decoration:none; background:none;}
 .product .summary .price del .amount{font-size:14px; color:inherit; text-decoration:line-through; vertical-align:super;}
+.product .summary .price .onsale{display:inline; position:static; font-size:13px; color:inherit; margin-left:10px; border:1px solid; vertical-align:middle; background:none;}
 
 /* star rating */
 .star-rating {position:relative; display:inline-block; line-height:26px; width:116px; height:26px; overflow:hidden;}
