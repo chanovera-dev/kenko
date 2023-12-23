@@ -12,41 +12,12 @@
 .flex-control-nav{padding-left:0; list-style:none;}
 
 /* precio */
-.product .summary .price {
-    line-height: 1;
-    vertical-align: top;
-    margin-bottom: 0;
-    padding: 12px 0 24px
-}
-
-.product .summary .price.has-sale-flash {
-    padding-top: 24px
-}
-
-.product .summary .price .amount {
-    font-size: 20px;
-    line-height: 1;
-    color: #dc9814
-}
-
-.product .summary .price del,.product .summary .price ins {
-    text-decoration: none;
-    vertical-align: top
-}
-
-.product .summary .price ins {
-    color: #dc9814;
-    text-decoration: none;
-    background: none
-}
-
-.product .summary .price del .amount {
-    font-size: 14px;
-    color: inherit;
-    text-decoration: line-through;
-    vertical-align: super
-}
-
+.product .summary .price{line-height:1; vertical-align:top; margin-bottom:0; padding:12px 0 24px;}
+.product .summary .price.has-sale-flash{padding-top:24px;}
+.product .summary .price .amount{font-size:20px; line-height:1; color:#dc9814;}
+.product .summary .price del,.product .summary .price ins{text-decoration:none; vertical-align:top;}
+.product .summary .price ins{color:#dc9814; text-decoration:none; background:none;}
+.product .summary .price del .amount{font-size:14px; color:inherit; text-decoration:line-through; vertical-align:super;}
 
 /* star rating */
 .star-rating {position:relative; display:inline-block; line-height:26px; width:116px; height:26px; overflow:hidden;}
