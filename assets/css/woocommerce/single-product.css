@@ -65,7 +65,7 @@
 .meta-wrapper .section .product_meta{display:var(--display--product-meta);}
 .meta-wrapper .section .product_meta > span:not(:last-child){margin-right:14px;}
 .meta-wrapper .section .product_meta span{color:var(--wp--preset--color--title); line-height:2;}
-.meta-wrapper .section .product_meta span :is(span, a){color:var(--wp--preset--color--text);}
+.meta-wrapper .section .product_meta span :is(span, a){color:#a1a1a1;}
 .meta-wrapper .section .product_meta span a:hover{color:var(--wp--preset--color--links);}
 
 /* star rating · puesta de calificación */
