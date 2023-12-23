@@ -21,6 +21,7 @@ function kenko_theme_custom_breakpoints() {
                 --single-post-pagination--svg-size:30px;
 
                 /* single-product */
+                --display--breadcrumb-single-product:none;
                 --padding--tabs-panel:28px 0 42px;
                 --width--tab-description:min(100%, 820px);
                     /* info meta */
@@ -65,6 +66,7 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-size:50px;
 
                     /* single-product */
+                    --display--breadcrumb-single-product:inherit;
                     --padding--tabs-panel:41px 0 53px;
                         /* info meta */
                         --text-align--meta:center;
