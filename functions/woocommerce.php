@@ -44,6 +44,9 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 // C O N T E N E D O R E S   P A R A    S I N G L E    P R O D U C T
 
+// quita la equita de de oferta
+remove_action ('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
+
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
     echo '<main id="main"><div class="container breadcrumb-wrapper"><section class="section breadcrumb-and-pagination">';
