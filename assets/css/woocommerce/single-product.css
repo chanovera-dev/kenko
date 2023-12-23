@@ -20,6 +20,9 @@
 .has-featured-video .woocommerce-product-gallery__trigger{display:none;}
 .woocommerce-product-gallery__trigger:after{font-family:'nm-font'; font-size:20px; line-height:20px; content:"\e114";}
 
+/* resumen */
+.summary.entry-sumary{padding:40px 15px 0;}
+
 /* precio */
 .product .summary .price{line-height:1; vertical-align:top; margin-bottom:0; padding:12px 0 24px;}
 .product .summary .price.has-sale-flash{padding-top:24px;}
