@@ -48,7 +48,7 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 remove_action ('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
 
 // Quita el contador de valoraciones en el summary de un solo producto
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+
 
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
