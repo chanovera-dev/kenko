@@ -24,6 +24,8 @@ function kenko_theme_custom_breakpoints() {
                 --display--breadcrumb-single-product:none;
                 --padding--tabs-panel:28px 0 42px;
                 --width--tab-description:min(100%, 820px);
+                    /* resumen */
+                    --font-size--product-title:24px;
                     /* info meta */
                     --text-align--meta:left;
                     --display--product-meta:grid;
