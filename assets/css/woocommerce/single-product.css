@@ -12,7 +12,7 @@
 /* navegación de galería */
 .flex-control-nav{padding-left:0; list-style:none;}
 
-/* galería */
+/* galería *
 .woocommerce-product-gallery {
     position: relative;
     float: left;
@@ -20,7 +20,7 @@
 }
 
 .woocommerce-product-gallery__wrapper {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .thumbnails-vertical .woocommerce-product-gallery__wrapper {
