@@ -29,7 +29,7 @@
 table.variations{width:100%; border:1px solid #ccc;}
 table.variations tbody tr{display:flex; align-items:center; justify-content:space-between; padding:3px 16px;}
 table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset--color--title);}
-table.variations tbody tr th.label span.woo-selected-variation-item-name{display:none;}
+.woo-variation-swatches.wvs-show-label .variations th .woo-selected-variation-item-name{display:none;}
 table.variations tbody tr td.woo-variation-swatches .variable-items-wrapper{gap:10px;}
 /* precio */
 .product .summary .price{line-height:1; vertical-align:top; margin-bottom:0; padding:12px 0 24px;}
