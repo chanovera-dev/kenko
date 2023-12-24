@@ -146,7 +146,8 @@ function kenko_theme_custom_breakpoints() {
                         .woocommerce-product-gallery__trigger{margin-left:auto;}
                         /* navegación */
                         .flex-control-nav{width:60px; overflow:hidden; display:grid; gap:17px; grid-column:1/2; grid-row:1/3; align-content:baseline;}
-                        .flex-control-nav li img{width:60px; height:60px;}
+                        .flex-control-nav li img{width:60px; height:60px; transition:all .3s ease;}
+                        .flex-control-nav li img.flex-active{opacity:.3;}
                     /* resumen */
                     .product .summary{max-width:340px; padding:40px 0 0; margin-inline:auto;}
                     /* pestañas */
