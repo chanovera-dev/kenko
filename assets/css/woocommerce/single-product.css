@@ -31,6 +31,7 @@ table.variations tbody tr{display:flex; align-items:center; justify-content:spac
 table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset--color--title);}
 .woo-variation-swatches.wvs-show-label .variations th .woo-selected-variation-item-name{display:none;}
 .woo-variation-swatches .variable-items-wrapper{gap:10px;}
+.variations_form .single_variation_wrap{display:grid;}
 
 /* precio */
 .product .summary .price{line-height:1; vertical-align:top; margin-bottom:0; padding:12px 0 24px;}
