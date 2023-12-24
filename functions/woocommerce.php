@@ -176,3 +176,12 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_ra
 
 // deshabilita el botón de reset variations
 add_filter('woocommerce_reset_variations_link', '__return_empty_string');
+
+
+
+// Desactivar variaciones agotadas
+add_filter( 'woocommerce_variation_is_active', 'ayudawp_desactivar_variaciones_agotadas', 10, 2 );
+function ayudawp_desactivar_variaciones_agotadas( $is_active, $variation ) {
+    if ( ! $variation->is_in_stock() ) return false;
+    return $is_active;
+}
