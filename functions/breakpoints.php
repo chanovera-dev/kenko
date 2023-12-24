@@ -223,6 +223,10 @@ function kenko_theme_custom_breakpoints() {
             }
 
             @media(min-width:1200px){
+                :root{
+                    /* resumen */
+                    --font-size--product-title:27px;
+                }
                 /* contacto */
                 .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:386px 1fr;}
             }
