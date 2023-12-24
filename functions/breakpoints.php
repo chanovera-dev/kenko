@@ -21,7 +21,7 @@ function kenko_theme_custom_breakpoints() {
                 --single-post-pagination--svg-size:30px;
 
                 /* single-product */
-                --background--product-wrapper:var(--wp--preset--color--background);
+                --background--product-wrapper:#fff;
                 --display--breadcrumb-single-product:none;
                 --padding--tabs-panel:28px 0 42px;
                 --width--tab-description:min(100%, 820px);
@@ -79,7 +79,7 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-size:50px;
 
                     /* single-product */
-                    --background--product-wrapper:var(--wp--preset--color--line);
+                    --background--product-wrapper:#eee;
                     --display--breadcrumb-single-product:inherit;
                     --padding--tabs-panel:41px 0 53px;
                         /* info meta */
