@@ -22,7 +22,7 @@
 
 /* resumen */
 .summary{padding:40px 15px 0;}
-.summary .product_title.entry-title{font-size:var(--font-size--product-title);}
+.summary .product_title.entry-title{font-size:var(--font-size--product-title); margin-bottom:22px;}
 .summary .woocommerce-product-details__short-description{margin-bottom:22px;}
 
 /* precio */
