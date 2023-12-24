@@ -137,6 +137,7 @@ function kenko_theme_custom_breakpoints() {
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
 
                 /* single product */
+                #main .container.product-wrapper .section .product{display:grid; grid-template-columns:58.3333% 1fr;}
                     /* pestañas */
                     .tabs.wc-tabs{display:flex; justify-content:center; gap:31px;}
                     .tabs.wc-tabs li{height:33px;}
