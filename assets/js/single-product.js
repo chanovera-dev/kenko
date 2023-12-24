@@ -1,6 +1,6 @@
 // agrega botones para el input de números en el producto
 document.addEventListener('DOMContentLoaded', function() {
-    const inputQty = document.querySelector(".summary .cart .quantity .input-text")[0];
+    const inputQty = document.querySelector(".summary .cart .quantity .input-text");
     inputQty.setAttribute("id", "input-qty");
 
     const buttonLess = document.createElement("button");
