@@ -77,6 +77,7 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
 .woocommerce-Tabs-panel > :is(ol, ul){padding-left:15px;}
 .woocommerce-Tabs-panel--description{width:var(--width--tab-description); margin-inline:auto;}  
     /* pestaña informqción adicional */
+    .woocommerce-Tabs-panel--additional_information{width:min(100%, 802px); margin-inline:auto;}
     .shop_attributes {width:100%;}
     .shop_attributes tr th,.shop_attributes tr td{font-size:16px; line-height:1.6; padding-bottom:19px; text-align:left; font-weight:400;}
     .shop_attributes tr:last-child th,.shop_attributes tr:last-child td{padding-bottom:0;}
