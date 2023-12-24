@@ -26,7 +26,7 @@
 .summary .woocommerce-product-details__short-description{margin-bottom:22px;}
 
 /* agregar al carrito · producto variable */
-table.variations{width:100%; border:1px solid #ccc;}
+table.variations{width:100%; border:1px solid #ccc; margin-top:22px;}
 table.variations tbody tr{display:flex; align-items:center; justify-content:space-between; padding:3px 16px;}
 table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset--color--title);}
 .woo-variation-swatches.wvs-show-label .variations th .woo-selected-variation-item-name{display:none;}
