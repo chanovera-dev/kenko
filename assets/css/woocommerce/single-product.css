@@ -23,6 +23,7 @@
 /* resumen */
 .summary{padding:40px 15px 0;}
 .summary .product_title.entry-title{font-size:var(--font-size--product-title);}
+.summary .woocommerce-product-details__short-description{margin-bottom:22px;}
 
 /* precio */
 .product .summary .price{line-height:1; vertical-align:top; margin-bottom:0; padding:12px 0 24px;}
