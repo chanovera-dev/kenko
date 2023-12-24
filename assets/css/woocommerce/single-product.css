@@ -21,7 +21,7 @@
 .woocommerce-product-gallery__trigger:after{font-family:'nm-font'; font-size:20px; line-height:20px; content:"\e114";}
 
 /* resumen */
-.summary{padding:40px 15px 0;}
+.summary{padding:40px 15px 0; overflow:hidden;}
 .summary .product_title.entry-title{font-size:var(--font-size--product-title); margin-bottom:22px;}
 .summary .woocommerce-product-details__short-description{margin-bottom:22px;}
 
