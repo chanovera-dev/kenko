@@ -31,7 +31,7 @@ table.variations tbody tr{display:flex; align-items:center; justify-content:spac
 table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset--color--title);}
 .woo-variation-swatches.wvs-show-label .variations th .woo-selected-variation-item-name{display:none;}
 .woo-variation-swatches .variable-items-wrapper{gap:10px;}
-.variations_form .single_variation_wrap{display:grid;}
+.variations_form .single_variation_wrap{display:grid; gap:22px;}
 .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart{order:1;}
     .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity{display:flex; align-items:center; justify-content:end; padding:0 18px; height:42px; border-left:1px solid #ccc; border-right:1px solid #ccc;}
     .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button{width:100%; padding:14px; color:#fff; background-color:var(--wp--preset--color--title); border:1px solid var(--wp--preset--color--title); font-size:16px;}
