@@ -79,7 +79,6 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-size:50px;
 
                     /* single-product */
-                    --background--product-wrapper:#eee;
                     --padding-top--gallery:40px;
                     --display--breadcrumb-single-product:block;
                     --padding--tabs-panel:41px 0 53px;
@@ -180,6 +179,7 @@ function kenko_theme_custom_breakpoints() {
                     --width-single-post-pagination:min(100% - 90px);
 
                     /* single-product */
+                    --background--product-wrapper:#eee;
                     --width--tab-description:min(100%, 1016px);
 
                     /* panel carrito */
