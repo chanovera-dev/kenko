@@ -80,7 +80,7 @@ function kenko_theme_custom_breakpoints() {
 
                     /* single-product */
                     --background--product-wrapper:#eee;
-                    --display--breadcrumb-single-product:inherit;
+                    --display--breadcrumb-single-product:block;
                     --padding--tabs-panel:41px 0 53px;
                         /* info meta */
                         --text-align--meta:center;
