@@ -23,6 +23,7 @@ function kenko_theme_custom_breakpoints() {
                 /* single-product */
                 --background--product-wrapper:#fff;
                 --display--breadcrumb-single-product:none;
+                --display--gallery-trigger:none;
                 --padding--tabs-panel:28px 0 42px;
                 --width--tab-description:min(100%, 820px);
                     /* resumen */
@@ -79,7 +80,7 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-size:50px;
 
                     /* single-product */
-                    --padding-top--gallery:40px;
+                    --padding-top--gallery:20px;
                     --display--breadcrumb-single-product:block;
                     --padding--tabs-panel:41px 0 53px;
                         /* info meta */
@@ -179,6 +180,8 @@ function kenko_theme_custom_breakpoints() {
                     --width-single-post-pagination:min(100% - 90px);
 
                     /* single-product */
+                    --display--gallery-trigger:block;
+                    --padding-top--gallery:40px;
                     --background--product-wrapper:#eee;
                     --width--tab-description:min(100%, 1016px);
 
