@@ -165,3 +165,8 @@ function change_displayed_sale_price_html( $price, $product ) {
 		$price .= sprintf( __('<small><span class="onsale">-%s</span></small>', 'woocommerce' ), $saving_percentage ); 
 	} return $price; 
 }
+
+
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 25);
