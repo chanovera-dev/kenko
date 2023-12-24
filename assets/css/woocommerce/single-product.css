@@ -2,7 +2,7 @@
 #main .container.product-wrapper .section{width:min(100%, 1220px); margin-inline:auto;}
 
 /* breadcrumb */
-#main .container.breadcrumb-wrapper{background-color:var(--wp--preset--color--line); padding-top:20px; display:var(--display--breadcrumb-single-product);}
+#main .container.breadcrumb-wrapper{background-color:#fff; padding-top:20px; display:var(--display--breadcrumb-single-product);}
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb{display:inline-flex; flex-wrap:wrap; gap:0 7px; font-size:14px;}
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb a{color:var(--wp--preset--color--title);}
 
