@@ -180,9 +180,13 @@ add_filter('woocommerce_reset_variations_link', '__return_empty_string');
 
 
 // Desactivar variaciones agotadas
-add_filter( 'woocommerce_variation_is_active', 'bbloomer_grey_out_variations_out_of_stock', 10, 2 );
- 
-function bbloomer_grey_out_variations_out_of_stock( $is_active, $variation ) {
-    if ( ! $variation->is_in_stock() ) return false;
-    return $is_active;
+add_filter( 'woocommerce_variation_is_active', 'variation_gray_out', 10, 2 );
+function variation_gray_out( $active, $variation ) {
+    // check if the variation is in stock
+    if( ! $variation->is_in_stock() ) {
+        // set the active variable to false
+        $active = false;
+    }
+    // return the active variable
+    return $active;
 }
