@@ -180,8 +180,9 @@ add_filter('woocommerce_reset_variations_link', '__return_empty_string');
 
 
 // Desactivar variaciones agotadas
-add_filter( 'woocommerce_variation_is_active', 'ayudawp_desactivar_variaciones_agotadas', 10, 2 );
-function ayudawp_desactivar_variaciones_agotadas( $is_active, $variation ) {
-    if ( ! $variation->is_in_stock() ) return false;
-    return $is_active;
+add_filter( 'woocommerce_variation_is_active', 'grey_out_variations_when_out_of_stock', 10, 2 ); 
+function grey_out_variations_when_out_of_stock( $grey_out, $variation ) { 
+	if ( ! $variation->is_in_stock() ) 
+	return false; 
+	return true; 
 }
