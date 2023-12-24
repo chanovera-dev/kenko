@@ -52,7 +52,7 @@ function kenko_theme_custom_breakpoints() {
                 --spacing-cart:55.88px;
             }
 
-            @media screen and (min-width: 31px) and (max-width: 767px){
+            @media screen and (min-width: 31px) and (max-width: 1023px){
                 /* galería */
                 .woocommerce-product-gallery__image a img{width:100%;}
                 /* navegación de galerías */
