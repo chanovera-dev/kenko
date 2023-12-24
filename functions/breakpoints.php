@@ -195,7 +195,7 @@ function kenko_theme_custom_breakpoints() {
                     #main-header .mobile-header .header-content .attachment-list :is(.wishlist-wrapper, .sign-in-wrapper){display:inherit;}
 
                 /* single product */
-                #main .container.breadcrumb-wrapper{background-color:var(--wp--preset--color--line);}
+                .single-product #main .container.breadcrumb-wrapper{background-color:var(--wp--preset--color--line);}
                 #main .container.product-wrapper .section .product{display:grid; grid-template-columns:58.3333% 1fr;}
                     /* galería */
                     .woocommerce-product-gallery{display:grid; gap:15px 0; grid-template-columns:60px 1fr;}
