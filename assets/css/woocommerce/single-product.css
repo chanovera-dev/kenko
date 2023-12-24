@@ -39,6 +39,7 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
         .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity input[type=number]:focus{outline:none;}
         .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity input[type=number]::-webkit-inner-spin-button, 
         .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;}
+        .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity input[type=number]{-moz-appearance:textfield;}
         .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button{width:100%; padding:14px; color:#fff; background-color:var(--wp--preset--color--title); border:1px solid var(--wp--preset--color--title); font-size:16px;}
 .variations_form .single_variation_wrap .woocommerce-variation{order:2;}
     /* swatches */
