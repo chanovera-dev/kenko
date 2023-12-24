@@ -46,6 +46,7 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
     .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item):hover{box-shadow:var(--wvs-selected-item-box-shadow,0 0 0 1px #444);}
     .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected, 
     .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).selected:hover{box-shadow:var(--wvs-selected-item-box-shadow,0 0 0 1px #444);}
+    .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).image-variable-item.selected:not(.no-stock) .variable-item-contents:before{background-image:none;}
 /* precio */
 .product .summary .price{line-height:1; vertical-align:top; margin-bottom:0; padding:12px 0 24px;}
 .product .summary .price.has-sale-flash{padding-top:24px;}
