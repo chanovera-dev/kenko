@@ -142,11 +142,13 @@ function kenko_theme_custom_breakpoints() {
                     .woocommerce-product-gallery{display:grid; gap:15px 0; grid-template-columns:60px 1fr;}
                         /* carrusel */
                         .woocommerce-product-gallery__wrapper{grid-column:2/3; grid-row:2/3;}
+                        /* botón de zoom */
+                        .woocommerce-product-gallery__trigger{margin-left:auto;}
                         /* navegación */
-                        .flex-control-nav{width:60px; overflow:hidden; display:grid; gap:17px; grid-column:1/2; grid-row:1/3;}
+                        .flex-control-nav{width:60px; overflow:hidden; display:grid; gap:17px; grid-column:1/2; grid-row:1/3; align-content:baseline;}
                         .flex-control-nav li img{width:60px; height:60px;}
                     /* resumen */
-                    .product .summary{max-width:340px; padding:40px 0 0;}
+                    .product .summary{max-width:340px; padding:40px 0 0; margin-inline:auto;}
                     /* pestañas */
                     .tabs.wc-tabs{display:flex; justify-content:center; gap:31px;}
                     .tabs.wc-tabs li{height:33px;}
