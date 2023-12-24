@@ -138,6 +138,8 @@ function kenko_theme_custom_breakpoints() {
 
                 /* single product */
                 #main .container.product-wrapper .section .product{display:grid; grid-template-columns:58.3333% 1fr;}
+                    /* resumen */
+                    .summary{max-width:340px; padding:44px 0 0;}
                     /* pestañas */
                     .tabs.wc-tabs{display:flex; justify-content:center; gap:31px;}
                     .tabs.wc-tabs li{height:33px;}
