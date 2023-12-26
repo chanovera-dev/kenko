@@ -2,7 +2,7 @@
 #main .container.product-wrapper .section{width:min(100%, 1220px); margin-inline:auto;}
 
 /* contenedor de breadcrumbs y paginación */
-#main .container .section.breadcrumb-and-pagination{display:flex; align-items:center; justify-content:space-between;}
+#main .container .section.breadcrumb-and-pagination{display:flex; align-items:center; justify-content:space-between; flex-direction:row-reverse;}
 #main .container .section.breadcrumb-and-pagination .single-product-pagination{display:flex; align-items:center; gap:10px;}
 #main .container .section.breadcrumb-and-pagination .single-product-pagination a{font-size:12px; color:#a1a1a1;}
 /* breadcrumb */
