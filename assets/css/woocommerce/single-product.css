@@ -52,8 +52,10 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
 /* añadir a la lista de deseos y compartir */
 .wishlist-button-and-share--wrapper{display:inline-flex; flex-wrap:wrap; gap:0 15px; margin-top:22px;}
 .wishlist-button-and-share--wrapper .yith-wcwl-add-to-wishlist{margin-top:0; padding-right:15px; border-right:1px solid #dadada;}
+.wishlist-button-and-share--wrapper .yith-wcwl-add-to-wishlist .yith-wcwl-add-button > a i{margin-right:0;}
 .wishlist-button-and-share--wrapper .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.add_to_wishlist,
 .wishlist-button-and-share--wrapper .share a{color:#a1a1a1;}
+.wishlist-button-and-share--wrapper .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.add_to_wishlist:hover,
 .wishlist-button-and-share--wrapper .share a:hover{color:var(--wp--preset--color--title);}
 .wishlist-button-and-share--wrapper .share a:not(:last-child){margin-right:20px;}
 .wishlist-button-and-share--wrapper .share a svg{width:18px; height:18px;}
