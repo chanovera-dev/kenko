@@ -234,11 +234,3 @@ function add_whislist_button_and_share(){
 
 
 
-// remueve la sidebar del single product
-add_action( 'wp', 'kenko_remove_sidebar_product_pages' );
- 
-function kenko_remove_sidebar_product_pages() {
-if ( is_product() ) {
-remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-}
-}
