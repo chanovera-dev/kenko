@@ -215,3 +215,11 @@ function variation_gray_out( $active, $variation ) {
     // return the active variable
     return $active;
 }
+
+
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_custom_content', 50 );
+
+function woocommerce_template_custom_content(){
+	include(TEMPLATEPATH . '/parts/widgets/share.php');
+}
