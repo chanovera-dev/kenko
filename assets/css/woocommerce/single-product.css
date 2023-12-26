@@ -1,6 +1,8 @@
 #main .container .section{width:min(100% - 30px, 1220px); margin-inline:auto;}
 #main .container.product-wrapper .section{width:min(100%, 1220px); margin-inline:auto;}
 
+/* contenedor de br */
+
 /* breadcrumb */
 #main .container.breadcrumb-wrapper{background-color:#fff; padding-top:20px; display:var(--display--breadcrumb-single-product);}
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb{display:inline-flex; flex-wrap:wrap; gap:0 7px; font-size:14px;}
@@ -26,7 +28,7 @@
 .summary .woocommerce-product-details__short-description{margin-bottom:22px;}
 
 /* agregar al carrito · producto variable */
-table.variations{width:100%; border:1px solid #ccc; margin-top:22px;}
+table.variations{width:100%; border-left:1px solid #ccc; border-right:1px solid #ccc; border-top:1px solid #ccc; margin-top:22px;}
 table.variations tbody tr{display:flex; align-items:center; justify-content:space-between; padding:3px 16px;}
 table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset--color--title);}
 .woo-variation-swatches.wvs-show-label .variations th .woo-selected-variation-item-name{display:none;}
