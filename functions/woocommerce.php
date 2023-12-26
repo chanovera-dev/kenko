@@ -221,5 +221,9 @@ function variation_gray_out( $active, $variation ) {
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_custom_content', 40 );
 
 function woocommerce_template_custom_content(){
-	include(TEMPLATEPATH . '/parts/widgets/share.php');
+    echo '<div class="wishlist-button-and-share--wrapper">' .
+        do_shortcode('[yith_wcwl_add_to_wishlist]');
+        include(TEMPLATEPATH . '/parts/widgets/share.php');
+    echo '
+    </div>';
 }
