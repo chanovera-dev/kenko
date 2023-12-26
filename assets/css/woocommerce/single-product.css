@@ -106,7 +106,7 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
 .woocommerce-Tabs-panel > :is(ol, ul){padding-left:15px;}
 .woocommerce-Tabs-panel--description{width:var(--width--tab-description); margin-inline:auto;}  
     /* pestaña informqción adicional */
-    .woocommerce-Tabs-panel--additional_information{width:min(100%, 802px); margin-inline:auto;}
+    .woocommerce-Tabs-panel--additional_information{width:min(100%, 820px); margin-inline:auto;}
     .shop_attributes {width:100%;}
     .shop_attributes tr th,.shop_attributes tr td{font-size:16px; line-height:1.6; padding-bottom:19px; text-align:left; font-weight:400;}
     .shop_attributes tr:last-child th,.shop_attributes tr:last-child td{padding-bottom:0;}
@@ -121,7 +121,7 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
     #tab-title-reviews a span{position:relative; margin-left:7px; top:-7px; font-size:14px; color:var(--wp--preset--color--links);}
     #comments .woocommerce-Reviews-title{display:none;}
     .commentlist,
-    #review_form_wrapper{width:min(100%, 802px); margin-inline:auto; padding-top:32px;}
+    #review_form_wrapper{width:min(100%, 820px); margin-inline:auto; padding-top:32px;}
     .commentlist li:not(:first-child){border-top:none;}
     .commentlist li .comment_container{position:relative;}
     .commentlist li .comment_container img{border-radius:50%; position:absolute; top:0; left:0; display:var(--display--avatar);}
