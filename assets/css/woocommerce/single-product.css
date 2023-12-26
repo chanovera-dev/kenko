@@ -9,6 +9,7 @@
 #main .container.breadcrumb-wrapper{background-color:#fff; padding-top:20px; display:var(--display--breadcrumb-single-product);}
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb{display:inline-flex; flex-wrap:wrap; gap:0 7px; font-size:14px;}
 #main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb a{color:var(--wp--preset--color--title);}
+#main .container.breadcrumb-wrapper .section .woocommerce-breadcrumb a:hover{color:#dc9814;}
 
 /* datos del producto */
 #main .container.product-wrapper{background-color:var(--background--product-wrapper);}
