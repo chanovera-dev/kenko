@@ -123,8 +123,9 @@ function agregar_contenido_antes_de_tabs() {
 }
 add_action('woocommerce_after_single_product_summary', 'agregar_contenido_antes_de_tabs', 9);
 
+// mueve el meta a antes de los productos relacionados
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
-add_action('woocommerce_after_single_product_summary', 'woocommerce_template_single_meta', 25);
+add_action('woocommerce_after_single_product_summary', 'woocommerce_template_single_meta', 19);
 
 // Agregar contenido HTML antes del gancho woocommerce_template_single_meta
 function my_custom_single_meta_before_wrapper() {
