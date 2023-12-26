@@ -15,6 +15,7 @@ function template_redirect_action() {
             wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' ); 
             return array_merge( $classes, array( $tipo ) );
         } );
+        // remueve la sidebar
         remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
     }
 }
