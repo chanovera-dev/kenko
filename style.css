@@ -105,7 +105,7 @@ img{display:block; height:auto;}
             #main-footer .social ul{display:inline-flex; align-items:center; gap:19px;}
             #main-footer .social ul li{display:flex; align-items:center; height:18px;}
             #main-footer .social ul li a{display:inline-flex; align-items:center; gap:0; height:34px; font-size:0;}
-            #main-footer .social ul li a:before{position:relative; font-size:22px; color:#fff; font-family:'nm-font';}
+            #main-footer .social ul li a:before{position:relative; font-size:18px; color:#fff; font-family:'nm-font';}
             #main-footer .social ul li a:hover{opacity:.7;}
             #main-footer .social ul li a[href*="facebook"]:before{content:'\f09a';}
             #main-footer .social ul li a[href*="twitter"]:before{content:'\e916';}
