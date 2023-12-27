@@ -1,0 +1,7 @@
+.products.columns-4{padding-left:0; list-style:none;}
+.products.columns-4 li{display:grid; gap:15px;}
+.products.columns-4 li .content{position:relative;}
+.products.columns-4 li .content > *{margin:0; line-height:1.6;}
+.products.columns-4 li .content .title-wrapper{color:var(--wp--preset--color--text);}
+.products.columns-4 li .content .title-wrapper:hover{color:var(--wp--preset--color--title);}
+.products.columns-4 li .content .title-wrapper .woocommerce-loop-product__title{font-size:16px;}
