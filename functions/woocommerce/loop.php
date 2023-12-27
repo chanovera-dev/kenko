@@ -84,15 +84,16 @@ remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add
 
 
 function cambiar_aspect_ratio_miniatura_loop_woocommerce($size) {
-    // Cambiamos el tamaño de miniatura para el loop
-    $size['width'] = 4;
-    $size['height'] = 5;
-    $size['crop'] = 1; // Puedes ajustar esto según tus necesidades (1 para recortar, 0 para redimensionar)
+    // Verificamos si estamos en una página de producto
+    if (is_product()) {
+        // Cambiamos el tamaño de miniatura para el loop
+        $size['width'] = 4;
+        $size['height'] = 5;
+        $size['crop'] = 1; // Puedes ajustar esto según tus necesidades (1 para recortar, 0 para redimensionar)
+    }
 
     return $size;
 }
 
-// Aplicamos la función al filtro 'woocommerce_get_image_size_woocommerce_thumbnail'
-add_filter('woocommerce_get_image_size_woocommerce_thumbnail', 'cambiar_aspect_ratio_miniatura_loop_woocommerce');
-
-
+// Aplicamos la función al filtro 'woocommerce_get_image_size_thumbnail'
+add_filter('woocommerce_get_image_size_thumbnail', 'cambiar_aspect_ratio_miniatura_loop_woocommerce');
