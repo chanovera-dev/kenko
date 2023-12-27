@@ -85,8 +85,11 @@ function change_displayed_sale_price_html( $price, $product ) {
 // A J U S T E S   A L   L O O P   D E   W O O C O M M E R C E
 
 // quita el contenedor link de la plantilla del loop de woocommerce
-remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
+// remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
+
+// los agrega arriba y debajo de la foto
+add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 11);
 
 // los agrega arriba y debajo del título
 add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 9);
@@ -117,7 +120,7 @@ add_action('woocommerce_after_shop_loop_item', 'boton_wishlist', 5);
 
 // agregar link al producto con mensaje de mostrar más
 function mostrar_mas() {
-    echo '<a href="' . esc_url( get_permalink( $loop->post->ID ) ) . '">' . esc_html('mostrar más', 'kenko') . '</a>';
+    echo '<a href="' . esc_url( get_permalink( $loop->post->ID ) ) . '">' . esc_html('Mostrar más', 'kenko') . '</a>';
 }
 add_action('woocommerce_after_shop_loop_item', 'mostrar_mas', 4);
 
