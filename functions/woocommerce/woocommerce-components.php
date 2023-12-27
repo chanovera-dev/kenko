@@ -12,7 +12,9 @@ function template_redirect_action() {
             // JS de ajustes
             wp_enqueue_script( 'ajustes', get_template_directory_uri() . '/assets/js/single-product.js', '', 1, true );
             /* estilos css para los formularios */
-            wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' ); 
+            wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' );
+            /* listas */
+            wp_enqueue_style( 'lists-styles', get_template_directory_uri() . '/assets/css/woocommerce/lists.css' );
             return array_merge( $classes, array( $tipo ) );
         } );
         // remueve la sidebar
