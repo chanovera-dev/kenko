@@ -97,7 +97,7 @@ function agregar_script_personalizado() {
                 enlace.addEventListener('mouseover', function() {
                     // Encuentra el elemento más cercano con la clase 'show-more' y agrega la clase 'show'
                     var showMore = encontrarElementoCercano(this, '.show-more');
-                    if (showMore) {
+                    if (showMore && showMore.classList) {
                         showMore.classList.add('show');
                     }
                 });
@@ -105,7 +105,7 @@ function agregar_script_personalizado() {
                 enlace.addEventListener('mouseout', function() {
                     // Al salir del hover, elimina la clase 'show'
                     var showMore = encontrarElementoCercano(this, '.show-more');
-                    if (showMore) {
+                    if (showMore && showMore.classList) {
                         showMore.classList.remove('show');
                     }
                 });
@@ -113,6 +113,10 @@ function agregar_script_personalizado() {
 
             function encontrarElementoCercano(elemento, clase) {
                 // Encuentra el elemento más cercano con la clase especificada
+                while (elemento && !elemento.classList) {
+                    elemento = elemento.parentNode;
+                }
+                
                 while (elemento && !elemento.classList.contains(clase)) {
                     elemento = elemento.parentNode;
                 }
