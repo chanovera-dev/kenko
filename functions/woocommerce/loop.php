@@ -83,20 +83,20 @@ remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add
 
 
 
-function cambiar_aspect_ratio_miniatura_woocommerce() {
-    // Obtenemos las configuraciones actuales de tamaño de miniaturas
-    $thumbnail_size = wc_get_image_size('woocommerce_thumbnail');
+function cambiar_aspect_ratio_miniatura_loop_woocommerce() {
+    // Definimos el nuevo tamaño de miniatura para el loop
+    add_image_size('woocommerce_loop_thumbnail', 4, 5, true);
 
-    // Cambiamos el aspect ratio (ancho/alto) a 4:5
-    $thumbnail_size['width'] = 4;
-    $thumbnail_size['height'] = 5;
-    $thumbnail_size['crop'] = 1; // Puedes ajustar esto según tus necesidades (1 para recortar, 0 para redimensionar)
-
-    // Aplicamos las nuevas configuraciones
-    add_filter('woocommerce_get_image_size_woocommerce_thumbnail', function ($size) use ($thumbnail_size) {
-        return $thumbnail_size;
+    // Aplicamos el nuevo tamaño a las miniaturas del loop
+    add_filter('woocommerce_get_image_size_woocommerce_loop_thumbnail', function ($size) {
+        return array(
+            'width'  => 4,
+            'height' => 5,
+            'crop'   => 1,
+        );
     });
 }
 
 // Aplicamos la función al gancho 'after_setup_theme'
-add_action('after_setup_theme', 'cambiar_aspect_ratio_miniatura_woocommerce');
+add_action('after_setup_theme', 'cambiar_aspect_ratio_miniatura_loop_woocommerce');
+
