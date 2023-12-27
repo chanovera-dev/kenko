@@ -1,6 +1,7 @@
 .products.columns-4{padding-left:0; list-style:none;}
 .products.columns-4 li{display:grid; gap:15px;}
 .products.columns-4 li .content{position:relative;}
-.products.columns-4 li .content > *{margin:0; line-height:1.6;}
-.products.columns-4 li .content .title-wrapper .woocommerce-loop-product__title{color:var(--wp--preset--color--text); font-size:16px;}
+.products.columns-4 li .content *{margin:0; line-height:1.6;}
+.products.columns-4 li .content .title-wrapper .woocommerce-loop-product__title{color:var(--wp--preset--color--text); font-size:16px; transition:all .3s ease;}
 .products.columns-4 li .content .title-wrapper .woocommerce-loop-product__title:hover{color:var(--wp--preset--color--title);}
+.products.columns-4 li .content .yith-wcwl-add-button{position:absolute; top:0; right:0;}
