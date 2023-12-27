@@ -88,9 +88,22 @@ function change_displayed_sale_price_html( $price, $product ) {
 remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 
-// los agrega arriba y debajodel título
+// los agrega arriba y debajo del título
 add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 9);
 add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 11);
+
+
+
+// agrega un contenedor para la info del producto
+function contenedor_antes_del_titulo() {
+	echo '<div>';
+}
+add_action('woocommerce_shop_loop_item_title', 'contenedor_antes_del_titulo', 8);
+
+function contenedor_despues_de_todo() {
+	echo '</div>';
+}
+add_action('woocommerce_after_shop_loop_item', 'contenedor_despues_de_todo', 5);
 
 
 
