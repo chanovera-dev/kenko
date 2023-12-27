@@ -93,3 +93,19 @@ remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_produ
 
 // desactivar la calificación
 remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
+
+// mostrar solamente el precio final
+// Elimina la etiqueta de precio regular
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+
+// Añade la etiqueta de precio final
+add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
+function custom_display_final_price() {
+    global $product;
+
+    // Obtiene el precio final
+    $final_price = wc_get_price_to_display($product);
+
+    // Muestra el precio final
+    echo '<span class="price">' . wc_price($final_price) . '</span>';
+}
