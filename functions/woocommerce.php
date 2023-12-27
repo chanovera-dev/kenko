@@ -103,7 +103,7 @@ add_action('woocommerce_shop_loop_item_title', 'contenedor_antes_del_titulo', 8)
 function contenedor_despues_de_todo() {
 	echo '</div>';
 }
-add_action('woocommerce_after_shop_loop_item', 'contenedor_despues_de_todo', 5);
+add_action('woocommerce_after_shop_loop_item', 'contenedor_despues_de_todo', 6);
 
 
 
@@ -111,7 +111,15 @@ add_action('woocommerce_after_shop_loop_item', 'contenedor_despues_de_todo', 5);
 function boton_wishlist() {
     echo do_shortcode('[yith_wcwl_add_to_wishlist]');
 }
-add_action('woocommerce_after_shop_loop_item', 'boton_wishlist');
+add_action('woocommerce_after_shop_loop_item', 'boton_wishlist', 5);
+
+
+
+// agregar link al producto con mensaje de mostrar más
+function mostrar_mas() {
+    echo '<a href="' . esc_url( get_permalink( $loop->post->ID ) ) . '">' . esc_html('mostrar más', 'kenko') . '</a>';
+}
+add_action('woocommerce_after_shop_loop_item', 'mostrar_mas', 4);
 
 
 
