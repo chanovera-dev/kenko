@@ -87,17 +87,37 @@ function change_displayed_sale_price_html( $price, $product ) {
 function agregar_script_personalizado() {
     ?>
     <script type="text/javascript">
-        jQuery(document).ready(function($) {
+        document.addEventListener('DOMContentLoaded', function() {
             // Espera a que el DOM esté listo
 
             // Agrega la clase 'show' a la clase 'show-more' al hacer hover sobre 'woocommerce-LoopProduct-link'
-            $('.woocommerce-LoopProduct-link').hover(function() {
-                // Encuentra el elemento más cercano con la clase 'show-more' y agrega la clase 'show'
-                $(this).closest('.show-more').addClass('show');
-            }, function() {
-                // Al salir del hover, elimina la clase 'show'
-                $(this).closest('.show-more').removeClass('show');
+            var enlaces = document.querySelectorAll('.woocommerce-LoopProduct-link');
+
+            enlaces.forEach(function(enlace) {
+                enlace.addEventListener('mouseover', function() {
+                    // Encuentra el elemento más cercano con la clase 'show-more' y agrega la clase 'show'
+                    var showMore = encontrarElementoCercano(this, '.show-more');
+                    if (showMore) {
+                        showMore.classList.add('show');
+                    }
+                });
+
+                enlace.addEventListener('mouseout', function() {
+                    // Al salir del hover, elimina la clase 'show'
+                    var showMore = encontrarElementoCercano(this, '.show-more');
+                    if (showMore) {
+                        showMore.classList.remove('show');
+                    }
+                });
             });
+
+            function encontrarElementoCercano(elemento, clase) {
+                // Encuentra el elemento más cercano con la clase especificada
+                while (elemento && !elemento.classList.contains(clase)) {
+                    elemento = elemento.parentNode;
+                }
+                return elemento;
+            }
         });
     </script>
     <?php
