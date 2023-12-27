@@ -1,4 +1,4 @@
-.products.columns-4{padding-left:0; list-style:none;}
+.products.columns-4{padding-left:0; list-style:none; display:grid; gap:24px; grid-template-columns:repeat(auto-fill, minmax(218px, 1fr));}
 .products.columns-4 li{display:grid; gap:15px;}
 .products.columns-4 li .content{position:relative;}
 .products.columns-4 li .content *{margin:0; line-height:1.6;}
