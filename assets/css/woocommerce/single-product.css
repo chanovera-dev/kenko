@@ -161,3 +161,7 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
 .comment-form-rating .stars.selected span .star-3.active{color:#dc9814!important;}
 .comment-form-rating .stars.selected span .star-4.active{color:#dc9814!important;}
 .comment-form-rating .stars.selected span .star-5.active{color:#dc9814!important;}
+
+/* productos relacionados */
+.related.products{padding:var(--padding--related-products);}
+.related.products h2{padding-bottom:28px;}
