@@ -104,3 +104,15 @@ function agregar_script_personalizado() {
 }
 add_action('wp_footer', 'agregar_script_personalizado');
 
+
+
+// Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
+function my_custom_content_before_wrapper() {
+	if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
+		echo '
+		<section class="section">';
+	}
+	
+}
+add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper', 10);
+
