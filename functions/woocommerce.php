@@ -91,11 +91,11 @@ function agregar_script_personalizado() {
             $('.product').hover(
                 function() {
                     // Cuando se hace hover sobre .product
-                    $(this).find('.show-more').addClass('see');
+                    $(this).find('.show').addClass('permalink');
                 },
                 function() {
                     // Cuando se sale del hover sobre .product
-                    $(this).find('.show-more').removeClass('see');
+                    $(this).find('.show').removeClass('permalink');
                 }
             );
         });

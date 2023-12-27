@@ -44,7 +44,7 @@ add_action('woocommerce_after_shop_loop_item', 'boton_wishlist', 5);
 
 // agregar link al producto con mensaje de mostrar más
 function mostrar_mas() {
-    echo '<a class="show-more" href="' . esc_url( get_permalink( $loop->post->ID ) ) . '">' . esc_html('Mostrar más', 'kenko') . '</a>';
+    echo '<a class="show" href="' . esc_url( get_permalink( $loop->post->ID ) ) . '">' . esc_html('Mostrar más', 'kenko') . '</a>';
 }
 add_action('woocommerce_after_shop_loop_item', 'mostrar_mas', 4);
 
