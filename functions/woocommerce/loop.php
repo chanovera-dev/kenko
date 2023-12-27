@@ -80,25 +80,3 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 
 // desactivar los botones de agregar al carrito y seleccionar opciones
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
-
-
-
-function agregar_script_personalizado() {
-    ?>
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            // Espera a que el DOM esté listo
-
-            // Agrega la clase 'show' a la clase 'show-more' al hacer hover sobre 'woocommerce-LoopProduct-link'
-            $('.woocommerce-LoopProduct-link').hover(function() {
-                // Encuentra el elemento más cercano con la clase 'show-more' y agrega la clase 'show'
-                $(this).closest('.show-more').addClass('show');
-            }, function() {
-                // Al salir del hover, elimina la clase 'show'
-                $(this).closest('.show-more').removeClass('show');
-            });
-        });
-    </script>
-    <?php
-}
-add_action('wp_footer', 'agregar_script_personalizado');

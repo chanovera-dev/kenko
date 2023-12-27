@@ -81,3 +81,25 @@ function change_displayed_sale_price_html( $price, $product ) {
 
     return $price; 
 }
+
+
+
+function agregar_script_personalizado() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            // Espera a que el DOM esté listo
+
+            // Agrega la clase 'show' a la clase 'show-more' al hacer hover sobre 'woocommerce-LoopProduct-link'
+            $('.woocommerce-LoopProduct-link').hover(function() {
+                // Encuentra el elemento más cercano con la clase 'show-more' y agrega la clase 'show'
+                $(this).closest('.show-more').addClass('show');
+            }, function() {
+                // Al salir del hover, elimina la clase 'show'
+                $(this).closest('.show-more').removeClass('show');
+            });
+        });
+    </script>
+    <?php
+}
+add_action('wp_footer', 'agregar_script_personalizado');
