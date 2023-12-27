@@ -80,12 +80,3 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 
 // desactivar los botones de agregar al carrito y seleccionar opciones
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
-
-
-
-add_filter( 'woocommerce_get_image_size_thumbnail', function( $size ) {
-    $size['width']  = 4;
-    $size['height'] = 5;
-    $size['crop']   = 1;
-    return $size;
-} );
