@@ -5,7 +5,7 @@
 .products.columns-4 li .content *{margin:0; line-height:1.6;}
 .products.columns-4 li .content .title-wrapper .woocommerce-loop-product__title{color:var(--wp--preset--color--text); font-size:16px; transition:all .3s ease;}
 .products.columns-4 li .content .title-wrapper .woocommerce-loop-product__title:hover{color:var(--wp--preset--color--title);}
-.products.columns-4 li .content .show{opacity:0; background-color:#fff; position:absolute; bottom:14px; left:0; max-width:0; border-radius:0; border-bottom:1px solid #cfcfcf; color:var(--wp--preset--color--title); transition:all.5s ease;}
-.products.columns-4 li .content .show.permalink{opacity:1; max-width:100%;}
+.products.columns-4 li .content .show{opacity:0; background-color:#fff; position:absolute; bottom:14px; left:0; max-width:0; border-radius:0; border-bottom:1px solid #cfcfcf; color:var(--wp--preset--color--title); transition:all 1s ease;}
+.products.columns-4 li .content .show.permalink{opacity:1; max-width:27.88px;}
 .products.columns-4 li .content .show.permalink:hover{color:var(--wp--preset--color--links);}
 .products.columns-4 li .content :is(.yith-wcwl-add-button, .yith-wcwl-add-to-wishlist){position:absolute; top:0; right:0;}
