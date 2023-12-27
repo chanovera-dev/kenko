@@ -88,24 +88,35 @@ function change_displayed_sale_price_html( $price, $product ) {
 remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 
+
+
 // desactiva el mensaje de oferta
 remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10);
+
+
 
 // desactivar la calificación
 remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
 
+
+
 // mostrar solamente el precio final
-// Elimina la etiqueta de precio regular
-remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+    // Elimina la etiqueta de precio regular
+    remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
 
-// Añade la etiqueta de precio final
-add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
-function custom_display_final_price() {
-    global $product;
+    // Añade la etiqueta de precio final
+    add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
+    function custom_display_final_price() {
+        global $product;
 
-    // Obtiene el precio final
-    $final_price = wc_get_price_to_display($product);
+        // Obtiene el precio final
+        $final_price = wc_get_price_to_display($product);
 
-    // Muestra el precio final
-    echo '<span class="price">' . wc_price($final_price) . '</span>';
-}
+        // Muestra el precio final
+        echo '<span class="price">' . wc_price($final_price) . '</span>';
+    }
+
+
+
+// desactivar los botones de agregar al carrito y seleccionar opciones
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
