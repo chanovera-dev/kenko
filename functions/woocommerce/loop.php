@@ -80,3 +80,23 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 
 // desactivar los botones de agregar al carrito y seleccionar opciones
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+
+
+function cambiar_aspect_ratio_miniatura_woocommerce() {
+    // Obtenemos las configuraciones actuales de tamaño de miniaturas
+    $thumbnail_size = wc_get_image_size('woocommerce_thumbnail');
+
+    // Cambiamos el aspect ratio (ancho/alto) a 4:5
+    $thumbnail_size['width'] = 4;
+    $thumbnail_size['height'] = 5;
+    $thumbnail_size['crop'] = 1; // Puedes ajustar esto según tus necesidades (1 para recortar, 0 para redimensionar)
+
+    // Aplicamos las nuevas configuraciones
+    add_filter('woocommerce_get_image_size_woocommerce_thumbnail', function ($size) use ($thumbnail_size) {
+        return $thumbnail_size;
+    });
+}
+
+// Aplicamos la función al gancho 'after_setup_theme'
+add_action('after_setup_theme', 'cambiar_aspect_ratio_miniatura_woocommerce');
