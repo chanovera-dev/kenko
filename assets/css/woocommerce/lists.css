@@ -9,5 +9,6 @@
 .products.columns-4 li .content .show{opacity:0; background-color:#fff; position:absolute; font-size:0; bottom:14px; left:0; border-radius:0; border-bottom:1px solid #cfcfcf; color:var(--wp--preset--color--title); transition:all .3s ease;}
 .products.columns-4 li .content .show.permalink{opacity:1; font-size:14px;}
 .products.columns-4 li .content .show.permalink:hover{color:var(--wp--preset--color--links);}
-.products.columns-4 li .content :is(.yith-wcwl-add-button, .yith-wcwl-add-to-wishlist){position:absolute; top:0; right:0; color:var(--wp--preset--color--text); transition:all .3s ease;}
-.products.columns-4 li .content :is(.yith-wcwl-add-button, .yith-wcwl-add-to-wishlist):hover{color:var(--wp--preset--color--title);}
+.products.columns-4 li .content :is(.yith-wcwl-add-button, .yith-wcwl-add-to-wishlist){position:absolute; top:0; right:0; transition:all .3s ease;}
+.products.columns-4 li .content :is(.yith-wcwl-add-button, .yith-wcwl-add-to-wishlist) i{ color:var(--wp--preset--color--text);}
+.products.columns-4 li .content :is(.yith-wcwl-add-button, .yith-wcwl-add-to-wishlist) i:hover{color:var(--wp--preset--color--title);}
