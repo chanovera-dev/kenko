@@ -70,10 +70,11 @@ img{display:block; height:auto;}
             #main-header .mobile-header .social ul{display:inline-flex; align-items:center; gap:19px;}
             #main-header .mobile-header .social ul li{display:flex; align-items:center; height:18px;}
             #main-header .mobile-header .social ul li a{display:inline-flex; align-items:center; gap:0; height:34px; font-size:0;}
-            #main-header .mobile-header .social ul li a:before{position:relative; padding:9px; display:inline-block;}
+            #main-header .mobile-header .social ul li a:before{position:relative; font-size:18px; color:#3a3a3a; font-family:'nm-font';}
             #main-header .mobile-header .social ul li a:hover{opacity:.7;}
-            #main-header .mobile-header .social ul li a[href*="facebook"]:before{position:relative; padding:9px 5px; display:inline-block;}
-            #main-header .mobile-header .social ul li a[href*="facebook"]:before{padding:9px 5px;}
+            #main-header .mobile-header .social ul li a[href*="facebook"]:before{content:'\f09a';}
+            #main-header .mobile-header .social ul li a[href*="twitter"]:before{content:'\e916';}
+            #main-header .mobile-header .social ul li a[href*="instagram"]:before{content:'\f16f';}
         /* marca */
         #main-header .mobile-header .header-content .site-brand{grid-column:2/3;}
         #main-header .mobile-header .header-content .site-brand a{color:var(--wp--preset--color--title); text-transform:uppercase; text-align:center; letter-spacing:10px; font-size:var(--wp--preset--font-size--x-large); font-weight:700;}
