@@ -164,4 +164,4 @@ table.variations tbody tr th.label label{font-weight:400; color:var(--wp--preset
 
 /* productos relacionados */
 .related.products{padding:var(--padding--related-products);}
-.related.products h2{padding-bottom:28px;}
+.related.products > h2{padding-bottom:28px;}
