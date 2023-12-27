@@ -7,36 +7,37 @@ remove_action ('woocommerce_before_single_product_summary', 'woocommerce_show_pr
 
 // Agregar contenido HTML antes del gancho woocommerce_output_content_wrapper
 function my_custom_content_before_wrapper() {
-    echo '<main id="main"><div class="container breadcrumb-wrapper"><section class="section breadcrumb-and-pagination">';
+    echo '<main id="main"><div class="container breadcrumb-wrapper">';
 	if ( is_product() ) {
 		echo '
-		<div class="single-product-pagination">
-			<div class="left">';
-				global $post;
+		<section class="section breadcrumb-and-pagination">
+			<div class="single-product-pagination">
+				<div class="left">';
+					global $post;
 
-				// Obtener el producto anterior
-				$prev_product = wc_get_product(get_previous_post()->ID);
-				if ($prev_product) :
-					echo '
-					<a href="' .esc_url(get_permalink($prev_product->get_id())) . '" class="previous-post-link">
-						<i class="nm-font nm-font-media-play flip"></i>
-					</a>';
-				endif;
-			echo '
-			</div>
-			<div class="right">';
-
-				// Obtener el producto siguiente
-				$next_product = wc_get_product(get_next_post()->ID);
-				if ($next_product) :
-					echo '
-					<a href="' . esc_url(get_permalink($next_product->get_id())) . '" class="next-post-link">
-						<i class="nm-font nm-font-media-play"></i>
-					</a>';
-				endif;
+					// Obtener el producto anterior
+					$prev_product = wc_get_product(get_previous_post()->ID);
+					if ($prev_product) :
+						echo '
+						<a href="' .esc_url(get_permalink($prev_product->get_id())) . '" class="previous-post-link">
+							<i class="nm-font nm-font-media-play flip"></i>
+						</a>';
+					endif;
 				echo '
-			</div>
-		</div>';
+				</div>
+				<div class="right">';
+
+					// Obtener el producto siguiente
+					$next_product = wc_get_product(get_next_post()->ID);
+					if ($next_product) :
+						echo '
+						<a href="' . esc_url(get_permalink($next_product->get_id())) . '" class="next-post-link">
+							<i class="nm-font nm-font-media-play"></i>
+						</a>';
+					endif;
+					echo '
+				</div>
+			</div>';
 	}
 	
 }
