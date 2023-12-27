@@ -111,6 +111,7 @@ add_action('woocommerce_after_shop_loop_item', 'contenedor_despues_de_todo', 5);
 function boton_wishlist() {
     echo do_shortcode('[yith_wcwl_add_to_wishlist]');
 }
+add_action('woocommerce_after_shop_loop_item', 'boton_wishlist');
 
 
 
