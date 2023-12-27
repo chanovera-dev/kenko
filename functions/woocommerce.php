@@ -87,24 +87,17 @@ function change_displayed_sale_price_html( $price, $product ) {
 function agregar_script_personalizado() {
     ?>
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            var enlaces = document.querySelectorAll('.woocommerce-LoopProduct-link');
-
-            enlaces.forEach(function(enlace) {
-                enlace.addEventListener('mouseover', function() {
-                    var showMore = this.closest('.show-more');
-                    if (showMore) {
-                        showMore.classList.add('show');
-                    }
-                });
-
-                enlace.addEventListener('mouseout', function() {
-                    var showMore = this.closest('.show-more');
-                    if (showMore) {
-                        showMore.classList.remove('show');
-                    }
-                });
-            });
+        jQuery(document).ready(function($) {
+            $('.product').hover(
+                function() {
+                    // Cuando se hace hover sobre .product
+                    $(this).find('.show-more').addClass('see');
+                },
+                function() {
+                    // Cuando se sale del hover sobre .product
+                    $(this).find('.show-more').removeClass('see');
+                }
+            );
         });
     </script>
     <?php
