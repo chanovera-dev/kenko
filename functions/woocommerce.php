@@ -88,6 +88,10 @@ function change_displayed_sale_price_html( $price, $product ) {
 remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 
+// los agrega arriba y debajodel título
+add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 9);
+add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 11);
+
 
 
 // desactiva el mensaje de oferta
