@@ -88,36 +88,23 @@ function agregar_script_personalizado() {
     ?>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
-            // Espera a que el DOM esté listo
-
-            // Agrega la clase 'show' a la clase 'show-more' al hacer hover sobre 'woocommerce-LoopProduct-link'
             var enlaces = document.querySelectorAll('.woocommerce-LoopProduct-link');
 
             enlaces.forEach(function(enlace) {
                 enlace.addEventListener('mouseover', function() {
-                    // Encuentra el elemento más cercano con la clase 'show-more' y agrega la clase 'show'
-                    var showMore = encontrarElementoCercano(this, '.show-more');
-                    if (showMore && typeof showMore.classList !== 'undefined') {
+                    var showMore = enlace.closest('.show-more');
+                    if (showMore) {
                         showMore.classList.add('show');
                     }
                 });
 
                 enlace.addEventListener('mouseout', function() {
-                    // Al salir del hover, elimina la clase 'show'
-                    var showMore = encontrarElementoCercano(this, '.show-more');
-                    if (showMore && typeof showMore.classList !== 'undefined') {
+                    var showMore = enlace.closest('.show-more');
+                    if (showMore) {
                         showMore.classList.remove('show');
                     }
                 });
             });
-
-            function encontrarElementoCercano(elemento, clase) {
-                // Encuentra el elemento más cercano con la clase especificada
-                while (elemento && (typeof elemento.classList === 'undefined' || !elemento.classList.contains(clase))) {
-                    elemento = elemento.parentNode;
-                }
-                return elemento;
-            }
         });
     </script>
     <?php
