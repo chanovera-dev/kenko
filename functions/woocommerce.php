@@ -96,7 +96,7 @@ add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_produc
 
 // agrega un contenedor para la info del producto
 function contenedor_antes_del_titulo() {
-	echo '<div>';
+	echo '<div class="content">';
 }
 add_action('woocommerce_shop_loop_item_title', 'contenedor_antes_del_titulo', 8);
 
@@ -104,6 +104,13 @@ function contenedor_despues_de_todo() {
 	echo '</div>';
 }
 add_action('woocommerce_after_shop_loop_item', 'contenedor_despues_de_todo', 5);
+
+
+
+// agregar botón de wishlist
+function boton_wishlist() {
+    echo do_shortcode('[yith_wcwl_add_to_wishlist]');
+}
 
 
 
