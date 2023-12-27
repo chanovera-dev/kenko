@@ -92,14 +92,14 @@ function agregar_script_personalizado() {
 
             enlaces.forEach(function(enlace) {
                 enlace.addEventListener('mouseover', function() {
-                    var showMore = enlace.closest('.show-more');
+                    var showMore = this.closest('.show-more');
                     if (showMore) {
                         showMore.classList.add('show');
                     }
                 });
 
                 enlace.addEventListener('mouseout', function() {
-                    var showMore = enlace.closest('.show-more');
+                    var showMore = this.closest('.show-more');
                     if (showMore) {
                         showMore.classList.remove('show');
                     }
@@ -110,3 +110,4 @@ function agregar_script_personalizado() {
     <?php
 }
 add_action('wp_footer', 'agregar_script_personalizado');
+
