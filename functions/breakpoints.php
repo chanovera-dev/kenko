@@ -20,6 +20,9 @@ function kenko_theme_custom_breakpoints() {
                 --single-post-pagination--svg-grid-row:1/2;
                 --single-post-pagination--svg-size:30px;
 
+                /* shop */
+                --padding--breadcrumb--shop:35px 0 32px;
+
                 /* loop woo */
                 --grid-columns--loop--woo:1fr 1fr;
 
@@ -83,6 +86,9 @@ function kenko_theme_custom_breakpoints() {
                     --single-post-pagination--svg-opacity:.3;
                     --single-post-pagination--svg-grid-row:1/3;
                     --single-post-pagination--svg-size:50px;
+
+                    /* shop */
+                    --padding--breadcrumb--shop:40px 0;
 
                     /* loop woo */
                     --grid-columns--loop--woo:repeat(auto-fill, minmax(230px, 1fr));
@@ -188,6 +194,9 @@ function kenko_theme_custom_breakpoints() {
                     /* single post */
                     --padding-top--post-wrapper:68px;
                     --width-single-post-pagination:min(100% - 90px);
+
+                    /* shop */
+                    --padding--breadcrumb--shop:56px 0;
 
                     /* single-product */
                     --display--gallery-trigger:block;
