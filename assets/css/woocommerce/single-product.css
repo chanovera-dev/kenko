@@ -23,7 +23,7 @@
 .woocommerce-product-gallery{padding-top:var(--padding-top--gallery);}
 
 /* icono de zoom de la galería */
-.woocommerce-product-gallery__trigger{z-index:10; font-size:0; color:inherit; width:20px; height:20px; margin-right:15px; display:var(--display--gallery-trigger);}
+.woocommerce-product-gallery__trigger{font-size:0; color:inherit; width:20px; height:20px; margin-right:15px; display:var(--display--gallery-trigger);}
 .has-featured-video .woocommerce-product-gallery__trigger{display:none;}
 .woocommerce-product-gallery__trigger:after{font-family:'nm-font'; font-size:20px; line-height:20px; content:"\e114";}
 
