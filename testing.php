@@ -6,20 +6,21 @@ echo '
     <div class="container">
         <section class="section sections-filters">';
         $taxonomy = 'product_cat';
-        $categories = get_terms(array(
-            'taxonomy' => $taxonomy,
-            'hide_empty' => false,
-        ));
-        
-        echo '<ul class="categories-list">
-            <li><a class="category-list_item active" href="#!" data-slug="">' . esc_html__('Todo', 'kenko') . '</a></li>';
-        
-        foreach($categories as $category) :
-            echo '
-            <li><a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a></li>';
-        endforeach;
-        
-        echo '</ul>
+$categories = get_terms(array(
+    'taxonomy'   => $taxonomy,
+    'hide_empty' => false,
+    'exclude'    => array(get_option('default_product_cat')), // Excluir la categoría 'sin categorizar'
+));
+
+echo '<ul class="categories-list">
+    <li><a class="category-list_item active" href="#!" data-slug="">' . esc_html__('Todo', 'kenko') . '</a></li>';
+
+foreach($categories as $category) :
+    echo '
+    <li><a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a></li>';
+endforeach;
+
+echo '</ul>
         
         </section>
     </div>
