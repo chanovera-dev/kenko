@@ -5,20 +5,22 @@ echo '
 <main id="main">
     <div class="container">
         <section class="section sections-filters">';
-            $taxonomy = 'product_cat';
-            $categories = wc_get_product_terms(0, $taxonomy, array('hide_empty' => false));
-            
+        $taxonomy = 'product_cat';
+        $categories = get_terms(array(
+            'taxonomy' => $taxonomy,
+            'hide_empty' => false,
+        ));
+        
+        echo '<ul class="categories-list">
+            <li><a class="category-list_item active" href="#!" data-slug="">' . esc_html__('Todo', 'kenko') . '</a></li>';
+        
+        foreach($categories as $category) :
             echo '
-            <ul class="categories-list">
-                <li><a class="category-list_item active" href="#!" data-slug="">' . esc_html__('Todo', 'kenko') . '</a></li>';
-            
-            foreach($categories as $category) :
-                echo '
-                <li><a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a></li>';
-            endforeach;
-            
-            echo '
-            </ul>
+            <li><a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a></li>';
+        endforeach;
+        
+        echo '</ul>
+        
         </section>
     </div>
     <div class="container">
