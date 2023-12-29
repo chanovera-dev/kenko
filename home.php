@@ -18,7 +18,7 @@ echo '
         echo '
         </ul>';
 
-        $projects = new WP_Query([
+        $posts = new WP_Query([
         'post_type' => 'post',
         'posts_per_page' => -1,
         'order_by' => 'date',
@@ -26,33 +26,16 @@ echo '
         ]);
 
 
-        if($projects->have_posts()):
+        if($posts->have_posts()):
         echo '
         <div class="posts">';
-            while($projects->have_posts()) : $projects->the_post();
+            while($posts->have_posts()) : $posts->the_post();
             get_template_part( 'templates/content', 'archive' ); 
             endwhile;
         echo '
         </div>';
             wp_reset_postdata();
         endif;
-        
-        // if ( have_posts() ){           
-        //     echo '
-        //     <div class="posts">';
-                
-
-        //         while( have_posts() ){            
-        //             the_post();  
-        //             get_template_part( 'templates/content', 'archive' );    
-        //         }
-
-        //         echo '
-                
-        //     </div>';     
-        // } else {
-        //     echo '<p>' . esc_html__('No se encontraron artículos', 'kenko') . '</p>';
-        // }
 
         // the_posts_pagination();
 
