@@ -148,3 +148,22 @@ add_action('wp_ajax_nopriv_filter_projects', 'filter_posts');
 // deshabilita contact form 7 en todas las páginas, excepciones en components.php
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
+
+
+
+// Registra los sidebars
+function widgets_areas(){
+    
+    register_sidebar(
+        array(
+            'name' => __('Blog Sidebar','renata'),
+            'id' => 'blog-sidebar',
+            'description' => __('Sidebar Widget Area','renata'),
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+            'before_widget' => '',
+            'after_widget' => '',
+        )
+    );
+}
+add_action( 'widgets_init', 'widgets_areas' );

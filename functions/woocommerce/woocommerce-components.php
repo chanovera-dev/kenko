@@ -33,7 +33,7 @@ function shop_styles() {
         /* estilos css para la paginación */
         wp_enqueue_style( 'pagination-styles', get_template_directory_uri() . '/assets/css/pagination.css' );
         // remueve la sidebar
-        remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+        // remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
     }
 }
 add_action( 'wp_enqueue_scripts', 'shop_styles' );
