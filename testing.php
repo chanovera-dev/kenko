@@ -27,27 +27,24 @@ echo '
     <div class="container">
         <section class="section sections-products">';
 
-            $get_creators = new WP_Query([
-            'post_type' => 'creators',
-            'posts_per_page' => -1,
-            ]);
-            
-            if ($get_creators->have_posts()): ?>
-            <h4 class="filter-title"><?= _e('Creators','kenko'); ?></h4>
-            <ul class="list-filters">
-                <?php while ($get_creators->have_posts()):$get_creators->the_post(); ?>
-                
-                <li>
-                    <a href="javascript:;" class="filter-link" data-type="creators" data-id="<?= get_the_ID(); ?>">
-                    <?= esc_html(get_the_title()); ?>
-                    <span class="remove"><i class="fas fa-times"></i></span>
-                    </a>
-                </li>
-            
-                <?php endwhile; ?>
-            </ul>
-            <?php wp_reset_postdata(); ?>
-            <?php endif;
+        $products = new WC_Product_Query(array(
+            'limit' => -1,
+            'orderby' => 'date',
+            'order' => 'DESC',
+        ));
+        
+        $products = $products->get_products();
+        
+        if ($products) :
+            echo '
+            <ul class="products">';
+                foreach ($products as $product) :
+                    wc_get_template_part('content', 'product'); // Ajusta según la estructura de tu template
+                endforeach;
+            echo '
+            </ul>';
+        endif;
+        
         echo '
         </section>
     </div>
