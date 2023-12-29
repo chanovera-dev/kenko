@@ -18,7 +18,7 @@ function template_redirect_action() {
             return array_merge( $classes, array( $tipo ) );
         } );
         // remueve la sidebar
-        remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+        // remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
     }
 }
 
