@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
                 category: $(this).data('slug'),
             },
             success: function(res) {
-                $('.products').html(res);
+                $('.products.columns-4').html(res);
             }
         });
     });
