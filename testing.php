@@ -37,7 +37,7 @@ echo '
         
         if ($products) :
             echo '
-            <ul class="products">';
+            <ul class="products columns-4">';
                 foreach ($products as $product) :
                     wc_get_template_part('content', 'product'); // Ajusta según la estructura de tu template
                 endforeach;
