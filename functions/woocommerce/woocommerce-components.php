@@ -44,6 +44,8 @@ add_action( 'wp_enqueue_scripts', 'shop_styles' );
 function kenko_testing_styles() {
     if ( is_page_template('testing.php') ) {
         wp_enqueue_style( 'shop-styles', get_template_directory_uri() . '/assets/css/woocommerce/shop.css' );
+        /* listas */
+        wp_enqueue_style( 'lists-styles', get_template_directory_uri() . '/assets/css/woocommerce/lists.css' );
         /* js */
         wp_enqueue_script( 'filters-js', get_template_directory_uri() . '/assets/js/filters.js', array(), '1.0', true );
     }
