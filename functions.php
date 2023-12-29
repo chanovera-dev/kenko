@@ -117,7 +117,7 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 
 
 // ajax para el blog
-function filter_projects() {
+function filter_posts() {
     $catSlug = $_POST['category'];
 
     $ajaxposts = new WP_Query([
@@ -140,8 +140,8 @@ function filter_projects() {
     echo $response;
     exit;
 }
-add_action('wp_ajax_filter_projects', 'filter_projects');
-add_action('wp_ajax_nopriv_filter_projects', 'filter_projects');
+add_action('wp_ajax_filter_projects', 'filter_posts');
+add_action('wp_ajax_nopriv_filter_projects', 'filter_posts');
 
 
 
