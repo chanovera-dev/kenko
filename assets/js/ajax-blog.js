@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
             url: '/wp-admin/admin-ajax.php',
             dataType: 'html',
             data: {
-                action: 'filter_projects',
+                action: 'filter_posts',
                 category: $(this).data('slug'),
             },
             success: function(res) {

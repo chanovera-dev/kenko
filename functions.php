@@ -148,20 +148,3 @@ add_action('wp_ajax_nopriv_filter_projects', 'filter_posts');
 // deshabilita contact form 7 en todas las páginas, excepciones en components.php
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
-
-
-
-function filter_products() {
-	$catIds = $_POST['catIds'];
-	$creatorIds = $_POST['creatorIds'];
-
-	$args = [
-		'post_type' => 'product',
-		'posts_per_page' => -1,
-		'post_status'  => 'publish',
-		'orderby'        => 'date',
-                'order'          => 'desc',
-	];
-}
-add_action('wp_ajax_filter_products', 'filter_products');
-add_action('wp_ajax_nopriv_filter_products', 'filter_products');
