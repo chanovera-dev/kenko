@@ -4,19 +4,21 @@ get_header();
 echo '
 <main id="main">
     <div class="container">
-        <section class="section sections-filters">
-            <div class="filter--sidebar">
-                <input type="hidden" id="filters-category" />
-                <input type="hidden" id="filters-creators" />';
+        <section class="section sections-filters">';
+            $taxonomy = 'product_cat';
+            $categories = wc_get_product_terms(0, $taxonomy, array('hide_empty' => false));
             
-                // or use include_once('parts/filter-pricerange.php');
-                get_template_part('parts/filter','pricerange');
-            
-                get_template_part('parts/filter','categories');
-                
-                get_template_part('parts/filter','creators');
             echo '
-            </div>
+            <ul class="categories-list">
+                <li><a class="category-list_item active" href="#!" data-slug="">' . esc_html__('Todo', 'kenko') . '</a></li>';
+            
+            foreach($categories as $category) :
+                echo '
+                <li><a class="category-list_item" href="#!" data-slug="' . $category->slug . '">' . $category->name . '</a></li>';
+            endforeach;
+            
+            echo '
+            </ul>
         </section>
     </div>
     <div class="container">
