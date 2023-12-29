@@ -84,7 +84,8 @@ function change_displayed_sale_price_html( $price, $product ) {
 
 
 
-function agregar_script_personalizado() {
+// agrega la clase permalink a el link al hacer hover sobre el li del producto
+function show_permalink_with_hover() {
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
@@ -102,7 +103,7 @@ function agregar_script_personalizado() {
     </script>
     <?php
 }
-add_action('wp_footer', 'agregar_script_personalizado');
+add_action('wp_footer', 'show_permalink_with_hover');
 
 
 
@@ -148,3 +149,9 @@ function my_custom_content_before_wrapper() {
 	
 }
 add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper', 10);
+
+
+
+// evita que se muestre el título de la página tienda   
+add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
+function woo_hide_page_title() { return false; }
