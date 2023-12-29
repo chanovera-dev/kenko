@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
         $(this).addClass('active');
 
         $.ajax({
-            type: 'PRODUCT',
+            type: 'product',
             url: '/wp-admin/admin-ajax.php',
             dataType: 'html',
             data: {
