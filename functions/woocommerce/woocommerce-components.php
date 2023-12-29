@@ -43,7 +43,7 @@ add_action( 'wp_enqueue_scripts', 'shop_styles' );
 // Estilos para el template de la página testing
 function kenko_testing_styles() {
     if ( is_page_template('testing.php') ) {
-
+        wp_enqueue_style( 'shop-styles', get_template_directory_uri() . '/assets/css/woocommerce/shop.css' );
         /* js */
         wp_enqueue_script( 'filters-js', get_template_directory_uri() . '/assets/js/filters.js', array(), '1.0', true );
     }
