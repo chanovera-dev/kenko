@@ -156,8 +156,8 @@ function widgets_areas(){
     
     register_sidebar(
         array(
-            'name' => __('Blog Sidebar','renata'),
-            'id' => 'blog-sidebar',
+            'name' => __('Shop Sidebar','renata'),
+            'id' => 'shop-sidebar',
             'description' => __('Sidebar Widget Area','renata'),
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
