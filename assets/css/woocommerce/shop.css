@@ -1,5 +1,5 @@
 .section.breadcrumb-filter-search{padding:var(--padding--breadcrumb--shop);}
-.section.breadcrumb-filter-search .categories-list--wrapper{}
+.section.breadcrumb-filter-search .categories-list--wrapper{display:grid;}
 .section.breadcrumb-filter-search .categories-list--wrapper .categories-list{display:var(--categories-list--display); padding-left:0; list-style:none;}
 .section.breadcrumb-filter-search .categories-list--wrapper .categories-list li a{font-size:var(--categories-list-link--font-size); margin:var(--categories-list-link--margin);}
 .section.breadcrumb-filter-search .categories-list--wrapper .categories-list li a:not(.active):hover{color:var(--wp--preset--color--links);}
