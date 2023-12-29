@@ -112,8 +112,8 @@ function my_custom_content_before_wrapper() {
     echo '<main id="main"><div class="container breadcrumb-wrapper">';
     // contenido de la parte superior de shop
     if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
-        echo '<section class="section breadcrumb-filter-search">';
-        if ( is_active_sidebar('shop-sidebar') ) { dynamic_sidebar('shop-sidebar'); }
+        echo '<section class="section breadcrumb-filter-search">' . 
+        do_shortcode('[yith_wcan_filters slug="etiquetas"]');
     }
     // contenido de la parte superior de single product
 	if ( is_product() ) {
