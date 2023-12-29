@@ -37,3 +37,15 @@ function shop_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'shop_styles' );
+
+
+
+// Estilos para el template de la página testing
+function kenko_testing_styles() {
+    if ( is_page_template('testing.php') ) {
+
+        /* js */
+        wp_enqueue_script( 'filters-js', get_template_directory_uri() . '/assets/js/filters.js', array(), '1.0', true );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'kenko_testing_styles' );
