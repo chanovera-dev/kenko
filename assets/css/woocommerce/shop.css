@@ -2,7 +2,7 @@
 .section.breadcrumb-filter-search .header-shop{display:grid; grid-template-columns:1fr auto auto auto; align-items:start;}
 .section.breadcrumb-filter-search .header-shop *{margin:0;}
 .section.breadcrumb-filter-search .filters{max-height:0; overflow:hidden;}
-
+.section.breadcrumb-filter-search .header-shop .filters-container form{display:var(--categories-list--display);}
 .section.breadcrumb-filter-search .filter-content{display:grid;}
 .section.breadcrumb-filter-search .filter-content .filter-text{display:var(--categories-list--display); padding-left:0; list-style:none;}
 .section.breadcrumb-filter-search .filter-content .filter-text li:nth-child(1) a{margin-left:0;}
