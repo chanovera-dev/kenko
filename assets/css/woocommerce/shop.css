@@ -1,5 +1,5 @@
 .section.breadcrumb-filter-search{padding:var(--padding--breadcrumb--shop);}
-.section.breadcrumb-filter-search .header-shop{display:grid; grid-template-columns:1fr auto auto;}
+.section.breadcrumb-filter-search .header-shop{display:grid; grid-template-columns:1fr auto auto auto; align-items:start;}
 .section.breadcrumb-filter-search .filters{max-height:0; overflow:hidden;}
 
 .section.breadcrumb-filter-search .categories-list--wrapper{display:grid;}
