@@ -6,6 +6,7 @@
 .section.breadcrumb-filter-search .filter-content{display:grid;}
 .section.breadcrumb-filter-search .filter-content .filter-text{display:var(--categories-list--display); padding-left:0; list-style:none;}
 .section.breadcrumb-filter-search .filter-content .filter-text li:nth-child(1) a{margin-left:0;}
+.section.breadcrumb-filter-search .filter-content .filter-text li:not(:last-child):after{content:'/';}
 .section.breadcrumb-filter-search .filter-content .filter-text li a{font-size:var(--categories-list-link--font-size); margin:var(--categories-list-link--margin);}
 .section.breadcrumb-filter-search .filter-content .filter-text li a:not(.active):hover{color:var(--wp--preset--color--links);}
 .section.breadcrumb-filter-search .filter-content .filter-text li a:not(.active){color:var(--wp--preset--color--text);}
