@@ -153,9 +153,8 @@ function kenko_theme_custom_breakpoints() {
                     .comment-form :is(.comment-notes, .comment-form-comment, .comment-form-url, .comment-form-cookies-consent, .form-submit){grid-column:1/-1;}
                 
                 /* tienda */
-                .section.breadcrumb-filter-search .header-shop .filters-container form .reset-filters:before{content:'/'; font-size:14px; color:#ccc;}
-                .section.breadcrumb-filter-search .header-shop .filters-container form .reset-filters{padding-left:17px;}
-                
+                .section.breadcrumb-filter-search .header-shop .filters-container form .reset-filters:before{content:'/'; font-size:14px; color:#ccc; margin-right:13px;}
+
                 /* contacto */
                 .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:226px 1fr;}
                 .contact-page .info-and-contact--wrapper .contact .wpcf7-form{grid-template-columns:1fr 1fr;}
