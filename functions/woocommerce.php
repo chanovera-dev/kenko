@@ -124,7 +124,18 @@ function my_custom_content_before_wrapper() {
                 if ( is_active_sidebar('shop-sidebar') ) { dynamic_sidebar('shop-sidebar'); }
             echo '
             </div>';
+
+        function cambiar_contenido_filter_button() {
+            ?>
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                    $('.breadcrumb-filter-search .header-shop .filters-container form .reset-filters').text('Todo');
+                });
+            </script>
+            <?php
+        }
         
+        add_action('wp_footer', 'cambiar_contenido_filter_button');
     }
     // contenido de la parte superior de single product
 	if ( is_product() ) {
