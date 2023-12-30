@@ -34,17 +34,15 @@ echo '
         ));
         
         $products = $products->get_products();
-
+        
         if ($products) :
-            echo '<ul class="products columns-4">';
-            foreach ($products as $product) :
-                echo '<li>';
-                echo '<h2>' . esc_html($product->get_title()) . '</h2>';
-                echo '<span class="price">' . $product->get_price_html() . '</span>';
-                echo '<a href="' . esc_url($product->get_permalink()) . '">Ver producto</a>';
-                echo '</li>';
-            endforeach;
-            echo '</ul>';
+            echo '
+            <ul class="products columns-4">';
+                foreach ($products as $product) :
+                    wc_get_template_part('content', 'product'); // Ajusta según la estructura de tu template
+                endforeach;
+            echo '
+            </ul>';
         endif;
         
         echo '
