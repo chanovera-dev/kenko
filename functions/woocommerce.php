@@ -113,9 +113,12 @@ function my_custom_content_before_wrapper() {
     // contenido de la parte superior de shop
     if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
         echo '
-        <section class="section breadcrumb-filter-search">' .
-            do_shortcode('[yith_wcan_filters slug="breadcrumb"]') . '
-
+        <section class="section breadcrumb-filter-search">
+            <div class="header-shop">' .
+                do_shortcode('[yith_wcan_filters slug="breadcrumb"]') . '
+                <button id="filter-button">' . eschtml__('Filtros', 'kenko') . '</button>
+                <button id="search-button">' . esc_html__('Buscar', 'kenko') . '<i class="nm-font nm-font-search flip"></i></button>
+            </div>
             <div class="filters">';
                 if ( is_active_sidebar('shop-sidebar') ) { dynamic_sidebar('shop-sidebar'); }
             echo '
