@@ -1,7 +1,7 @@
 .section.breadcrumb-filter-search{padding:var(--padding--breadcrumb--shop);}
 .section.breadcrumb-filter-search .header-shop{display:grid; grid-template-columns:1fr auto auto auto; align-items:start; gap:17px;}
 .section.breadcrumb-filter-search .header-shop *{margin:0;}
-.section.breadcrumb-filter-search .header-shop > button{position:relative; top:3px; line-height:1.7; padding:0; border:0 solid transparent; background-color:transparent; font-size:var(--categories-list-link--font-size); color:var(--wp--preset--color--text); display:inline-flex; align-items:center; gap:7px; transition:all .3s ease;}
+.section.breadcrumb-filter-search .header-shop > button{line-height:1.9; padding:0; border:0 solid transparent; background-color:transparent; font-size:var(--categories-list-link--font-size); color:var(--wp--preset--color--text); display:inline-flex; align-items:center; gap:7px; transition:all .3s ease;}
 .section.breadcrumb-filter-search .header-shop > button:hover{color:var(--wp--preset--color--links);}
 .section.breadcrumb-filter-search .header-shop > button#button-filters:after{content:'/'; color:#ccc; font-size:14px; margin-left:14px;}
 .section.breadcrumb-filter-search .header-shop > button i{font-size:14px; color:#ccc;}
