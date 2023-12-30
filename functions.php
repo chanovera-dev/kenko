@@ -167,3 +167,37 @@ function widgets_areas(){
     );
 }
 add_action( 'widgets_init', 'widgets_areas' );
+
+
+
+function filter_products() {
+    $catIds = $_POST['catIds'];
+    $creatorIds = $_POST['creatorIds'];
+    $args = [
+        'post_type' => 'product',
+        'posts_per_page' => -1,
+        'post_status'  => 'publish',
+        'orderby'        => 'date',
+                'order'          => 'desc',
+    ];
+    if ( $ajaxproducts->have_posts() ) {
+        ob_start();
+        while ( $ajaxproducts->have_posts() ) : $ajaxproducts->the_post();
+            $response .= wc_get_template_part( 'content', 'product-dibbz' );
+        endwhile;
+        $output = ob_get_contents();
+        ob_end_clean();
+    } else {
+        echo __( 'No products found' );
+    }
+        
+    $result = [
+        'total' => $counter,
+        'html' => $output,
+    ];
+    echo json_encode($result);
+    wp_reset_postdata();
+    exit;
+}
+add_action('wp_ajax_filter_products', 'filter_products');
+add_action('wp_ajax_nopriv_filter_products', 'filter_products');
