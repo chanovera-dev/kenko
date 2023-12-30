@@ -112,12 +112,13 @@ function my_custom_content_before_wrapper() {
     echo '<main id="main"><div class="container breadcrumb-wrapper">';
     // contenido de la parte superior de shop
     if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
+        add_filter( 'woocommerce_get_breadcrumb', '__return_false' );
         echo '
         <section class="section breadcrumb-filter-search">
             <div class="header-shop">' .
                 do_shortcode('[yith_wcan_filters slug="breadcrumb"]') . '
                 <button id="button-filters">Filtros</button>
-                <button id="button-search">Buscar</button>
+                <button id="button-search">Buscar<i class="nm-font nm-font-search flip"></i></button>
             </div>
             <div class="filters">';
                 if ( is_active_sidebar('shop-sidebar') ) { dynamic_sidebar('shop-sidebar'); }
