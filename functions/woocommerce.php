@@ -116,8 +116,6 @@ function my_custom_content_before_wrapper() {
         <section class="section breadcrumb-filter-search">
             <div class="header-shop">' .
                 do_shortcode('[yith_wcan_filters slug="breadcrumb"]') . '
-                <button id="filter-button">' . esc_html__('Filtros', 'kenko') . '</button>' . esc_html__('/', 'kenko') . '
-                <button id="search-button">' . esc_html__('Buscar', 'kenko') . '<i class="nm-font nm-font-search flip"></i></button>
             </div>
             <div class="filters">';
                 if ( is_active_sidebar('shop-sidebar') ) { dynamic_sidebar('shop-sidebar'); }
