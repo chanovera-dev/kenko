@@ -155,6 +155,7 @@ function kenko_theme_custom_breakpoints() {
                 /* tienda */
                 .section.breadcrumb-filter-search .filter-content .filter-text li:not(:last-child):after{content:'/'; color:#ccc; font-size:14px;}
                 .section.breadcrumb-filter-search .header-shop .filters-container form .reset-filters:before{content:'/'; font-size:14px; color:#ccc; margin-right:13px;}
+                .section.breadcrumb-filter-search .header-shop > button{line-height:1.9;}
 
                 /* contacto */
                 .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:226px 1fr;}
