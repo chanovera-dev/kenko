@@ -161,39 +161,3 @@ add_action('woocommerce_before_main_content', 'my_custom_content_before_wrapper'
 // evita que se muestre el título de la página tienda   
 add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
 function woo_hide_page_title() { return false; }
-
-
-
-// Ajax para productos de WooCommerce
-function filter_products() {
-    $catSlug = $_POST['category'];
-
-    $args = array(
-        'post_type'      => 'product',
-        'posts_per_page' => -1,
-        'product_cat'    => $catSlug,
-        'orderby'        => 'menu_order',
-        'order'          => 'desc',
-    );
-
-    $ajaxproducts = new WP_Query($args);
-    $response = '';
-
-    if ($ajaxproducts->have_posts()) {
-        while ($ajaxproducts->have_posts()) : $ajaxproducts->the_post();
-            $product_id = get_the_ID();
-            $product = wc_get_product($product_id);
-            
-            ob_start();
-            wc_get_template_part('content', 'product');
-            $response .= ob_get_clean();
-        endwhile;
-    } else {
-        $response = 'empty';
-    }
-
-    echo $response;
-    exit;
-}
-add_action('wp_ajax_filter_products', 'filter_products');
-add_action('wp_ajax_nopriv_filter_products', 'filter_products');
