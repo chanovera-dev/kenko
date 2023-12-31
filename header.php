@@ -12,7 +12,7 @@ echo '
     echo '
     </head>
     <body id="body" '; body_class(); echo '>
-        <div id="panel-overlay"></div>';
+        <div id="panel-overlay" onclick="closePanels()"></div>';
         include(TEMPLATEPATH . '/parts/sidebars/cart-panel.php'); 
         echo '
         <header id="main-header" class="container main-header">';
