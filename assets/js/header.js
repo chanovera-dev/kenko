@@ -144,15 +144,24 @@ window.addEventListener("scroll", () => {
 
 
 
-function panelCart() {
-    // Agrega la clase 'open' al elemento con el id 'panel-overlay'
-    var panelOverlay = document.getElementById('panel-overlay');
+function openPanelCart() {
+    let panelOverlay = document.getElementById('panel-overlay');
+    let cartPanelWrapper = document.getElementById('cart-panel--wrapper');
+    
     panelOverlay.classList.add('open');
-  
-    // Agrega la clase 'open' al elemento con el id 'cart-panel--wrapper'
-    var cartPanelWrapper = document.getElementById('cart-panel--wrapper');
     cartPanelWrapper.classList.add('open');
-  }
+}
+
+function closePanels() {
+    let panelOverlay = document.getElementById('panel-overlay');
+    let cartPanelWrapper = document.getElementById('cart-panel--wrapper');
+    // let wishlistPanelWrapper = document.getElementById('wishlist-panel--wrapper');
+
+    if (panelOverlay.classList.contains('open') || cartPanelWrapper.classList.contains('open')) {
+        panelOverlay.classList.remove('open');
+        cartPanelWrapper.classList.remove('open');
+    }
+}
 // botón para abrir y cerrar el carrito
 // const panelCarritoWrapper = document.getElementById('cart-panel--wrapper');
 // const panelOverlay = document.getElementById('panel-overlay');

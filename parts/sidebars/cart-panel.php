@@ -1,6 +1,6 @@
 <div id="cart-panel--wrapper">
     <div id="cart-panel">
-        <a id="close-cart-panel" href="#"><?php echo esc_html__('Cerrar', 'kenko'); ?></a>
+        <button id="close-cart-panel" onclick="closePanels()"><?php echo esc_html__('Cerrar', 'kenko'); ?></button>
         
     </div>
 </div>
