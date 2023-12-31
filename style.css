@@ -89,6 +89,9 @@ img{display:block; height:auto;}
         #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .cart-wrapper) .counter{display:flex; border:0 solid transparent; background-color: transparent; color:var(--wp--preset--color--text); transition:all .3s ease;}
         #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .cart-wrapper) .counter:hover{color:var(--wp--preset--color--title);}
         #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .cart-wrapper) .counter :is(.parentesis, .number){font-size:14px;}
+        /* páneles */
+        #panel-overlay{position:fixed; width:100%; height:100%; top:0; right:-100%; background-color:transparent; transition:background-color .3s ease; transition-delay:.3s;}
+        #panel-overlay.open{right:0; background-color:#ffffffb9;}
         /* menú principal */
         #main-header .mobile-header .header-content .primary{display:none;}
 
