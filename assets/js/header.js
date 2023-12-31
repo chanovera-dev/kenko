@@ -158,14 +158,8 @@ function closePanels() {
     // let wishlistPanelWrapper = document.getElementById('wishlist-panel--wrapper');
 
     if (panelOverlay.classList.contains('open') || cartPanelWrapper.classList.contains('open')) {
-        panelOverlay.classList.add('close');
-        cartPanelWrapper.classList.add('close');
-        setTimeout(function() {
-            panelOverlay.classList.remove('open');
-            cartPanelWrapper.classList.remove('open');
-            panelOverlay.classList.remove('close');
-            cartPanelWrapper.classList.remove('close');
-        }, 300);
+        panelOverlay.classList.remove('open');
+        cartPanelWrapper.classList.remove('open');
     }
 }
 
