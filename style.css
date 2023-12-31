@@ -86,6 +86,7 @@ img{display:block; height:auto;}
         #main-header .mobile-header .header-content > nav ul li a:hover{color:var(--wp--preset--color--title);}
         #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .sign-in-wrapper){display:none;}
         #main-header .mobile-header .header-content > nav ul .cart-wrapper .counter{font-size:0;}
+        #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .cart-wrapper) .counter{display:flex;}
         #main-header .mobile-header .header-content > nav ul :is(.wishlist-wrapper, .cart-wrapper) .counter :is(.parentesis, .number){font-size:14px;}
         /* menú principal */
         #main-header .mobile-header .header-content .primary{display:none;}
