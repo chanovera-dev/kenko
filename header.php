@@ -13,7 +13,8 @@ echo '
     </head>
     <body id="body" '; body_class(); echo '>
         <div id="panel-overlay"></div>';
-        include(TEMPLATEPATH . '/parts/sidebars/cart-panel.php'); 
+        include(TEMPLATEPATH . '/parts/sidebars/cart-panel.php');
+        include(TEMPLATEPATH . '/parts/sidebars/wishlist-panel.php'); 
         echo '
         <header id="main-header" class="container main-header">';
             include(TEMPLATEPATH . '/parts/header/mobile-header.php');

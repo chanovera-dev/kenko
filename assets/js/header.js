@@ -152,14 +152,23 @@ function openPanelCart() {
     cartPanel.classList.add('open');
 }
 
+function openWishlistPanel() {
+    let panelOverlay = document.getElementById('panel-overlay');
+    let wishlistPanel = document.getElementById('wishlist-panel');
+    
+    panelOverlay.classList.add('open');
+    wishlistPanel.classList.add('open');
+}
+
 function closePanels() {
     let panelOverlay = document.getElementById('panel-overlay');
     let cartPanel = document.getElementById('cart-panel');
-    // let wishlistPanel = document.getElementById('wishlist-panel');
+    let wishlistPanel = document.getElementById('wishlist-panel');
 
-    if (panelOverlay.classList.contains('open') || cartPanel.classList.contains('open')) {
+    if (panelOverlay.classList.contains('open') || cartPanel.classList.contains('open') || wishlistPanel.classList.contains('open')) {
         panelOverlay.classList.remove('open');
         cartPanel.classList.remove('open');
+        wishlistPanel.classList.remove('open');
     }
 }
 
