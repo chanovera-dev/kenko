@@ -113,6 +113,7 @@ function my_custom_content_before_wrapper() {
     // contenido de la parte superior de shop
     if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
         add_filter( 'woocommerce_get_breadcrumb', '__return_false' );
+        remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
         echo '
         <section class="section breadcrumb-filter-search">
             <div class="header-shop">' .
