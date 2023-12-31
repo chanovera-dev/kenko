@@ -163,10 +163,12 @@ function closePanels() {
     }
 }
 
-let cerrarPaneles = document.getElementById('panel-overlay');
-cerrarPaneles.addEventListener("click", function() {
-    closePanels();
+document.addEventListener("click", function(event) {
+    if (event.target && event.target.id === 'panel-overlay') {
+        closePanels();
+    }
 });
+
 
 
 
