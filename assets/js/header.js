@@ -182,6 +182,8 @@ function closePanels() {
 
 let cerrarCarrito = document.getElementById('panel-overlay');
 cerrarCarrito.addEventListener("click", function() {
+    let panelOverlay = document.getElementById('panel-overlay');
+    let cartPanelWrapper = document.getElementById('cart-panel--wrapper');
     if (panelOverlay.classList.contains('open') || cartPanelWrapper.classList.contains('open')) {
         panelOverlay.classList.remove('open');
         cartPanelWrapper.classList.remove('open');
