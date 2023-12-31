@@ -146,20 +146,20 @@ window.addEventListener("scroll", () => {
 
 function openPanelCart() {
     let panelOverlay = document.getElementById('panel-overlay');
-    let cartPanelWrapper = document.getElementById('cart-panel--wrapper');
+    let cartPanel = document.getElementById('cart-panel');
     
     panelOverlay.classList.add('open');
-    cartPanelWrapper.classList.add('open');
+    cartPanel.classList.add('open');
 }
 
 function closePanels() {
     let panelOverlay = document.getElementById('panel-overlay');
-    let cartPanelWrapper = document.getElementById('cart-panel--wrapper');
-    // let wishlistPanelWrapper = document.getElementById('wishlist-panel--wrapper');
+    let cartPanel = document.getElementById('cart-panel');
+    // let wishlistPanel = document.getElementById('wishlist-panel');
 
-    if (panelOverlay.classList.contains('open') || cartPanelWrapper.classList.contains('open')) {
+    if (panelOverlay.classList.contains('open') || cartPanel.classList.contains('open')) {
         panelOverlay.classList.remove('open');
-        cartPanelWrapper.classList.remove('open');
+        cartPanel.classList.remove('open');
     }
 }
 
