@@ -180,16 +180,13 @@ function closePanels() {
 //     panelOverlay.style.backgroundColor = "rgba(255,255,255,.75)";
 // });
 
-// cerrarCarrito.addEventListener("click", function() {
-//     panelCarritoWrapper.style.transition = "all 1s ease";
-//     panelCarritoWrapper.style.right = null;
-//     panelOverlay.style.transition = null;
-//     panelOverlay.style.transitionDelay = null;
-//     panelOverlay.style.backgroundColor = null;
-//     setTimeout(function() {
-//         panelCarritoWrapper.style.transition = null;
-//     }, 500); 
-// });
+let cerrarCarrito = document.getElementById('panel-overlay');
+cerrarCarrito.addEventListener("click", function() {
+    if (panelOverlay.classList.contains('open') || cartPanelWrapper.classList.contains('open')) {
+        panelOverlay.classList.remove('open');
+        cartPanelWrapper.classList.remove('open');
+    }
+});
 
 // panelOverlay.addEventListener('click', function(event) {
 //     panelCarritoWrapper.style.transition = "all 1s ease";
