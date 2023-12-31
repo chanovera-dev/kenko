@@ -128,7 +128,7 @@ function kenko_theme_custom_breakpoints() {
                     .mobile-menu--button .bars > div:not(:last-child){margin-bottom:6px;}
                     .mobile-menu--button .bars.active .bar3{transform:translateY(-5px) rotate(90deg);}
                     /* carrito */
-                    #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:16px;}
+                    #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter{font-size:16px; gap:3px;}
                     #main-header .mobile-header .header-content .attachment-list .cart-wrapper .counter .parentesis{display:none;}
                     #main-header .mobile-header .header-content .attachment-list :is(.wishlist-wrapper, .cart-wrapper) .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
                 /* blog */
