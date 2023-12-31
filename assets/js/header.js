@@ -168,6 +168,11 @@ function closePanels() {
         }, 300);
     }
 }
+
+let closePanels = document.getElementById('panel-overlay');
+closePanels.addEventListener("click", function() {
+    closePanels();
+});
 // botón para abrir y cerrar el carrito
 // const panelCarritoWrapper = document.getElementById('cart-panel--wrapper');
 // const panelOverlay = document.getElementById('panel-overlay');
