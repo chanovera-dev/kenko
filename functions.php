@@ -156,9 +156,9 @@ function widgets_areas(){
     
     register_sidebar(
         array(
-            'name' => __('Shop Sidebar','renata'),
+            'name' => __('Shop Sidebar','kenko'),
             'id' => 'shop-sidebar',
-            'description' => __('Sidebar Widget Area','renata'),
+            'description' => __('Sidebar Widget Area','kenko'),
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
             'before_widget' => '',
@@ -168,9 +168,9 @@ function widgets_areas(){
 
     register_sidebar(
         array(
-            'name' => __('Mini Cart Sidebar','renata'),
+            'name' => __('Mini Cart Sidebar','kenko'),
             'id' => 'mini-cart-sidebar',
-            'description' => __('Sidebar Widget Area','renata'),
+            'description' => __('Sidebar Widget Area','kenko'),
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
             'before_widget' => '',
