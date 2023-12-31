@@ -17,10 +17,10 @@ echo '
     if (is_plugin_active('woocommerce/woocommerce.php')) {
         echo '
         <li class="cart-wrapper">
-            <a id="open-cart-panel" class="counter cart-customlocation" href="#">'.
+            <button id="open-cart-panel" class="counter cart-customlocation" onclick="panelCart()">'.
                 esc_html__('Carrito', 'kenko').'
                 <div class="wrapper"><span class="parentesis">'.esc_html__('(', 'kenko').'</span><span class="number">'; echo sprintf ( WC()->cart->get_cart_contents_count() );  echo'</span><span class="parentesis">'.esc_html__(')', 'kenko').'</span></div>
-            </a>
+            </button>
         </li>';
     } else {}
     echo '

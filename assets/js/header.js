@@ -144,40 +144,49 @@ window.addEventListener("scroll", () => {
 
 
 
+function panelCart() {
+    // Agrega la clase 'open' al elemento con el id 'panel-overlay'
+    var panelOverlay = document.getElementById('panel-overlay');
+    panelOverlay.classList.add('open');
+  
+    // Agrega la clase 'open' al elemento con el id 'cart-panel--wrapper'
+    var cartPanelWrapper = document.getElementById('cart-panel--wrapper');
+    cartPanelWrapper.classList.add('open');
+  }
 // botón para abrir y cerrar el carrito
-const panelCarritoWrapper = document.getElementById('cart-panel--wrapper');
-const panelOverlay = document.getElementById('panel-overlay');
-const abrirCarrito = document.getElementById('open-cart-panel');
-const cerrarCarrito = document.getElementById('close-cart-panel');
+// const panelCarritoWrapper = document.getElementById('cart-panel--wrapper');
+// const panelOverlay = document.getElementById('panel-overlay');
+// const abrirCarrito = document.getElementById('open-cart-panel');
+// const cerrarCarrito = document.getElementById('close-cart-panel');
 
-abrirCarrito.addEventListener("click", function() {
-    panelCarritoWrapper.style.right = "0";
-    panelOverlay.style.transition = "background-color .3s ease";
-    panelOverlay.style.transitionDelay = ".3s";
-    panelOverlay.style.backgroundColor = "rgba(255,255,255,.75)";
-});
+// abrirCarrito.addEventListener("click", function() {
+//     panelCarritoWrapper.style.right = "0";
+//     panelOverlay.style.transition = "background-color .3s ease";
+//     panelOverlay.style.transitionDelay = ".3s";
+//     panelOverlay.style.backgroundColor = "rgba(255,255,255,.75)";
+// });
 
-cerrarCarrito.addEventListener("click", function() {
-    panelCarritoWrapper.style.transition = "all 1s ease";
-    panelCarritoWrapper.style.right = null;
-    panelOverlay.style.transition = null;
-    panelOverlay.style.transitionDelay = null;
-    panelOverlay.style.backgroundColor = null;
-    setTimeout(function() {
-        panelCarritoWrapper.style.transition = null;
-    }, 500); 
-});
+// cerrarCarrito.addEventListener("click", function() {
+//     panelCarritoWrapper.style.transition = "all 1s ease";
+//     panelCarritoWrapper.style.right = null;
+//     panelOverlay.style.transition = null;
+//     panelOverlay.style.transitionDelay = null;
+//     panelOverlay.style.backgroundColor = null;
+//     setTimeout(function() {
+//         panelCarritoWrapper.style.transition = null;
+//     }, 500); 
+// });
 
-panelOverlay.addEventListener('click', function(event) {
-    panelCarritoWrapper.style.transition = "all 1s ease";
-    panelCarritoWrapper.style.right = null;
-    panelOverlay.style.transition = null;
-    panelOverlay.style.transitionDelay = null;
-    panelOverlay.style.backgroundColor = null;
-    setTimeout(function() {
-        panelCarritoWrapper.style.transition = null;
-    }, 500); 
-});
+// panelOverlay.addEventListener('click', function(event) {
+//     panelCarritoWrapper.style.transition = "all 1s ease";
+//     panelCarritoWrapper.style.right = null;
+//     panelOverlay.style.transition = null;
+//     panelOverlay.style.transitionDelay = null;
+//     panelOverlay.style.backgroundColor = null;
+//     setTimeout(function() {
+//         panelCarritoWrapper.style.transition = null;
+//     }, 500); 
+// });
 
 
 
