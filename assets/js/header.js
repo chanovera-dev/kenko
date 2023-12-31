@@ -163,10 +163,10 @@ function closePanels() {
     }
 }
 
-let closePanels = document.getElementById('panel-overlay');
-closePanels.addEventListener("click", function() {
-    closePanels();
-});
+// let closePanels = document.getElementById('panel-overlay');
+// closePanels.addEventListener("click", function() {
+//     closePanels();
+// });
 // botón para abrir y cerrar el carrito
 // const panelCarritoWrapper = document.getElementById('cart-panel--wrapper');
 // const panelOverlay = document.getElementById('panel-overlay');
@@ -180,13 +180,13 @@ closePanels.addEventListener("click", function() {
 //     panelOverlay.style.backgroundColor = "rgba(255,255,255,.75)";
 // });
 
-// let cerrarCarrito = document.getElementById('panel-overlay');
-// cerrarCarrito.addEventListener("click", function() {
-//     if (panelOverlay.classList.contains('open') || cartPanelWrapper.classList.contains('open')) {
-//         panelOverlay.classList.remove('open');
-//         cartPanelWrapper.classList.remove('open');
-//     }
-// });
+let cerrarCarrito = document.getElementById('panel-overlay');
+cerrarCarrito.addEventListener("click", function() {
+    if (panelOverlay.classList.contains('open') || cartPanelWrapper.classList.contains('open')) {
+        panelOverlay.classList.remove('open');
+        cartPanelWrapper.classList.remove('open');
+    }
+});
 
 // panelOverlay.addEventListener('click', function(event) {
 //     panelCarritoWrapper.style.transition = "all 1s ease";
