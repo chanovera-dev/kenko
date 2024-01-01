@@ -126,5 +126,11 @@ img{display:block; height:auto;}
 .close-panels{color:#fff;border-bottom:1px solid #464646; border:0 solid transparent; background-color:transparent; font-size:16px; display:block; margin-left:auto; cursor:pointer;}
 /* wishlist */
 #whishlist-panel .yith-wcwl-form .wishlist-title-container{display:none;}
-/* miniatura */
-.wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
+    /* tabla */
+    table.wishlist_table{width:100%;}
+    /* cabecera de tabla */
+    table.wishlist_table thead{display:none;}
+    /* fila */
+    table.wishlist_table tr{display:grid;}
+        /* miniatura */
+        .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
