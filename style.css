@@ -134,5 +134,6 @@ img{display:block; height:auto;}
     table.wishlist_table tr{display:grid;}
         /* celda */
         table.wishlist_table tbody td{padding:0 12px;}
+        table.wishlist_table tbody td.product-remove{padding:0;}
             /* miniatura */
             .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
