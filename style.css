@@ -131,7 +131,7 @@ img{display:block; height:auto;}
     /* cabecera de tabla */
     table.wishlist_table thead{display:none;}
     /* cuespo de la tabla */
-    table.wishlist_table tbody *:not(:last-child){margin-bottom:22px;}
+    table.wishlist_table tbody > *:not(:last-child){margin-bottom:22px;}
     /* fila */
     table.wishlist_table tr{display:grid;}
         /* celda */
