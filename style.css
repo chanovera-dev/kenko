@@ -140,7 +140,7 @@ img{display:block; height:auto;}
         table.wishlist_table tbody :is(td.product-remove, td.product-name, td.product-price, td.product-stock-status, td.product-add-to-cart){grid-column:2/3; text-align:left;}
         table.wishlist_table tbody td a{margin:0; color:#fff;}
             /* miniatura */
-            .wishlist_table tr td.product-thumbnail{grid-column:1/2; grid-row:1/5; display:grid; padding:0; align-items:center;}
+            .wishlist_table tr td.product-thumbnail{grid-column:1/2; grid-row:1/6; display:grid; padding:0; align-items:center;}
             .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
             /* agregar al carrito */
             .wishlist_table .product-add-to-cart a{margin:0!important;}
