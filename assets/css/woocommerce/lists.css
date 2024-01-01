@@ -1,5 +1,5 @@
 .products{padding-left:0; list-style:none; display:grid; gap:38px 24px; grid-template-columns:var(--grid-columns--loop--woo); padding-bottom:37px;}
-.products li{display:grid; gap:15px;}
+.products li > *:not(:last-child){margin-bottom:15px;}
 .products li a img{width:100%;}
 .products li .content{position:relative; padding-right:30px;}
 .products li .content *{margin:0; line-height:1.6;}
