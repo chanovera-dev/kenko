@@ -131,10 +131,12 @@ img{display:block; height:auto;}
     table.wishlist_table{width:100%; padding-top:40px;}
     /* cabecera de tabla */
     table.wishlist_table thead{display:none;}
-    /* cuespo de la tabla */
-    table.wishlist_table tbody > *:not(:last-child){margin-bottom:22px;}
+    /* cuerpo de la tabla */
+    
     /* fila */
     table.wishlist_table tr{display:grid;}
+    table.wishlist_table tbody > *:not(:last-child),
+    ul.wishlist_table.mobile li{margin-bottom:22px;}
         /* celda */
         table.wishlist_table tbody td,
         table.wishlist_table tbody td.product-remove{padding:0;}
