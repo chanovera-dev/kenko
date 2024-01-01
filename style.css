@@ -137,7 +137,7 @@ img{display:block; height:auto;}
         /* celda */
         table.wishlist_table tbody td{padding:0 12px;}
         table.wishlist_table tbody td.product-remove{padding:0;}
-        table.wishlist_table tbody :is(td.product-remove, td.product-name, td.product-price, td.product-stock-status, td.product-add-to-cart){grid-column:2/3;}
+        table.wishlist_table tbody :is(td.product-remove, td.product-name, td.product-price, td.product-stock-status, td.product-add-to-cart){grid-column:2/3; color:#fff; text-align:left;}
             /* miniatura */
             .wishlist_table tr td.product-thumbnail{grid-column:1/2; grid-row:1/5; display:grid; padding:0; align-items:center;}
             .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
