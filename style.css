@@ -63,7 +63,8 @@ img{display:block; height:auto;}
                 /* menu-mobile · abierto · submenús */
                 #main-header .mobile-header .menu-mobile :is(.attachment-nav, .mobile) ul li .sub-menu.open{max-height:500px; border-top:1px solid #eee;}
         /* wishlist */
-            #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{font-size:16px;}
+            #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter{display:flex; font-size:16px; gap:3px; border:0 solid transparent; background-color: transparent; color:var(--wp--preset--color--text); transition:all .3s ease;}
+            #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter:hover{color:var(--wp--preset--color--title);}
             #main-header .mobile-header .attachment-nav .attachment-list .wishlist-wrapper .counter .number{position:relative; top:-7px; color:var(--wp--preset--color--links);}
             /* menú social */
             #main-header .mobile-header .social{padding-top:14px;}
