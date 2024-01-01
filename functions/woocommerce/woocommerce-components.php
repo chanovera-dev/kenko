@@ -32,6 +32,7 @@ function shop_styles() {
         wp_enqueue_style( 'lists-styles', get_template_directory_uri() . '/assets/css/woocommerce/lists.css' );
         /* estilos css para la paginación */
         wp_enqueue_style( 'pagination-styles', get_template_directory_uri() . '/assets/css/pagination.css' );
+        wp_enqueue_style( 'wishlist-styles', get_template_directory_uri() . '/assets/css/woocommerce/wishlist.css' );
         // remueve la sidebar
         remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
     }
