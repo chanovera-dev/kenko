@@ -147,6 +147,7 @@ img{display:block; height:auto;}
             table.wishlist_table tbody td.product-remove{text-align:right;}
             /* miniatura */
             .wishlist_table tr td.product-thumbnail{grid-column:1/2; grid-row:1/6; display:grid; padding:0; align-items:center;}
+            ul.wishlist_table.mobile li .item-wrapper .item-details{width:100%;}
             ul.wishlist_table.mobile li .item-wrapper .product-thumbnail{margin:0;}
             ul.wishlist_table.mobile li .product-thumbnail a{position:absolute; top:0; left:0;}
             ul.wishlist_table.mobile li .product-thumbnail a img,
