@@ -132,5 +132,7 @@ img{display:block; height:auto;}
     table.wishlist_table thead{display:none;}
     /* fila */
     table.wishlist_table tr{display:grid;}
-        /* miniatura */
-        .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
+        /* celda */
+        table.wishlist_table tbody td{padding:0 12px;}
+            /* miniatura */
+            .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
