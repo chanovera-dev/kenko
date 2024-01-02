@@ -171,3 +171,6 @@ img{display:block; height:auto;}
             #wishlist-panel .wishlist_table .product-stock-status span.wishlist-in-stock{color:#777;}
             /* wishlist vacia */
             #wishlist-panel p.wishlist-empty, #wishlist-panel table.wishlist_table tbody td.wishlist-empty{grid-column:1/-1;}
+/* minicarrito */
+.woocommerce-mini-cart{padding-left:0; list-style:none;}
+.woocommerce-mini-cart li a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
