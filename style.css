@@ -174,7 +174,8 @@ img{display:block; height:auto;}
 /* minicarrito */
 .widget_shopping_cart_content{display:grid; height:calc(100% - 15px); grid-template-rows:1fr auto;}
 .woocommerce-mini-cart{padding-left:0; padding-top:40px; list-style:none;}
-.woocommerce-mini-cart li{position:relative; padding-left:86px; padding-right:20px; min-height:64px; display:grid; align-items:start; margin-bottom:50px;}
+.woocommerce-mini-cart li{position:relative; padding:14px 20px 14px 86px; min-height:64px; display:grid; align-items:start; margin-bottom:50px;}
+.woocommerce-mini-cart li:not(:last-child){border-bottom:1px solid #464646;}
 .woocommerce-mini-cart li a.remove.remove_from_cart_button{position:absolute; top:0; right:0; color:#fff;}
 .woocommerce-mini-cart li a{color:#fff;}
 .woocommerce-mini-cart li a img{width:64px; height:64px; object-fit:cover; border-radius:50%; position:absolute; top:0; left:0;}
