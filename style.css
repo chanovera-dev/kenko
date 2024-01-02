@@ -167,3 +167,5 @@ img{display:block; height:auto;}
             .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
             /* agregar al carrito */
             .wishlist_table .product-add-to-cart a{margin:0!important;}
+            /* hay existencias */
+            .wishlist_table .product-stock-status span.wishlist-in-stock{color:#777;}
