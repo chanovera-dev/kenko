@@ -136,7 +136,8 @@ img{display:block; height:auto;}
     /* fila */
     #wishlist-panel table.wishlist_table tr{display:grid; grid-template-columns:86px 1fr; position:relative;}
     #wishlist-panel table.wishlist_table tbody > *:not(:last-child){margin-bottom:50px;}
-    #wishlist-panel ul.wishlist_table.mobile li{margin-bottom:50px; padding-left:86px; position:relative;}
+    #wishlist-panel ul.wishlist_table.mobile li{padding:14px 20px 14px 86px; position:relative;}
+    #wishlist-panel ul.wishlist_table.mobile li:not(:last-child){border-bottom:1px solid #464646;}
     #wishlist-panel ul.wishlist_table.mobile li .item-wrapper{display:flex;}
         /* celda */
         #wishlist-panel table.wishlist_table tbody td,
