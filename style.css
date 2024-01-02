@@ -145,7 +145,7 @@ img{display:block; height:auto;}
         #wishlist-panel table.wishlist_table tbody :is(td.product-remove, td.product-name, td.product-price, td.product-stock-status, td.product-add-to-cart){grid-column:2/3; text-align:left;}
         #wishlist-panel table.wishlist_table tbody td a{margin:0; color:#fff;}
             /* remover producto */
-            #wishlist-panel table.wishlist_table tbody td.product-remove{text-align:right; position:absolute; top:0; right:0;}
+            #wishlist-panel table.wishlist_table tbody td.product-remove{text-align:right; position:absolute; top:14px; right:0;}
             /* miniatura */
             #wishlist-panel .wishlist_table tr td.product-thumbnail{grid-column:1/2; grid-row:1/5; display:grid; padding:0; align-items:start;}
             #wishlist-panel ul.wishlist_table.mobile li .item-wrapper{margin-bottom:0;}
