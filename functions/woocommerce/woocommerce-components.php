@@ -61,3 +61,15 @@ function wishlist_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'wishlist_styles' );
+
+
+
+// Estilos para la página mi cuenta
+function my_woocommerce_account_styles() {
+    if ( is_page_template('my-woocommerce-account.php') ) {
+        wp_enqueue_style( 'my-account-styles', get_template_directory_uri() . '/assets/css/woocommerce/my-account.css' );
+        /* estilos css para los formularios */
+        wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'my_woocommerce_account_styles' );
