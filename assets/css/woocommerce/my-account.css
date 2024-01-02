@@ -1,5 +1,8 @@
 #main .container .section{padding:50px 0;}
 #main .container .section .woocommerce{width:min(100%, 500px); margin-inline:auto;}
 #main .container .section .woocommerce h2{margin-bottom:22px;}
+#main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login{display:grid; gap:20px;}
 #main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login p.woocommerce-form-row{display:grid;}
 #main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login p.woocommerce-form-row :is(input[type=text], input[type=password]){width:100%;}
+#main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login .form-row{display:grid; gap:3px;}
+#main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login .form-row button{height:44px; display:flex; align-items:center; justify-content:center; border-radius:0; border:1px solid #111; background-color:#111; color:#fff; font-size:16px; transition:all .3s ease;}
