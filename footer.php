@@ -17,7 +17,7 @@
                 );
             }
 
-            echo '<p>© '. bloginfo( 'name' ) . ' · ' . date("Y") . '</p>';
+            echo '<p>© '. get_bloginfo( 'name' ) . ' · ' . date("Y") . '</p>';
 
             $menu_social_id = get_nav_menu_locations()['social'];
             $menu_social = wp_get_nav_menu_object($menu_social_id);
