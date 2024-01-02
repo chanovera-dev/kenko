@@ -20,7 +20,7 @@
 .flex-control-nav{padding-left:0; list-style:none;}
 
 /* galería */
-.woocommerce-product-gallery{padding-top:var(--padding-top--gallery);}
+.woocommerce-product-gallery{padding-top:var(--padding-top--gallery); padding-bottom:var(--padding-top--gallery);}
 
 /* icono de zoom de la galería */
 .woocommerce-product-gallery__trigger{font-size:0; color:inherit; width:20px; height:20px; margin-right:15px; display:var(--display--gallery-trigger);}

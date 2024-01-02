@@ -222,7 +222,7 @@ function kenko_theme_custom_breakpoints() {
                 .single-product #main .container.breadcrumb-wrapper{background-color:var(--wp--preset--color--line);}
                 #main .container.product-wrapper .section .product{display:grid; grid-template-columns:58.3333% 1fr;}
                     /* galería */
-                    .woocommerce-product-gallery{display:grid; gap:15px 0; grid-template-columns:60px 1fr;}
+                    .woocommerce-product-gallery{display:grid; gap:15px; grid-template-columns:60px 1fr;}
                         /* carrusel */
                         .woocommerce-product-gallery__wrapper{grid-column:2/3; grid-row:2/3;}
                         /* botón de zoom */
