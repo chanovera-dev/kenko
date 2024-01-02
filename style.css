@@ -122,7 +122,7 @@ img{display:block; height:auto;}
 
 /* paneles carrito & wishlist */
 #cart-panel,
-#wishlist-panel{background-color:#333; color:#fff; position:fixed; top:0; right:-100%; width:var(--width--cart-panel); height:100%; overflow:hidden; padding:var(--padding-cart-panel); transition:all .3s ease; z-index:102;}
+#wishlist-panel{background-color:#333; color:#fff; position:fixed; top:0; right:-100%; width:var(--width--cart-panel); height:100%; overflow:hidden; padding:var(--padding-cart-panel); transition:all .3s ease; overflow-y:scroll; z-index:102;}
 .close-panels{color:#fff;border-bottom:1px solid #464646; border:0 solid transparent; background-color:transparent; font-size:16px; display:block; margin-left:auto; cursor:pointer;}
 /* wishlist */
 #wishlist-panel .yith-wcwl-form .wishlist-title-container{display:none;}
