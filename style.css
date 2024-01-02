@@ -169,3 +169,5 @@ img{display:block; height:auto;}
             .wishlist_table .product-add-to-cart a{margin:0!important;}
             /* hay existencias */
             .wishlist_table .product-stock-status span.wishlist-in-stock{color:#777;}
+            /* wishlist vacia */
+            p.wishlist-empty, table.wishlist_table tbody td.wishlist-empty{grid-column:1/-1;}
