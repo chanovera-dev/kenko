@@ -17,7 +17,7 @@
                 );
             }
 
-            echo '<p>© '.date("Y").esc_html__(' Kenko', 'kenko').' · '.esc_html__('por ', 'kenko').'<a href="https://peramanzana.com">' . esc_html__('PeraManzana', 'kenko') . '</a></p>';
+            echo '<p>© '.date("Y"). bloginfo( 'name' ) .'</p>';
 
             $menu_social_id = get_nav_menu_locations()['social'];
             $menu_social = wp_get_nav_menu_object($menu_social_id);
