@@ -2,3 +2,4 @@
 #main .container .section .woocommerce{width:min(100%, 500px); margin-inline:auto;}
 #main .container .section .woocommerce h2{margin-bottom:22px;}
 #main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login p.woocommerce-form-row{display:grid;}
+#main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login p.woocommerce-form-row :is(input[type=text], input[type=password]){width:100%;}
