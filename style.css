@@ -127,7 +127,7 @@ img{display:block; height:auto;}
 /* wishlist */
 #wishlist-panel .yith-wcwl-form .wishlist-title-container{display:none;}
     /* tabla */
-    ul.wishlist_table.mobile{padding-left:0; padding-top:40px;}
+    ul.wishlist_table.mobile{padding-left:0; margin-top:40px; border-top:1px solid #464646;}
     table.wishlist_table{width:100%; padding-top:40px;}
     /* cabecera de tabla */
     table.wishlist_table thead{display:none;}
@@ -159,6 +159,7 @@ img{display:block; height:auto;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .additional-info{margin-bottom:0;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .additional-info tbody tr td.label{display:none;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .additional-info tbody tr td.value{padding:0; font-size:16px; color:#777;}
+            #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart{margin-bottom:0;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart a{color:#fff;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-remove{position:absolute; top:14px; right:0;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-remove a{color:#fff;}
