@@ -6,3 +6,4 @@
 #main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login p.woocommerce-form-row :is(input[type=text], input[type=password]){width:100%;}
 #main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login .form-row{display:grid; gap:3px;}
 #main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login .form-row button{height:44px; display:flex; align-items:center; justify-content:center; border-radius:0; border:1px solid #111; background-color:#111; color:#fff; font-size:16px; transition:all .3s ease;}
+#main .container .section .woocommerce .woocommerce-form.woocommerce-form-login.login .form-row button:hover{filter:brightness(1.3);}
