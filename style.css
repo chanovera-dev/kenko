@@ -179,3 +179,4 @@ img{display:block; height:auto;}
 .woocommerce-mini-cart li a{color:#fff;}
 .woocommerce-mini-cart li a img{width:64px; height:64px; object-fit:cover; border-radius:50%; position:absolute; top:0; left:0;}
 .woocommerce-mini-cart li .quantity{color:#777;}
+.widget_shopping_cart_content .woocommerce-mini-cart__buttons{display:grid;}
