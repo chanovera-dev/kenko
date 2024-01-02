@@ -136,7 +136,7 @@ img{display:block; height:auto;}
     /* fila */
     #wishlist-panel table.wishlist_table tr{display:grid; grid-template-columns:86px 1fr; position:relative;}
     #wishlist-panel table.wishlist_table tbody > *:not(:last-child){margin-bottom:50px;}
-    #wishlist-panel ul.wishlist_table.mobile li{padding:14px 20px 14px 86px; position:relative;}
+    #wishlist-panel ul.wishlist_table.mobile li{padding:14px 20px 14px 86px; margin-bottom:0; position:relative;}
     #wishlist-panel ul.wishlist_table.mobile li:not(:last-child){border-bottom:1px solid #464646;}
     #wishlist-panel ul.wishlist_table.mobile li .item-wrapper{display:flex;}
         /* celda */
@@ -160,10 +160,10 @@ img{display:block; height:auto;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .additional-info tbody tr td.label{display:none;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .additional-info tbody tr td.value{padding:0; font-size:16px; color:#777;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart a{color:#fff;}
-            #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-remove{position:absolute; top:0; right:0;}
+            #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-remove{position:absolute; top:14px; right:0;}
             #wishlist-panel ul.wishlist_table.mobile li .additional-info-wrapper .product-remove a{color:#fff;}
             #wishlist-panel ul.wishlist_table.mobile li .item-wrapper .product-thumbnail{margin:0;}
-            #wishlist-panel ul.wishlist_table.mobile li .product-thumbnail a{position:absolute; top:0; left:0;}
+            #wishlist-panel ul.wishlist_table.mobile li .product-thumbnail a{position:absolute; top:14px; left:0;}
             #wishlist-panel ul.wishlist_table.mobile li .product-thumbnail a img,
             #wishlist-panel .wishlist_table tr td.product-thumbnail a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
             /* agregar al carrito */
