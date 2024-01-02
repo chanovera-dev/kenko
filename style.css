@@ -172,6 +172,7 @@ img{display:block; height:auto;}
             /* wishlist vacia */
             #wishlist-panel p.wishlist-empty, #wishlist-panel table.wishlist_table tbody td.wishlist-empty{grid-column:1/-1;}
 /* minicarrito */
+.widget_shopping_cart_content{display:grid; height:100%; grid-template-rows:1fr auto;}
 .woocommerce-mini-cart{padding-left:0; list-style:none;}
 .woocommerce-mini-cart li:not(:last-child){margin-bottom:50px;}
 .woocommerce-mini-cart li a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
