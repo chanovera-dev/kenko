@@ -173,4 +173,5 @@ img{display:block; height:auto;}
             #wishlist-panel p.wishlist-empty, #wishlist-panel table.wishlist_table tbody td.wishlist-empty{grid-column:1/-1;}
 /* minicarrito */
 .woocommerce-mini-cart{padding-left:0; list-style:none;}
+.woocommerce-mini-cart li:not(:last-child){margin-bottom:50px;}
 .woocommerce-mini-cart li a img{width:64px; height:64px; object-fit:cover; border-radius:50%;}
