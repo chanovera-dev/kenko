@@ -1,7 +1,7 @@
 /* navegación de páginas */
 .navigation.pagination .screen-reader-text{display:none;}
 .navigation.pagination{display:grid; grid-gap:3rem; text-align:center; grid-column:1/-1; margin-top:4rem;}
-.woocommerce-pagination{}
+.woocommerce-pagination{padding-bottom:37px;}
 .navigation.pagination .nav-links,
 .woocommerce-pagination .page-numbers{display:flex; gap:1rem; justify-content:center; padding-left:0; list-style:none;}
 .navigation.pagination .nav-links .page-numbers,
