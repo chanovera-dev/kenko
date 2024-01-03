@@ -78,7 +78,7 @@ img{display:block; height:auto;}
             #main-header .mobile-header .social ul li a[href*="instagram"]:before{content:'\f16f';}
         /* marca */
         #main-header .mobile-header .header-content .site-brand{grid-column:2/3;}
-        #main-header .mobile-header .header-content .site-brand a{color:var(--wp--preset--color--title); text-transform:uppercase; text-align:center; letter-spacing:5px; font-size:var(--wp--preset--font-size--x-large); font-weight:700;}
+        #main-header .mobile-header .header-content .site-brand a{color:var(--wp--preset--color--title); text-transform:uppercase; text-align:center; letter-spacing:3px; font-size:var(--wp--preset--font-size--x-large); font-weight:700;}
         /* menús directamente dentro de la cabecera */
         #main-header .mobile-header .header-content > nav.attachment-nav{margin-left:auto; display:flex; align-items:center;}
         #main-header .mobile-header .header-content > nav ul{display:inline-flex; gap:24px;}
