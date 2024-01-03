@@ -1,5 +1,6 @@
 ul.products{padding-left:0; list-style:none; display:grid; gap:38px 24px; grid-template-columns:var(--grid-columns--loop--woo); padding-bottom:37px;}
 ul.products li > *:not(:last-child){margin-bottom:15px;}
+ul.products li{overflow:hidden;}
 ul.products li a{display:block; width:100%;}
 ul.products li a img{width:100%;}
 ul.products li .content{position:relative; padding-right:30px;}
