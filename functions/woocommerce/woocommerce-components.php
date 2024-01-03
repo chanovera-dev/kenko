@@ -26,7 +26,7 @@ function template_redirect_action() {
 
 // Estilos para los archivos de la tienda
 function shop_styles() {
-    if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
+    if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) || is_front_page() ) {
         wp_enqueue_style( 'shop-styles', get_template_directory_uri() . '/assets/css/woocommerce/shop.css' );
         /* listas */
         wp_enqueue_style( 'lists-styles', get_template_directory_uri() . '/assets/css/woocommerce/lists.css' );
