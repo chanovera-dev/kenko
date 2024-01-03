@@ -1,16 +1,16 @@
 /* navegación de páginas */
 .navigation.pagination .screen-reader-text{display:none;}
-.navigation.pagination{display:grid; grid-gap:3rem; text-align:center; grid-column:1/-1; margin-top:4rem;}
+.navigation.pagination{display:grid; grid-gap:30px; text-align:center; grid-column:1/-1; margin-top:40px;}
 .woocommerce-pagination{padding-bottom:37px;}
 .navigation.pagination .nav-links,
-.woocommerce-pagination .page-numbers{display:flex; gap:1rem; justify-content:center; padding-left:0; list-style:none;}
+.woocommerce-pagination .page-numbers{display:flex; gap:10px; justify-content:center; padding-left:0; list-style:none;}
 .navigation.pagination .nav-links .page-numbers,
-.woocommerce-pagination .page-numbers li .page-numbers{display:grid; place-content:center; width:4.3rem; height:4.3rem; color:var(--color-header); border:1px solid var(--attenuated-line); box-sizing:border-box; border-radius:.4rem; text-decoration:none; transition:all .3s ease;}
+.woocommerce-pagination .page-numbers li .page-numbers{display:grid; place-content:center; width:43px; height:43px; color:var(--wp--preset--color--text); border:1px solid var(--wp--preset--color--line); box-sizing:border-box; border-radius:0; text-decoration:none; transition:all .3s ease;}
 .navigation.pagination .nav-links .page-numbers.current,
-.woocommerce-pagination .page-numbers li .page-numbers.current{background-color:var(--yellow); border:1px solid var(--yellow); color:var(--color-header);}
+.woocommerce-pagination .page-numbers li .page-numbers.current{background-color:var(--wp--preset--color--links); border:1px solid var(--wp--preset--color--links); color:var(--wp--preset--color--text);}
 .navigation.pagination .nav-links .page-numbers.current:hover,
-.woocommerce-pagination .page-numbers li .page-numbers.current:hover{color:var(--color-header);}
+.woocommerce-pagination .page-numbers li .page-numbers.current:hover{color:var(--wp--preset--color--text);}
 .navigation.pagination .nav-links .page-numbers:hover,
-.woocommerce-pagination .page-numbers li .page-numbers:hover{border:1px solid var(--yellow); color:var(--yellow);}
-:is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next){width:auto; padding:0 3rem;}
-:is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next):hover{border:1px solid var(--attenuated-line);}
+.woocommerce-pagination .page-numbers li .page-numbers:hover{border:1px solid var(--wp--preset--color--links); color:var(--wp--preset--color--links);}
+:is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next){width:auto; padding:0 30px;}
+:is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next):hover{border:1px solid var(--wp--preset--color--line);}
