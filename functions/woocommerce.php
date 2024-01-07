@@ -13,7 +13,7 @@ add_theme_support( 'wc-product-gallery-slider' );
 
 
 //Disable all woocommerce stylesheets
-add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+// add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 
 
