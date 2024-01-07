@@ -5,7 +5,8 @@ main .container .section{padding:5rem 0;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:not(:last-child){border-bottom:1px solid var(--wp--preset--color--line);}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr{padding:1.2rem 0;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child{display:block;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td{display:grid;grid-template-columns:1fr 9rem;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td{display:grid;gap:.3rem;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td .coupon{display:grid;grid-template-columns:1fr 9rem;gap:.3rem;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item{display:grid;grid-template-columns:5rem 1fr 6rem;grid-template-rows:auto 1fr;gap:.3rem 1rem;padding:1.2rem 0;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-remove{grid-column:3/4;grid-row:1/2;text-align:right;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-thumbnail{grid-column:1/2;grid-row:1/3;}
