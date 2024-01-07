@@ -73,3 +73,15 @@ function my_woocommerce_account_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'my_woocommerce_account_styles' );
+
+
+
+// Estilos para la página cart
+function cart_styles() {
+    if ( is_page_template('cart.php') ) {
+        wp_enqueue_style( 'cart-styles', get_template_directory_uri() . '/assets/css/woocommerce/cart.css' );
+        // JS de ajustes
+        wp_enqueue_script( 'ajustes-carrito', get_template_directory_uri() . '/assets/js/cart.js', '', 1, true );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'cart_styles' );
