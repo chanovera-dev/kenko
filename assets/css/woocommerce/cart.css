@@ -1,4 +1,5 @@
 /* tabla */
+.woocommerce-cart-form .woocommerce-cart-form__contents{width:100%;}
 .woocommerce-cart-form .woocommerce-cart-form__contents thead{display:none;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item{display:grid;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_remove{grid-column:3/4;grid-row:1/2;}
