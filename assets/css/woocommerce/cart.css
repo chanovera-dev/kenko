@@ -2,10 +2,10 @@
 .woocommerce-cart-form .woocommerce-cart-form__contents{width:100%;}
 .woocommerce-cart-form .woocommerce-cart-form__contents thead{display:none;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item{display:grid;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_remove{grid-column:3/4;grid-row:1/2;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_thumbnail{grid-column:1/2;grid-row:1/3;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_thumbnail a img{width:5rem;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_name{grid-column:2/3;grid-row:1/2;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_price{display:none;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_quantity{grid-column:2/3;grid-row:2/3;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product_subtotal{grid-column:3/4;grid-row:2/3;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-remove{grid-column:3/4;grid-row:1/2;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-thumbnail{grid-column:1/2;grid-row:1/3;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-thumbnail a img{width:5rem;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-name{grid-column:2/3;grid-row:1/2;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-price{display:none;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-quantity{grid-column:2/3;grid-row:2/3;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-subtotal{grid-column:3/4;grid-row:2/3;}
