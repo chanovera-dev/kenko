@@ -17,19 +17,6 @@ add_theme_support( 'wc-product-gallery-slider' );
 
 
 
-function load_woocommerce_styles_on_cart_checkout_pages() {
-    if (is_cart() || is_checkout()) {
-        // Habilitar los estilos de WooCommerce solo en las páginas de carrito y checkout
-        return true;
-    }
-    // Deshabilitar los estilos de WooCommerce en todas las demás páginas
-    return false;
-}
-add_filter('woocommerce_enqueue_styles', 'load_woocommerce_styles_on_cart_checkout_pages');
-
-
-
-
 // mostrar el carrito en tiempo real
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
 
