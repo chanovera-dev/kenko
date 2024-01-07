@@ -2,7 +2,7 @@ main .container .section{padding:var(--categories-list--padding);}
 /* tabla de productos */
 .woocommerce-cart-form .woocommerce-cart-form__contents{width:100%;}
 .woocommerce-cart-form .woocommerce-cart-form__contents thead{display:none;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item{display:grid;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item{display:grid; gap:1rem;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-remove{grid-column:3/4;grid-row:1/2;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-thumbnail{grid-column:1/2;grid-row:1/3;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-thumbnail a img{width:5rem;}
