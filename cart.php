@@ -1,4 +1,4 @@
-<?php 
+<?php /* Template name: Carrito */
 
 get_header(); 
 
