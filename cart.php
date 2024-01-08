@@ -6,7 +6,7 @@ echo '
 <main id="main">
     <div class="container">
         <section class="section">
-            <h1>' . get_the_title() . '</h1>' .
+            <h1>'; the_title(); echo '</h1>' .
 
             do_shortcode('[woocommerce_cart]');
         echo '
