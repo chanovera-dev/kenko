@@ -5,9 +5,7 @@ get_header();
 echo '
 <main id="main">
     <div class="container">
-        <section class="section">
-            <h1>'; the_title(); echo '</h1>' .
-
+        <section class="section">' .
             do_shortcode('[woocommerce_cart]');
         echo '
         </section>
