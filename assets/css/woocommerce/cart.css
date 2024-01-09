@@ -2,9 +2,9 @@ main .container .section{padding:5rem 0;}
 
 /* mensaje de carito vacío */
 .wc-empty-cart-message{text-align:center;padding:1.5rem 0 1.6rem;}
-.wc-empty-cart-message .cart-empty{display:inline-flex;position:relative;vertical-align:middle;font-size:2rem;}
+.wc-empty-cart-message .cart-empty{display:inline-flex;position:relative;vertical-align:middle;font-size:20px;color:var(--wp--preset--color--title);}
 .return-to-shop{text-align:center;}
-.return-to-shop .button.wc-backward{padding:.8rem 1.4rem;color:#fff;background-color:var(--wp--preset--color--text);font-size:1.6rem;}
+.return-to-shop .button.wc-backward{padding:.8rem 1.4rem;color:#fff;background-color:var(--wp--preset--color--title);font-size:16px;}
 
 /* tabla de productos */
 .woocommerce-cart-form .woocommerce-cart-form__contents{width:100%;}
