@@ -14,7 +14,7 @@ main .container .section{padding:3rem 0;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:not(:last-child){border-bottom:1px solid var(--wp--preset--color--line);}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr{padding:1.2rem 0;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child{display:block;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td{display:grid;gap:44px;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td{display:grid;gap:12px;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td .coupon{display:grid;grid-template-columns:1fr 9rem;gap:3px;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td .coupon input[type=text]{line-height:1.6; outline:none; padding:8px 10px; border:1px solid var(--wp--preset--color--border-input);font-size:16px;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td .coupon input[type=text]:focus{border-color:var(--wp--preset--color--border-input-focus);}
