@@ -13,8 +13,8 @@ echo '
                     <div><h3>' . esc_html__('Información práctica', 'kenko') . '</h3></div>
                     <div>
                         <p>' . esc_html__('Messenger bag raw denim health goth pour-over, twee Neutra Vice ethical bespoke. Irony hashtag mixtape kogi blog you probably haven’t heard of them, fashion axe readymade scenester flexitarian. Ugh bespoke actually vinyl photo booth tattooed paleo Pinterest Schlitz. Cronut hella selfies, flexitarian sriracha keffiyeh Intelligentsia biodiesel.', 'kenko') . '</p>
-                        <p>' . esc_html__('Teléfono: ', 'kenko') . ' <a id="number-contact" href="' . get_theme_mod('office_phone_number', '2290000000') . '">' . get_theme_mod('office_phone_number', '2290000000') . '</a></p>
-                        <p>' . get_theme_mod('address_line1', 'Mártires del HTML #404') . '<br>' . get_theme_mod('address_line2', 'Veracruz, México.') . '</p>
+                        <p>' . esc_html__('Teléfono: ', 'kenko') . ' <a id="number-contact" href="' . get_theme_mod('office_phone_number', '5523797688') . '">' . get_theme_mod('office_phone_number', '5523797688') . '</a></p>
+                        <p>' . get_theme_mod('address_line1', 'Calle Mz 4 Grupo 26 #8') . '<br>' . get_theme_mod('address_line2', 'Col. Santa Fe IMSS.') . '<br>' . get_theme_mod('address_line3', 'C.P. 01170') . '<br>' . get_theme_mod('address_line4', 'Ciudad de México') . '</p>
                     </div>
                 </div>
                 <div class="contact">
