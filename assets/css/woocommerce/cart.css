@@ -28,6 +28,6 @@ main .container .section{padding:3rem 0;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-quantity input[type="number"]:focus{outline:none;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-quantity input[type="number"]::-webkit-inner-spin-button,
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-quantity input[type="number"]::-webkit-outer-spin-button{-webkit-appearance:none;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-quantity .quantity button{border:none;background-color:none;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-quantity .quantity button{border:none;background-color:transparent;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-quantity .quantity button:focus{outline:none;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item td.product-subtotal{grid-column:3/4;grid-row:2/3;text-align:right;}
