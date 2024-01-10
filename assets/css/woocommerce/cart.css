@@ -23,7 +23,7 @@ main .container .section .woocommerce .woocommerce-notices-wrapper{grid-column:1
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td .coupon input[type=text]{line-height:1.6; outline:none; padding:8px 10px; border:1px solid var(--wp--preset--color--border-input);font-size:16px;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child td .coupon input[type=text]:focus{border-color:var(--wp--preset--color--border-input-focus);}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child :is(td .coupon, td) button{line-height:1.6; outline:none; padding:8px 10px;font-size:16px;border:1px solid #323232;background-color:#323232;color:#fff;font-size:16px;transition:all .3s ease;}
-.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child :is(td .coupon, td) :is(button:hover,button:focus){border:1px solid #888;background-color:#888;}
+.woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child :is(td .coupon, td) :is(button:hover,button:focus){filter:brightness(1.5);}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child :is(td .coupon, td) button:disabled{border:1px solid #888;color:#888;background-color:#ebebeb;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr:last-child :is(td .coupon, td) button:disabled:hover{border:1px solid #888;color:#888;background-color:#ebebeb;}
 .woocommerce-cart-form .woocommerce-cart-form__contents tbody tr.woocommerce-cart-form__cart-item{display:grid;grid-template-columns:5rem 1fr 6rem;grid-template-rows:auto 1fr;gap:.3rem 1rem;padding:1.2rem 0;}
@@ -51,4 +51,4 @@ main .container .section .woocommerce .woocommerce-notices-wrapper{grid-column:1
 .cart-collaterals .cart_totals table.shop_table tbody tr > *{padding:15px 22px;font-weight:400;color:var(--wp--preset--color--title);}
 .cart-collaterals .cart_totals table.shop_table tbody tr > * strong{font-weight:400;color:var(--wp--preset--color--title);}
 .cart-collaterals .cart_totals .wc-proceed-to-checkout a{display:grid;place-content:center;line-height:1.6;padding:8px 10px;font-size:16px;border:1px solid #323232;background-color:#323232;color:#fff;font-size:16px;transition:all .3s ease;}
-.cart-collaterals .cart_totals .wc-proceed-to-checkout :is(a:hover,a:focus){border:1px solid #888;background-color:#888;}
+.cart-collaterals .cart_totals .wc-proceed-to-checkout :is(a:hover,a:focus){filter:brightness(1.5);}
