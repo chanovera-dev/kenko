@@ -1,5 +1,5 @@
 main .woocommerce-checkout{display:grid; gap:0 5rem; margin-bottom:6rem;}
-main .woocommerce-info{padding-bottom:32px;}
+main .woocommerce-info{padding:32px 0;}
 p:has(label){display:grid;}
 p :is(input,textarea){width:100%;}
 #customer_details .col-1{color:var(--wp--preset--color--title);}
