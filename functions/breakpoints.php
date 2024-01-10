@@ -191,7 +191,7 @@ function kenko_theme_custom_breakpoints() {
                 #main-header .mobile-header .header-content .primary{display:inherit;}
 
                 /* contacto */
-                .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:301px 1fr;}
+                .contact-page .info-and-contact--wrapper :is(.info, .contact){grid-template-columns:301px 1fr};
             }
 
             @media(min-width:1024px){
@@ -216,6 +216,9 @@ function kenko_theme_custom_breakpoints() {
                     --padding-cart-panel:32px 37px;
                     --padding-close--cart-panel:32px;
                     --spacing-cart:59.88px;
+
+                    /* carrito */
+                    --grid-template-columns--carrito:1fr 400px;
                 }
                 /* cabecera */
                     /* carrito */

@@ -1,4 +1,4 @@
-main .container .section{padding:3rem 0;}
+main .container .section{padding:3rem 0;display:grid;grid-template-columns:var(--grid-template-columns--carrito);gap:50px;}
 
 /* mensaje de carito vacío */
 .wc-empty-cart-message{text-align:center;padding:15px 0 16px;}
