@@ -8,8 +8,8 @@ p :is(input,textarea){width:100%;}
 #order_comments_field label{color:var(--wp--preset--color--title);}
 abbr[title]{color:red; text-decoration:none;}
 #order_review_heading{font-size:24px;}
-.shop_table.woocommerce-checkout-review-order-table{width:100%;margin:27px 0 21px;}
-.shop_table.woocommerce-checkout-review-order-table tr{display:flex;align-items:center;justify-content:space-between;background-color:#fafafa;border:1px solid #e1e1e1;}
+.shop_table.woocommerce-checkout-review-order-table{width:100%;margin:27px 0 21px;border-collapse:collapse;}
+.shop_table.woocommerce-checkout-review-order-table tr{display:flex;align-items:center;justify-content:space-between;background-color:#fafafa;border:1px solid #e1e1e1;border-bottom:0px solid transparent;}
 .shop_table.woocommerce-checkout-review-order-table tr > *{padding:15px 22px;}
 
 .woocommerce-terms-and-conditions-wrapper{margin-bottom:2rem;}
