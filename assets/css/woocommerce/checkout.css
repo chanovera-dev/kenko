@@ -4,8 +4,7 @@ p :is(input,textarea){width:100%;}
 #customer_details .col-1{color:var(--wp--preset--color--title);}
 #customer_details .col-1 h3{font-size:24px; margin-bottom:3rem;}
 #customer_details .col-1 .woocommerce-billing-fields__field-wrapper{display:grid; gap:2rem;}
-#customer_details .col-2{padding:3rem; border:1px solid var(--wp--preset--color--line);}
-#customer_details .col-2 h3{font-size:24px; margin-bottom:3rem;}
+#customer_details .col-2 h3{font-size:24px; margin-bottom:3rem;margin-top:36px;}
 #order_comments_field label{color:var(--wp--preset--color--title);}
 abbr[title]{color:red; text-decoration:none;}
 #order_review_heading{font-size:24px;}
