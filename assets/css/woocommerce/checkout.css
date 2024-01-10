@@ -1,4 +1,5 @@
 main .woocommerce-checkout{display:grid; gap:5rem; margin-bottom:6rem;}
+p:has(input){display:grid;}
 #customer_details .col-1 h3{font-size:24px; margin-bottom:3rem;}
 #customer_details .col-1 .woocommerce-billing-fields__field-wrapper{display:grid; gap:2rem;}
 #customer_details .col-2{padding:3rem; border:1px solid var(--wp--preset--color--line);}
