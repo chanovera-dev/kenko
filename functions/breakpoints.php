@@ -120,6 +120,9 @@ function kenko_theme_custom_breakpoints() {
                     /* panel carrito */
                     --width--cart-panel:410px;
                     --padding-cart-panel:28px 37px;
+
+                    /* carrito */
+                    --grid-template-columns--coupon:1fr 9rem;
                 }
                 /* cabecera */
                     /* botón del menú */
