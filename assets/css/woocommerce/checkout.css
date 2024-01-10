@@ -1,4 +1,4 @@
-main .woocommerce-checkout{display:grid; gap:5rem; margin-bottom:6rem;}
+main .woocommerce-checkout{display:grid; gap:0 5rem; margin-bottom:6rem;}
 p:has(label){display:grid;}
 p :is(input,textarea){width:100%;}
 #customer_details .col-1 h3{font-size:24px; margin-bottom:3rem;}
@@ -9,7 +9,7 @@ p :is(input,textarea){width:100%;}
 abbr[title]{color:red; text-decoration:none;}
 #order_review_heading{font-size:24px;}
 .shop_table.woocommerce-checkout-review-order-table{width:100%;margin:27px 0 21px;}
-.shop_table.woocommerce-checkout-review-order-table tbody tr{display:flex;align-items:center;justify-content:space-between;background-color:#fafafa;border:1px solid #e1e1e1;}
+.shop_table.woocommerce-checkout-review-order-table tr{display:flex;align-items:center;justify-content:space-between;background-color:#fafafa;border:1px solid #e1e1e1;}
 
 .woocommerce-terms-and-conditions-wrapper{margin-bottom:2rem;}
 #place_order{
