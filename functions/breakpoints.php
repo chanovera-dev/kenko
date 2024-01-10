@@ -218,7 +218,15 @@ function kenko_theme_custom_breakpoints() {
                     --spacing-cart:59.88px;
 
                     /* carrito */
-                    --grid-template-columns--carrito:1fr 400px;
+                    <?php
+                        if (class_exists('WooCommerce')) {
+                            if (WC()->cart->is_empty()) {
+                            } else {
+                                echo '--grid-template-columns--carrito:1fr 400px;';
+                            }
+                        }
+                    ?>
+                    
                 }
                 /* cabecera */
                     /* carrito */
