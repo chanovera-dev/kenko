@@ -2,7 +2,9 @@
 
 main .container .section{padding:3rem 0;}
 main .container .section .woocommerce{display:grid;grid-template-columns:var(--grid-template-columns--carrito);gap:0 50px;}
-main .container .section .woocommerce .woocommerce-notices-wrapper{grid-column:1/-1;}
+
+/*mensajes*/
+main .container .section .woocommerce .woocommerce-notices-wrapper{grid-column:1/-1;text-align:center;color:#03a678;font-size:18px;}
 
 /* mensaje de carito vacío */
 .wc-empty-cart-message{text-align:center;padding:15px 0 16px;}
