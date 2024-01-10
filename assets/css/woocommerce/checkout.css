@@ -32,6 +32,9 @@ abbr[title]{color:var(--wp--preset--color--attenuated); text-decoration:none;}
     filter:brightness(1.5);
 }
 
+/* métodos de pago */
+.woocommerce-checkout-payment .wc_payment_methods.payment_methods.methods{padding-left:0;list-style:none;}
+
 @media(min-width:1024px){
     main .woocommerce-checkout{grid-template-columns:var(--grid-template-columns--carrito); grid-template-rows:auto 1fr;}
     #customer_details{grid-column:1/2; grid-row:1/3;}
