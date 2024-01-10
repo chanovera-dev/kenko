@@ -2,7 +2,7 @@ main .woocommerce-checkout{display:grid; gap:0 5rem; margin-bottom:6rem;}
 main .woocommerce-info{padding:32px 0;}
 p:has(label){display:grid;}
 p :is(input,textarea){width:100%;}
-#customer_details .col-1{color:var(--wp--preset--color--title);}
+#customer_details .col-1{color:var(--wp--preset--color--title);font-size:15px;}
 #customer_details .col-1 h3{font-size:24px; margin-bottom:3rem;}
 #customer_details .col-1 .woocommerce-billing-fields__field-wrapper{display:grid; gap:2rem;}
 #customer_details .col-2 h3{font-size:24px; margin-bottom:3rem;margin-top:36px;}
