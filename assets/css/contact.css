@@ -5,7 +5,7 @@
 .contact-page .info-and-contact--wrapper{padding:48px 0; display:grid; gap:47px; max-width:1011px; margin-inline:auto;}
 .contact-page .info-and-contact--wrapper :is(.info, .contact){display:grid; gap:20px;}
 .contact-page .info-and-contact--wrapper :is(.info, .contact) div *:not(:last-child, p, input){margin-bottom:20px;}
-.contact-page .info-and-contact--wrapper .info p:not(:last-child){margin-bottom:20px;}
+.contact-page .info-and-contact--wrapper .info div p:not(:last-child){margin-bottom:20px;}
 .contact-page .info-and-contact--wrapper .contact .wpcf7-form{display:grid; gap:19px;}
 .contact-page .info-and-contact--wrapper .contact .wpcf7-form :is(input[type=text], input[type=email], textarea){width:100%;}
 .contact-page .info-and-contact--wrapper .contact .wpcf7-form p:nth-child(4){grid-column:1/-1;}
