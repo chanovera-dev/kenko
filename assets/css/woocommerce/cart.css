@@ -43,5 +43,6 @@ main .container .section{padding:3rem 0;}
 /* totales del carrito */
 .cart-collaterals .cart_totals table.shop_table{width:100%;}
 .cart-collaterals .cart_totals table.shop_table tbody{border:1px solid var(--wp--preset--color--line);}
-.cart-collaterals .cart_totals table.shop_table tbody tr{display:flex;align-items:center;justify-content:space-between;background-color:#fafafa;}
+.cart-collaterals .cart_totals table.shop_table tbody tr{display:flex;align-items:center;justify-content:space-between;background-color:#fafafa;border:1px solid #e1e1e1;}
+.cart-collaterals .cart_totals table.shop_table tbody tr.cart-subtotal{border-bottom:0px solid transparent;}
 .cart-collaterals .cart_totals table.shop_table tbody tr > *{padding:15px 22px;}
